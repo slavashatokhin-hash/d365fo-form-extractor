@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "D365FO Field & Help Text Scanner",
+  "version": "1.0.0",
+  "description": "Scans the current Dynamics 365 Finance & Operations form and lists every field's control name, label, and help text.",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": ["activeTab", "scripting"]
+}
