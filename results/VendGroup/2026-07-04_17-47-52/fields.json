@@ -1,0 +1,92 @@
+{
+  "formName": "VendGroup",
+  "url": "https://hint-sb-04a9f0283cca85a5c5devaos.cloudax.dynamics.com/?cmp=hge&mi=VendGroup",
+  "scannedAt": "2026-07-04T15:47:52.807Z",
+  "deep": true,
+  "walkTabs": true,
+  "tabsFound": [],
+  "tabsScanned": 1,
+  "fields": [
+    {
+      "controlName": "QuickFilterControl",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Filter",
+      "role": "QuickFilter",
+      "tab": ""
+    },
+    {
+      "controlName": "QuickFilterControl_Input",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Filter",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "Grid.Vendor group",
+      "helpSource": "dom",
+      "helpText": "Vendor group Click to follow link",
+      "label": "Vendor group",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "Grid.Description",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Description",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "Grid.Terms of payment",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Terms of payment",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "Grid.Time between invoice due date and payment date",
+      "helpSource": "dom",
+      "helpText": "Time between invoice due date and payment date",
+      "label": "Time between invoice due date and payment date",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "Grid.Default tax group",
+      "helpSource": "dom",
+      "helpText": "Default tax group Click to follow link",
+      "label": "Default tax group",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "Grid.Exclude from search results",
+      "helpSource": "dom",
+      "helpText": "Exclude from search results",
+      "label": "Exclude from search results",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "Grid.Accounting currency exchange rate type",
+      "helpSource": "dom",
+      "helpText": "Accounting currency exchange rate type",
+      "label": "Accounting currency exchange rate type",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "Grid.Reporting currency exchange rate type",
+      "helpSource": "dom",
+      "helpText": "Reporting currency exchange rate type Unique ID for the record in the database",
+      "label": "Reporting currency exchange rate type",
+      "role": "GridColumn",
+      "tab": ""
+    }
+  ],
+  "lookups": []
+}
