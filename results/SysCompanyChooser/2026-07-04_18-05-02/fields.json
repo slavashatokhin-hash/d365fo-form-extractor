@@ -1,0 +1,116 @@
+{
+  "formName": "SysCompanyChooser",
+  "url": "https://hint-sb-04a9f0283cca85a5c5devaos.cloudax.dynamics.com/?cmp=usmf&mi=PurchAgreementListPage",
+  "scannedAt": "2026-07-04T16:05:02.589Z",
+  "deep": true,
+  "walkTabs": true,
+  "tabsFound": [],
+  "tabsScanned": 1,
+  "fields": [
+    {
+      "controlName": "MainTab",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Filter",
+      "role": "Pivot",
+      "tab": ""
+    },
+    {
+      "controlName": "TabPageGrid",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Filter",
+      "role": "PivotItem",
+      "tab": ""
+    },
+    {
+      "controlName": "GridHeaderFilter",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Filter",
+      "role": "QuickFilter",
+      "tab": ""
+    },
+    {
+      "controlName": "GridHeaderFilter_Input",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Filter",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "GridHeader.Purchase agreement",
+      "helpSource": "dom",
+      "helpText": "Purchase agreement Click to follow link",
+      "label": "Purchase agreement",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "GridHeader.Status",
+      "helpSource": "dom",
+      "helpText": "Status",
+      "label": "Status",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "GridHeader.Vendor account",
+      "helpSource": "dom",
+      "helpText": "Vendor account Click to follow link",
+      "label": "Vendor account",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "GridHeader.Name",
+      "helpSource": "dom",
+      "helpText": "Name",
+      "label": "Name",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "GridHeader.Invoice account",
+      "helpSource": "dom",
+      "helpText": "Invoice account Click to follow link",
+      "label": "Invoice account",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "GridHeader.Document title",
+      "helpSource": "dom",
+      "helpText": "Document title",
+      "label": "Document title",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "GridHeader.Purchase agreement classification",
+      "helpSource": "dom",
+      "helpText": "Purchase agreement classification The type of purchase agreement. Agreement types are defined in the Purchase agreement classification page in Procurement and sourcing. You cannot create a release order for a purchase agreement if the classification that you selected for the purchase agreement requires direct invoicing.",
+      "label": "Purchase agreement classification",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "GridHeader.Currency",
+      "helpSource": "dom",
+      "helpText": "Currency Click to follow link",
+      "label": "Currency",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "GridHeader.Project ID",
+      "helpSource": "dom",
+      "helpText": "Project ID Click to follow link",
+      "label": "Project ID",
+      "role": "GridColumn",
+      "tab": ""
+    }
+  ],
+  "lookups": []
+}
