@@ -1,0 +1,3136 @@
+{
+  "formName": "Procurement and sourcing parameters -- Finance and Operations",
+  "url": "https://hint-sb-04a9f0283cca85a5c5devaos.cloudax.dynamics.com/?cmp=hge&mi=SrmParameters",
+  "scannedAt": "2026-07-04T11:53:14.942Z",
+  "deep": true,
+  "walkTabs": true,
+  "tabsFound": [
+    "Workspaces",
+    "AppsApps",
+    "General",
+    "Delivery",
+    "Prices",
+    "Request for quotation",
+    "Rebate program",
+    "Number sequences",
+    "Margin alerts",
+    "Inventory dimensions",
+    "Vendor collaboration",
+    "Purchase requisition"
+  ],
+  "tabsScanned": 12,
+  "fields": [
+    {
+      "controlName": "NavigationBar",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Navigation bar",
+      "role": "NavigationBar",
+      "tab": "Workspaces"
+    },
+    {
+      "controlName": "NavBarOfficeWaffle",
+      "helpSource": "hover",
+      "helpText": "Go to the Office 365 site",
+      "label": "Office 365",
+      "role": "Button",
+      "tab": "Workspaces"
+    },
+    {
+      "controlName": "UserCompany",
+      "helpSource": "dom",
+      "helpText": "Höegh Evi",
+      "label": "Current company is hge, activate to choose a company",
+      "role": "",
+      "tab": "Workspaces"
+    },
+    {
+      "controlName": "2",
+      "helpSource": "hover",
+      "helpText": "(Ctrl+/) Just start typing the name of a page to see a list of similarly named pages. Choose the page you'd like to navigate to.",
+      "label": "Search",
+      "role": "Button",
+      "tab": "Workspaces"
+    },
+    {
+      "controlName": "navBarMessageCenter",
+      "helpSource": "dom",
+      "helpText": "Show messages",
+      "label": "Show messages (Ctrl+Shift+F7) Open to view system messages.",
+      "role": "",
+      "tab": "Workspaces"
+    },
+    {
+      "controlName": "navBarFeedback",
+      "helpSource": "hover",
+      "helpText": "Please send us your feedback. We really appreciate you taking the time to let us know how we can improve Finance and Operations.",
+      "label": "Feedback",
+      "role": "Button",
+      "tab": "Workspaces"
+    },
+    {
+      "controlName": "SystemDefinedButtonsActionPane",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Search for an action",
+      "role": "AppBarSection",
+      "tab": "Workspaces"
+    },
+    {
+      "controlName": "SystemDefinedCloseButton",
+      "helpSource": "hover",
+      "helpText": "(Esc)",
+      "label": "Back",
+      "role": "CommandButton",
+      "tab": "Workspaces"
+    },
+    {
+      "controlName": "AppBarSearch",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Search for an action",
+      "role": "AppBarSearchField",
+      "tab": "Workspaces"
+    },
+    {
+      "controlName": "SystemDefinedRefreshButton",
+      "helpSource": "hover",
+      "helpText": "(Shift+F5)",
+      "label": "Refresh",
+      "role": "CommandButton",
+      "tab": "Workspaces"
+    },
+    {
+      "controlName": "SystemDefinedPopoutButton",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Open in new window",
+      "role": "CommandButton",
+      "tab": "Workspaces"
+    },
+    {
+      "controlName": "Tab",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Set up default values and parameters for purchase orders",
+      "role": "VerticalTabs",
+      "tab": "Workspaces"
+    },
+    {
+      "controlName": "TabGeneral",
+      "helpSource": "",
+      "helpText": "",
+      "label": "General",
+      "role": "PivotItem",
+      "tab": "Workspaces"
+    },
+    {
+      "controlName": "GeneralTabPage",
+      "helpSource": "hover",
+      "helpText": "The purchase-order type assigned to newly created purchase orders by default. A \"journal\" is a draft purchase order that doesn't have inventory transactions and can't be confirmed. A \"purchase order\" can have inventory transactions and can be confirmed, received, and invoiced. Use \"returned order\" when returning goods to a vendor; it has a return material authorization (RMA) number and order lines with negative quantities.",
+      "label": "Purchase type",
+      "role": "SectionPage",
+      "tab": "Workspaces"
+    },
+    {
+      "controlName": "DefaultValues_PurchaseType",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Purchase type",
+      "role": "ComboBox",
+      "tab": "Workspaces"
+    },
+    {
+      "controlName": "DefaultValues_ReturnActionDefault",
+      "helpSource": "hover",
+      "helpText": "Select the standard return action that is created by default when you enter return item quantities in a purchase order line.",
+      "label": "Return action default",
+      "role": "Input",
+      "tab": "Workspaces"
+    },
+    {
+      "controlName": "DefaultValues_PurchPoolId",
+      "helpSource": "hover",
+      "helpText": "Select the purchase pool that you want to appear by default on a purchase order when it is created on the Purchase order page. If you do not want to use the default purchase order pool, you can change it for a specific vendor or on a specific purchase order.",
+      "label": "Purchase pool",
+      "role": "Input",
+      "tab": "Workspaces"
+    },
+    {
+      "controlName": "PurchParameters_PromptTransfer",
+      "helpSource": "hover",
+      "helpText": "Select this option to display a message when you create or modify a purchase order. The message indicates that vendor's term information, such as terms of payment, from the Vendors page will be copied to the purchase order. If you do not select this option, the information will be copied and no message will be displayed. Basic information about the vendor, such as account number, is copied to a purchase order whether this option is selected or not.",
+      "label": "Prompt when specifying vendor and invoice account",
+      "role": "CheckBox",
+      "tab": "Workspaces"
+    },
+    {
+      "controlName": "PurchParameters_PromptQty",
+      "helpSource": "hover",
+      "helpText": "Recommend a value for quantity field when posting documents.",
+      "label": "Prompt quantity field value when posting documents",
+      "role": "CheckBox",
+      "tab": "Workspaces"
+    },
+    {
+      "controlName": "PurchParameters_AutomaticFactBoxUpdateOnPO_PSN",
+      "helpSource": "hover",
+      "helpText": "Select this check box to automatically recalculate FactBoxes when a purchase order line is added or changed. The recalculation process can slow system performance. If you do not select this check box, you must press F5 to refresh the FactBoxes after purchase order lines are added or changed.",
+      "label": "Automatically recalculate FactBoxes on purchase order update",
+      "role": "CheckBox",
+      "tab": "Workspaces"
+    },
+    {
+      "controlName": "PSNPurchParameters_PSNCalculatePODeliveryDate",
+      "helpSource": "hover",
+      "helpText": "Enable this parameter to calculate a delivery date based on the lead time for Procurement documents. The date will not change if the lead time is zero.",
+      "label": "Calculate purchase order delivery date based on lead time and working days",
+      "role": "CheckBox",
+      "tab": "Workspaces"
+    },
+    {
+      "controlName": "PSNPurchParameters_PSNWorkingCalendarId",
+      "helpSource": "hover",
+      "helpText": "Select the calendar that specifies the days your agency is open, such as weekdays, and the ‘Closed for pickup’ check box is selected to indicate weekends and holidays.",
+      "label": "Select calendar to determine working days",
+      "role": "Input",
+      "tab": "Workspaces"
+    },
+    {
+      "controlName": "PurchParameters_DisallowLineRenumbering",
+      "helpSource": "hover",
+      "helpText": "Select this check box if synchronization to Common Data Service is enabled and you want to avoid renumbering purchase order lines because it can create inconsistent references to lines.",
+      "label": "Disallow renumbering of lines",
+      "role": "CheckBox",
+      "tab": "Workspaces"
+    },
+    {
+      "controlName": "PurchParameters_EnableBillToAddress",
+      "helpSource": "hover",
+      "helpText": "Select this option to enable a different Bill-to address to be chosen on Purchase orders. The bill‐to address will default from the Invoice-type address that has been associated with the operating unit and position of the worker who is creating the purchase order.",
+      "label": "Enable change to Bill-to address on Purchase orders",
+      "role": "CheckBox",
+      "tab": "Workspaces"
+    },
+    {
+      "controlName": "PurchParameters_ExcludeCancelledLinesFromTotalsCalculation",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Exclude cancelled lines from totals calculation",
+      "role": "CheckBox",
+      "tab": "Workspaces"
+    },
+    {
+      "controlName": "PurchParameters_PurchLineDefaultAddressFromHeader",
+      "helpSource": "hover",
+      "helpText": "When this parameter is enabled, the delivery address for the purchase order line will always default to the purchase order header address, disregarding any site or warehouse-specific delivery addresses.",
+      "label": "Always default line delivery address from the header",
+      "role": "CheckBox",
+      "tab": "Workspaces"
+    },
+    {
+      "controlName": "PurchParameters_PurchLineDefaultSalesTaxGroupFromHeaderAddress",
+      "helpSource": "hover",
+      "helpText": "When this parameter is enabled, the sales tax group for the purchase order line will default from the sales tax group associated with the delivery address specified for the purchase order header. When disabled, the sales tax group will default to the sales tax group associated with the purchase order header.",
+      "label": "Enable default line sales tax group from delivery address configuration",
+      "role": "CheckBox",
+      "tab": "Workspaces"
+    },
+    {
+      "controlName": "PurchParameters_PurchlinePriceModifyPostReceive",
+      "helpSource": "hover",
+      "helpText": "When this parameter is Enabled user cannot modify unit price of Purchase Order Lines after line has Product Receipt for 1 or more quantity.",
+      "label": "Block modifications to Purchase Order Line Unit Price after line has Product Receipt for 1 or more quantity.",
+      "role": "CheckBox",
+      "tab": "Workspaces"
+    },
+    {
+      "controlName": "PurchParameters_DoSetReleasedPOToDraft",
+      "helpSource": "hover",
+      "helpText": "If this option is selected, the approval status of a purchase order that is created from a purchase requisition will be Draft.",
+      "label": "Give purchase orders created via purchase requisitions Draft approval status",
+      "role": "CheckBox",
+      "tab": "Workspaces"
+    },
+    {
+      "controlName": "PurchParameters_PrintAmountOnPurchaseOrder",
+      "helpSource": "hover",
+      "helpText": "Print prices and amounts on purchase order documents.",
+      "label": "Purchase order prices/amount",
+      "role": "CheckBox",
+      "tab": "Workspaces"
+    },
+    {
+      "controlName": "ChangeRequest_ChangeRequestEnabled",
+      "helpSource": "hover",
+      "helpText": "Select this check box to enable change management for purchase orders.",
+      "label": "Activate change management",
+      "role": "CheckBox",
+      "tab": "Workspaces"
+    },
+    {
+      "controlName": "ChangeRequest_ChangeRequestAllowOverride",
+      "helpSource": "hover",
+      "helpText": "Select this check box to allow users to override change management settings on a per vendor basis.",
+      "label": "Allow override of settings per vendor",
+      "role": "CheckBox",
+      "tab": "Workspaces"
+    },
+    {
+      "controlName": "InterCompany_IntercompanyAgreementAutoSearch",
+      "helpSource": "hover",
+      "helpText": "Select this check box to search for a purchase agreement when you create an intercompany purchase order from the original sales order.",
+      "label": "Find purchase agreements",
+      "role": "CheckBox",
+      "tab": "Workspaces"
+    },
+    {
+      "controlName": "PurchaseIntegrationTabPage",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Retain concurrent update warningChoose whether the system should allow users to receive warnings when simultaneous edits of the same purchase order header occur. Additionally, setting this to \"Yes\" will also prevent purchase order header from being refreshed while open, and it can impact various purchase order update scenarios with purchase order table extensions. If you do have relevant extensions, you should keep this set to No. Yes",
+      "role": "SectionPage",
+      "tab": "Workspaces"
+    },
+    {
+      "controlName": "PurchParameters_SkipRereadOnUpdate",
+      "helpSource": "hover",
+      "helpText": "Choose whether the system should allow users to receive warnings when simultaneous edits of the same purchase order header occur. Additionally, setting this to \"Yes\" will also prevent purchase order header from being refreshed while open, and it can impact various purchase order update scenarios with purchase order table extensions. If you do have relevant extensions, you should keep this set to No.",
+      "label": "Retain concurrent update warning",
+      "role": "CheckBox",
+      "tab": "Workspaces"
+    },
+    {
+      "controlName": "PurchParameters_IsPurchUpdateSkipPurchLineEventsEnabled",
+      "helpSource": "hover",
+      "helpText": "Choose whether the system should allow custom features to receive alerts when a purchase update event occurs in the purchase order line (PurchLine). Setting this to \"Yes\" will prevent custom features from receiving these alerts, even when specifically requested by a custom feature. Setting this to \"No\" will allow the alerts to be generated, but can impact system performance, especially if your system is integrated with Dynamics 365 Sales through dual-write. If you don't have any relevant customizations, you should keep this set to \"Yes\".",
+      "label": "Skip purchase line alerts upon purchase updates",
+      "role": "CheckBox",
+      "tab": "Workspaces"
+    },
+    {
+      "controlName": "PurchParameters_IntercompanyUseNotActiveRelation",
+      "helpSource": "hover",
+      "helpText": "Choose whether the system should allow inactive intercompany relationships to exist. Setting this to \"Yes\" the system will not prevent saving intercompany relationships as inactive. If you have relevant extensions that depend on inactive relationships to exist, you should set this to \"Yes\".",
+      "label": "Allow inactive intercompany relationships",
+      "role": "CheckBox",
+      "tab": "Workspaces"
+    },
+    {
+      "controlName": "PurchParameters_InterCompanyAutoCreatePurchaseOrder",
+      "helpSource": "hover",
+      "helpText": "Choose whether the system will automatically create intercompany orders. This parameter applies for a scenario with 4 or more intercompany orders in the chain when the originating order is an intercompany purchase order. In that case, system will automatically create remaining orders without a need to navigate to the newly created intercompany sales order to trigger the creation of remaining intercompany orders in the chain. Furthermore, this parameter is ignored in the creation of intercompany return scenarios. If you are creating exclusively intercompany return scenarios, you should set this parameter to \"No\".",
+      "label": "Auto-create direct delivery intercompany orders originating from purchase order creation",
+      "role": "CheckBox",
+      "tab": "Workspaces"
+    },
+    {
+      "controlName": "NavigationBar",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Navigation bar",
+      "role": "NavigationBar",
+      "tab": "AppsApps"
+    },
+    {
+      "controlName": "NavBarOfficeWaffle",
+      "helpSource": "hover",
+      "helpText": "Go to the Office 365 site",
+      "label": "Office 365",
+      "role": "Button",
+      "tab": "AppsApps"
+    },
+    {
+      "controlName": "UserCompany",
+      "helpSource": "dom",
+      "helpText": "Höegh Evi",
+      "label": "Current company is hge, activate to choose a company",
+      "role": "",
+      "tab": "AppsApps"
+    },
+    {
+      "controlName": "2",
+      "helpSource": "hover",
+      "helpText": "(Ctrl+/) Just start typing the name of a page to see a list of similarly named pages. Choose the page you'd like to navigate to.",
+      "label": "Search",
+      "role": "Button",
+      "tab": "AppsApps"
+    },
+    {
+      "controlName": "navBarMessageCenter",
+      "helpSource": "dom",
+      "helpText": "Show messages",
+      "label": "Show messages (Ctrl+Shift+F7) Open to view system messages.",
+      "role": "",
+      "tab": "AppsApps"
+    },
+    {
+      "controlName": "navBarFeedback",
+      "helpSource": "hover",
+      "helpText": "Please send us your feedback. We really appreciate you taking the time to let us know how we can improve Finance and Operations.",
+      "label": "Feedback",
+      "role": "Button",
+      "tab": "AppsApps"
+    },
+    {
+      "controlName": "SystemDefinedButtonsActionPane",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Search for an action",
+      "role": "AppBarSection",
+      "tab": "AppsApps"
+    },
+    {
+      "controlName": "SystemDefinedCloseButton",
+      "helpSource": "hover",
+      "helpText": "(Esc)",
+      "label": "Back",
+      "role": "CommandButton",
+      "tab": "AppsApps"
+    },
+    {
+      "controlName": "AppBarSearch",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Search for an action",
+      "role": "AppBarSearchField",
+      "tab": "AppsApps"
+    },
+    {
+      "controlName": "SystemDefinedRefreshButton",
+      "helpSource": "hover",
+      "helpText": "(Shift+F5)",
+      "label": "Refresh",
+      "role": "CommandButton",
+      "tab": "AppsApps"
+    },
+    {
+      "controlName": "SystemDefinedPopoutButton",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Open in new window",
+      "role": "CommandButton",
+      "tab": "AppsApps"
+    },
+    {
+      "controlName": "Tab",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Set up default values and parameters for purchase orders",
+      "role": "VerticalTabs",
+      "tab": "AppsApps"
+    },
+    {
+      "controlName": "TabGeneral",
+      "helpSource": "",
+      "helpText": "",
+      "label": "General",
+      "role": "PivotItem",
+      "tab": "AppsApps"
+    },
+    {
+      "controlName": "GeneralTabPage",
+      "helpSource": "hover",
+      "helpText": "The purchase-order type assigned to newly created purchase orders by default. A \"journal\" is a draft purchase order that doesn't have inventory transactions and can't be confirmed. A \"purchase order\" can have inventory transactions and can be confirmed, received, and invoiced. Use \"returned order\" when returning goods to a vendor; it has a return material authorization (RMA) number and order lines with negative quantities.",
+      "label": "Purchase type",
+      "role": "SectionPage",
+      "tab": "AppsApps"
+    },
+    {
+      "controlName": "DefaultValues_PurchaseType",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Purchase type",
+      "role": "ComboBox",
+      "tab": "AppsApps"
+    },
+    {
+      "controlName": "DefaultValues_ReturnActionDefault",
+      "helpSource": "hover",
+      "helpText": "Select the standard return action that is created by default when you enter return item quantities in a purchase order line.",
+      "label": "Return action default",
+      "role": "Input",
+      "tab": "AppsApps"
+    },
+    {
+      "controlName": "DefaultValues_PurchPoolId",
+      "helpSource": "hover",
+      "helpText": "Select the purchase pool that you want to appear by default on a purchase order when it is created on the Purchase order page. If you do not want to use the default purchase order pool, you can change it for a specific vendor or on a specific purchase order.",
+      "label": "Purchase pool",
+      "role": "Input",
+      "tab": "AppsApps"
+    },
+    {
+      "controlName": "PurchParameters_PromptTransfer",
+      "helpSource": "hover",
+      "helpText": "Select this option to display a message when you create or modify a purchase order. The message indicates that vendor's term information, such as terms of payment, from the Vendors page will be copied to the purchase order. If you do not select this option, the information will be copied and no message will be displayed. Basic information about the vendor, such as account number, is copied to a purchase order whether this option is selected or not.",
+      "label": "Prompt when specifying vendor and invoice account",
+      "role": "CheckBox",
+      "tab": "AppsApps"
+    },
+    {
+      "controlName": "PurchParameters_PromptQty",
+      "helpSource": "hover",
+      "helpText": "Recommend a value for quantity field when posting documents.",
+      "label": "Prompt quantity field value when posting documents",
+      "role": "CheckBox",
+      "tab": "AppsApps"
+    },
+    {
+      "controlName": "PurchParameters_AutomaticFactBoxUpdateOnPO_PSN",
+      "helpSource": "hover",
+      "helpText": "Select this check box to automatically recalculate FactBoxes when a purchase order line is added or changed. The recalculation process can slow system performance. If you do not select this check box, you must press F5 to refresh the FactBoxes after purchase order lines are added or changed.",
+      "label": "Automatically recalculate FactBoxes on purchase order update",
+      "role": "CheckBox",
+      "tab": "AppsApps"
+    },
+    {
+      "controlName": "PSNPurchParameters_PSNCalculatePODeliveryDate",
+      "helpSource": "hover",
+      "helpText": "Enable this parameter to calculate a delivery date based on the lead time for Procurement documents. The date will not change if the lead time is zero.",
+      "label": "Calculate purchase order delivery date based on lead time and working days",
+      "role": "CheckBox",
+      "tab": "AppsApps"
+    },
+    {
+      "controlName": "PSNPurchParameters_PSNWorkingCalendarId",
+      "helpSource": "hover",
+      "helpText": "Select the calendar that specifies the days your agency is open, such as weekdays, and the ‘Closed for pickup’ check box is selected to indicate weekends and holidays.",
+      "label": "Select calendar to determine working days",
+      "role": "Input",
+      "tab": "AppsApps"
+    },
+    {
+      "controlName": "PurchParameters_DisallowLineRenumbering",
+      "helpSource": "hover",
+      "helpText": "Select this check box if synchronization to Common Data Service is enabled and you want to avoid renumbering purchase order lines because it can create inconsistent references to lines.",
+      "label": "Disallow renumbering of lines",
+      "role": "CheckBox",
+      "tab": "AppsApps"
+    },
+    {
+      "controlName": "PurchParameters_EnableBillToAddress",
+      "helpSource": "hover",
+      "helpText": "Select this option to enable a different Bill-to address to be chosen on Purchase orders. The bill‐to address will default from the Invoice-type address that has been associated with the operating unit and position of the worker who is creating the purchase order.",
+      "label": "Enable change to Bill-to address on Purchase orders",
+      "role": "CheckBox",
+      "tab": "AppsApps"
+    },
+    {
+      "controlName": "PurchParameters_ExcludeCancelledLinesFromTotalsCalculation",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Exclude cancelled lines from totals calculation",
+      "role": "CheckBox",
+      "tab": "AppsApps"
+    },
+    {
+      "controlName": "PurchParameters_PurchLineDefaultAddressFromHeader",
+      "helpSource": "hover",
+      "helpText": "When this parameter is enabled, the delivery address for the purchase order line will always default to the purchase order header address, disregarding any site or warehouse-specific delivery addresses.",
+      "label": "Always default line delivery address from the header",
+      "role": "CheckBox",
+      "tab": "AppsApps"
+    },
+    {
+      "controlName": "PurchParameters_PurchLineDefaultSalesTaxGroupFromHeaderAddress",
+      "helpSource": "hover",
+      "helpText": "When this parameter is enabled, the sales tax group for the purchase order line will default from the sales tax group associated with the delivery address specified for the purchase order header. When disabled, the sales tax group will default to the sales tax group associated with the purchase order header.",
+      "label": "Enable default line sales tax group from delivery address configuration",
+      "role": "CheckBox",
+      "tab": "AppsApps"
+    },
+    {
+      "controlName": "PurchParameters_PurchlinePriceModifyPostReceive",
+      "helpSource": "hover",
+      "helpText": "When this parameter is Enabled user cannot modify unit price of Purchase Order Lines after line has Product Receipt for 1 or more quantity.",
+      "label": "Block modifications to Purchase Order Line Unit Price after line has Product Receipt for 1 or more quantity.",
+      "role": "CheckBox",
+      "tab": "AppsApps"
+    },
+    {
+      "controlName": "PurchParameters_DoSetReleasedPOToDraft",
+      "helpSource": "hover",
+      "helpText": "If this option is selected, the approval status of a purchase order that is created from a purchase requisition will be Draft.",
+      "label": "Give purchase orders created via purchase requisitions Draft approval status",
+      "role": "CheckBox",
+      "tab": "AppsApps"
+    },
+    {
+      "controlName": "PurchParameters_PrintAmountOnPurchaseOrder",
+      "helpSource": "hover",
+      "helpText": "Print prices and amounts on purchase order documents.",
+      "label": "Purchase order prices/amount",
+      "role": "CheckBox",
+      "tab": "AppsApps"
+    },
+    {
+      "controlName": "ChangeRequest_ChangeRequestEnabled",
+      "helpSource": "hover",
+      "helpText": "Select this check box to enable change management for purchase orders.",
+      "label": "Activate change management",
+      "role": "CheckBox",
+      "tab": "AppsApps"
+    },
+    {
+      "controlName": "ChangeRequest_ChangeRequestAllowOverride",
+      "helpSource": "hover",
+      "helpText": "Select this check box to allow users to override change management settings on a per vendor basis.",
+      "label": "Allow override of settings per vendor",
+      "role": "CheckBox",
+      "tab": "AppsApps"
+    },
+    {
+      "controlName": "InterCompany_IntercompanyAgreementAutoSearch",
+      "helpSource": "hover",
+      "helpText": "Select this check box to search for a purchase agreement when you create an intercompany purchase order from the original sales order.",
+      "label": "Find purchase agreements",
+      "role": "CheckBox",
+      "tab": "AppsApps"
+    },
+    {
+      "controlName": "PurchaseIntegrationTabPage",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Retain concurrent update warningChoose whether the system should allow users to receive warnings when simultaneous edits of the same purchase order header occur. Additionally, setting this to \"Yes\" will also prevent purchase order header from being refreshed while open, and it can impact various purchase order update scenarios with purchase order table extensions. If you do have relevant extensions, you should keep this set to No. Yes",
+      "role": "SectionPage",
+      "tab": "AppsApps"
+    },
+    {
+      "controlName": "PurchParameters_SkipRereadOnUpdate",
+      "helpSource": "hover",
+      "helpText": "Choose whether the system should allow users to receive warnings when simultaneous edits of the same purchase order header occur. Additionally, setting this to \"Yes\" will also prevent purchase order header from being refreshed while open, and it can impact various purchase order update scenarios with purchase order table extensions. If you do have relevant extensions, you should keep this set to No.",
+      "label": "Retain concurrent update warning",
+      "role": "CheckBox",
+      "tab": "AppsApps"
+    },
+    {
+      "controlName": "PurchParameters_IsPurchUpdateSkipPurchLineEventsEnabled",
+      "helpSource": "hover",
+      "helpText": "Choose whether the system should allow custom features to receive alerts when a purchase update event occurs in the purchase order line (PurchLine). Setting this to \"Yes\" will prevent custom features from receiving these alerts, even when specifically requested by a custom feature. Setting this to \"No\" will allow the alerts to be generated, but can impact system performance, especially if your system is integrated with Dynamics 365 Sales through dual-write. If you don't have any relevant customizations, you should keep this set to \"Yes\".",
+      "label": "Skip purchase line alerts upon purchase updates",
+      "role": "CheckBox",
+      "tab": "AppsApps"
+    },
+    {
+      "controlName": "PurchParameters_IntercompanyUseNotActiveRelation",
+      "helpSource": "hover",
+      "helpText": "Choose whether the system should allow inactive intercompany relationships to exist. Setting this to \"Yes\" the system will not prevent saving intercompany relationships as inactive. If you have relevant extensions that depend on inactive relationships to exist, you should set this to \"Yes\".",
+      "label": "Allow inactive intercompany relationships",
+      "role": "CheckBox",
+      "tab": "AppsApps"
+    },
+    {
+      "controlName": "PurchParameters_InterCompanyAutoCreatePurchaseOrder",
+      "helpSource": "hover",
+      "helpText": "Choose whether the system will automatically create intercompany orders. This parameter applies for a scenario with 4 or more intercompany orders in the chain when the originating order is an intercompany purchase order. In that case, system will automatically create remaining orders without a need to navigate to the newly created intercompany sales order to trigger the creation of remaining intercompany orders in the chain. Furthermore, this parameter is ignored in the creation of intercompany return scenarios. If you are creating exclusively intercompany return scenarios, you should set this parameter to \"No\".",
+      "label": "Auto-create direct delivery intercompany orders originating from purchase order creation",
+      "role": "CheckBox",
+      "tab": "AppsApps"
+    },
+    {
+      "controlName": "NavigationBar",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Navigation bar",
+      "role": "NavigationBar",
+      "tab": "General"
+    },
+    {
+      "controlName": "NavBarOfficeWaffle",
+      "helpSource": "hover",
+      "helpText": "Go to the Office 365 site",
+      "label": "Office 365",
+      "role": "Button",
+      "tab": "General"
+    },
+    {
+      "controlName": "UserCompany",
+      "helpSource": "dom",
+      "helpText": "Höegh Evi",
+      "label": "Current company is hge, activate to choose a company",
+      "role": "",
+      "tab": "General"
+    },
+    {
+      "controlName": "2",
+      "helpSource": "hover",
+      "helpText": "(Ctrl+/) Just start typing the name of a page to see a list of similarly named pages. Choose the page you'd like to navigate to.",
+      "label": "Search",
+      "role": "Button",
+      "tab": "General"
+    },
+    {
+      "controlName": "navBarMessageCenter",
+      "helpSource": "dom",
+      "helpText": "Show messages",
+      "label": "Show messages (Ctrl+Shift+F7) Open to view system messages.",
+      "role": "",
+      "tab": "General"
+    },
+    {
+      "controlName": "navBarFeedback",
+      "helpSource": "hover",
+      "helpText": "Please send us your feedback. We really appreciate you taking the time to let us know how we can improve Finance and Operations.",
+      "label": "Feedback",
+      "role": "Button",
+      "tab": "General"
+    },
+    {
+      "controlName": "SystemDefinedButtonsActionPane",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Search for an action",
+      "role": "AppBarSection",
+      "tab": "General"
+    },
+    {
+      "controlName": "SystemDefinedCloseButton",
+      "helpSource": "hover",
+      "helpText": "(Esc)",
+      "label": "Back",
+      "role": "CommandButton",
+      "tab": "General"
+    },
+    {
+      "controlName": "AppBarSearch",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Search for an action",
+      "role": "AppBarSearchField",
+      "tab": "General"
+    },
+    {
+      "controlName": "SystemDefinedRefreshButton",
+      "helpSource": "hover",
+      "helpText": "(Shift+F5)",
+      "label": "Refresh",
+      "role": "CommandButton",
+      "tab": "General"
+    },
+    {
+      "controlName": "SystemDefinedPopoutButton",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Open in new window",
+      "role": "CommandButton",
+      "tab": "General"
+    },
+    {
+      "controlName": "Tab",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Set up default values and parameters for purchase orders",
+      "role": "VerticalTabs",
+      "tab": "General"
+    },
+    {
+      "controlName": "TabGeneral",
+      "helpSource": "",
+      "helpText": "",
+      "label": "General",
+      "role": "PivotItem",
+      "tab": "General"
+    },
+    {
+      "controlName": "GeneralTabPage",
+      "helpSource": "hover",
+      "helpText": "The purchase-order type assigned to newly created purchase orders by default. A \"journal\" is a draft purchase order that doesn't have inventory transactions and can't be confirmed. A \"purchase order\" can have inventory transactions and can be confirmed, received, and invoiced. Use \"returned order\" when returning goods to a vendor; it has a return material authorization (RMA) number and order lines with negative quantities.",
+      "label": "Purchase type",
+      "role": "SectionPage",
+      "tab": "General"
+    },
+    {
+      "controlName": "DefaultValues_PurchaseType",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Purchase type",
+      "role": "ComboBox",
+      "tab": "General"
+    },
+    {
+      "controlName": "DefaultValues_ReturnActionDefault",
+      "helpSource": "hover",
+      "helpText": "Select the standard return action that is created by default when you enter return item quantities in a purchase order line.",
+      "label": "Return action default",
+      "role": "Input",
+      "tab": "General"
+    },
+    {
+      "controlName": "DefaultValues_PurchPoolId",
+      "helpSource": "hover",
+      "helpText": "Select the purchase pool that you want to appear by default on a purchase order when it is created on the Purchase order page. If you do not want to use the default purchase order pool, you can change it for a specific vendor or on a specific purchase order.",
+      "label": "Purchase pool",
+      "role": "Input",
+      "tab": "General"
+    },
+    {
+      "controlName": "PurchParameters_PromptTransfer",
+      "helpSource": "hover",
+      "helpText": "Select this option to display a message when you create or modify a purchase order. The message indicates that vendor's term information, such as terms of payment, from the Vendors page will be copied to the purchase order. If you do not select this option, the information will be copied and no message will be displayed. Basic information about the vendor, such as account number, is copied to a purchase order whether this option is selected or not.",
+      "label": "Prompt when specifying vendor and invoice account",
+      "role": "CheckBox",
+      "tab": "General"
+    },
+    {
+      "controlName": "PurchParameters_PromptQty",
+      "helpSource": "hover",
+      "helpText": "Recommend a value for quantity field when posting documents.",
+      "label": "Prompt quantity field value when posting documents",
+      "role": "CheckBox",
+      "tab": "General"
+    },
+    {
+      "controlName": "PurchParameters_AutomaticFactBoxUpdateOnPO_PSN",
+      "helpSource": "hover",
+      "helpText": "Select this check box to automatically recalculate FactBoxes when a purchase order line is added or changed. The recalculation process can slow system performance. If you do not select this check box, you must press F5 to refresh the FactBoxes after purchase order lines are added or changed.",
+      "label": "Automatically recalculate FactBoxes on purchase order update",
+      "role": "CheckBox",
+      "tab": "General"
+    },
+    {
+      "controlName": "PSNPurchParameters_PSNCalculatePODeliveryDate",
+      "helpSource": "hover",
+      "helpText": "Enable this parameter to calculate a delivery date based on the lead time for Procurement documents. The date will not change if the lead time is zero.",
+      "label": "Calculate purchase order delivery date based on lead time and working days",
+      "role": "CheckBox",
+      "tab": "General"
+    },
+    {
+      "controlName": "PSNPurchParameters_PSNWorkingCalendarId",
+      "helpSource": "hover",
+      "helpText": "Select the calendar that specifies the days your agency is open, such as weekdays, and the ‘Closed for pickup’ check box is selected to indicate weekends and holidays.",
+      "label": "Select calendar to determine working days",
+      "role": "Input",
+      "tab": "General"
+    },
+    {
+      "controlName": "PurchParameters_DisallowLineRenumbering",
+      "helpSource": "hover",
+      "helpText": "Select this check box if synchronization to Common Data Service is enabled and you want to avoid renumbering purchase order lines because it can create inconsistent references to lines.",
+      "label": "Disallow renumbering of lines",
+      "role": "CheckBox",
+      "tab": "General"
+    },
+    {
+      "controlName": "PurchParameters_EnableBillToAddress",
+      "helpSource": "hover",
+      "helpText": "Select this option to enable a different Bill-to address to be chosen on Purchase orders. The bill‐to address will default from the Invoice-type address that has been associated with the operating unit and position of the worker who is creating the purchase order.",
+      "label": "Enable change to Bill-to address on Purchase orders",
+      "role": "CheckBox",
+      "tab": "General"
+    },
+    {
+      "controlName": "PurchParameters_ExcludeCancelledLinesFromTotalsCalculation",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Exclude cancelled lines from totals calculation",
+      "role": "CheckBox",
+      "tab": "General"
+    },
+    {
+      "controlName": "PurchParameters_PurchLineDefaultAddressFromHeader",
+      "helpSource": "hover",
+      "helpText": "When this parameter is enabled, the delivery address for the purchase order line will always default to the purchase order header address, disregarding any site or warehouse-specific delivery addresses.",
+      "label": "Always default line delivery address from the header",
+      "role": "CheckBox",
+      "tab": "General"
+    },
+    {
+      "controlName": "PurchParameters_PurchLineDefaultSalesTaxGroupFromHeaderAddress",
+      "helpSource": "hover",
+      "helpText": "When this parameter is enabled, the sales tax group for the purchase order line will default from the sales tax group associated with the delivery address specified for the purchase order header. When disabled, the sales tax group will default to the sales tax group associated with the purchase order header.",
+      "label": "Enable default line sales tax group from delivery address configuration",
+      "role": "CheckBox",
+      "tab": "General"
+    },
+    {
+      "controlName": "PurchParameters_PurchlinePriceModifyPostReceive",
+      "helpSource": "hover",
+      "helpText": "When this parameter is Enabled user cannot modify unit price of Purchase Order Lines after line has Product Receipt for 1 or more quantity.",
+      "label": "Block modifications to Purchase Order Line Unit Price after line has Product Receipt for 1 or more quantity.",
+      "role": "CheckBox",
+      "tab": "General"
+    },
+    {
+      "controlName": "PurchParameters_DoSetReleasedPOToDraft",
+      "helpSource": "hover",
+      "helpText": "If this option is selected, the approval status of a purchase order that is created from a purchase requisition will be Draft.",
+      "label": "Give purchase orders created via purchase requisitions Draft approval status",
+      "role": "CheckBox",
+      "tab": "General"
+    },
+    {
+      "controlName": "PurchParameters_PrintAmountOnPurchaseOrder",
+      "helpSource": "hover",
+      "helpText": "Print prices and amounts on purchase order documents.",
+      "label": "Purchase order prices/amount",
+      "role": "CheckBox",
+      "tab": "General"
+    },
+    {
+      "controlName": "ChangeRequest_ChangeRequestEnabled",
+      "helpSource": "hover",
+      "helpText": "Select this check box to enable change management for purchase orders.",
+      "label": "Activate change management",
+      "role": "CheckBox",
+      "tab": "General"
+    },
+    {
+      "controlName": "ChangeRequest_ChangeRequestAllowOverride",
+      "helpSource": "hover",
+      "helpText": "Select this check box to allow users to override change management settings on a per vendor basis.",
+      "label": "Allow override of settings per vendor",
+      "role": "CheckBox",
+      "tab": "General"
+    },
+    {
+      "controlName": "InterCompany_IntercompanyAgreementAutoSearch",
+      "helpSource": "hover",
+      "helpText": "Select this check box to search for a purchase agreement when you create an intercompany purchase order from the original sales order.",
+      "label": "Find purchase agreements",
+      "role": "CheckBox",
+      "tab": "General"
+    },
+    {
+      "controlName": "PurchaseIntegrationTabPage",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Retain concurrent update warningChoose whether the system should allow users to receive warnings when simultaneous edits of the same purchase order header occur. Additionally, setting this to \"Yes\" will also prevent purchase order header from being refreshed while open, and it can impact various purchase order update scenarios with purchase order table extensions. If you do have relevant extensions, you should keep this set to No. Yes",
+      "role": "SectionPage",
+      "tab": "General"
+    },
+    {
+      "controlName": "PurchParameters_SkipRereadOnUpdate",
+      "helpSource": "hover",
+      "helpText": "Choose whether the system should allow users to receive warnings when simultaneous edits of the same purchase order header occur. Additionally, setting this to \"Yes\" will also prevent purchase order header from being refreshed while open, and it can impact various purchase order update scenarios with purchase order table extensions. If you do have relevant extensions, you should keep this set to No.",
+      "label": "Retain concurrent update warning",
+      "role": "CheckBox",
+      "tab": "General"
+    },
+    {
+      "controlName": "PurchParameters_IsPurchUpdateSkipPurchLineEventsEnabled",
+      "helpSource": "hover",
+      "helpText": "Choose whether the system should allow custom features to receive alerts when a purchase update event occurs in the purchase order line (PurchLine). Setting this to \"Yes\" will prevent custom features from receiving these alerts, even when specifically requested by a custom feature. Setting this to \"No\" will allow the alerts to be generated, but can impact system performance, especially if your system is integrated with Dynamics 365 Sales through dual-write. If you don't have any relevant customizations, you should keep this set to \"Yes\".",
+      "label": "Skip purchase line alerts upon purchase updates",
+      "role": "CheckBox",
+      "tab": "General"
+    },
+    {
+      "controlName": "PurchParameters_IntercompanyUseNotActiveRelation",
+      "helpSource": "hover",
+      "helpText": "Choose whether the system should allow inactive intercompany relationships to exist. Setting this to \"Yes\" the system will not prevent saving intercompany relationships as inactive. If you have relevant extensions that depend on inactive relationships to exist, you should set this to \"Yes\".",
+      "label": "Allow inactive intercompany relationships",
+      "role": "CheckBox",
+      "tab": "General"
+    },
+    {
+      "controlName": "PurchParameters_InterCompanyAutoCreatePurchaseOrder",
+      "helpSource": "hover",
+      "helpText": "Choose whether the system will automatically create intercompany orders. This parameter applies for a scenario with 4 or more intercompany orders in the chain when the originating order is an intercompany purchase order. In that case, system will automatically create remaining orders without a need to navigate to the newly created intercompany sales order to trigger the creation of remaining intercompany orders in the chain. Furthermore, this parameter is ignored in the creation of intercompany return scenarios. If you are creating exclusively intercompany return scenarios, you should set this parameter to \"No\".",
+      "label": "Auto-create direct delivery intercompany orders originating from purchase order creation",
+      "role": "CheckBox",
+      "tab": "General"
+    },
+    {
+      "controlName": "NavigationBar",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Navigation bar",
+      "role": "NavigationBar",
+      "tab": "Delivery"
+    },
+    {
+      "controlName": "NavBarOfficeWaffle",
+      "helpSource": "hover",
+      "helpText": "Go to the Office 365 site",
+      "label": "Office 365",
+      "role": "Button",
+      "tab": "Delivery"
+    },
+    {
+      "controlName": "UserCompany",
+      "helpSource": "dom",
+      "helpText": "Höegh Evi",
+      "label": "Current company is hge, activate to choose a company",
+      "role": "",
+      "tab": "Delivery"
+    },
+    {
+      "controlName": "2",
+      "helpSource": "hover",
+      "helpText": "(Ctrl+/) Just start typing the name of a page to see a list of similarly named pages. Choose the page you'd like to navigate to.",
+      "label": "Search",
+      "role": "Button",
+      "tab": "Delivery"
+    },
+    {
+      "controlName": "navBarMessageCenter",
+      "helpSource": "dom",
+      "helpText": "Show messages",
+      "label": "Show messages (Ctrl+Shift+F7) Open to view system messages.",
+      "role": "",
+      "tab": "Delivery"
+    },
+    {
+      "controlName": "navBarFeedback",
+      "helpSource": "hover",
+      "helpText": "Please send us your feedback. We really appreciate you taking the time to let us know how we can improve Finance and Operations.",
+      "label": "Feedback",
+      "role": "Button",
+      "tab": "Delivery"
+    },
+    {
+      "controlName": "SystemDefinedButtonsActionPane",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Search for an action",
+      "role": "AppBarSection",
+      "tab": "Delivery"
+    },
+    {
+      "controlName": "SystemDefinedCloseButton",
+      "helpSource": "hover",
+      "helpText": "(Esc)",
+      "label": "Back",
+      "role": "CommandButton",
+      "tab": "Delivery"
+    },
+    {
+      "controlName": "AppBarSearch",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Search for an action",
+      "role": "AppBarSearchField",
+      "tab": "Delivery"
+    },
+    {
+      "controlName": "SystemDefinedRefreshButton",
+      "helpSource": "hover",
+      "helpText": "(Shift+F5)",
+      "label": "Refresh",
+      "role": "CommandButton",
+      "tab": "Delivery"
+    },
+    {
+      "controlName": "SystemDefinedPopoutButton",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Open in new window",
+      "role": "CommandButton",
+      "tab": "Delivery"
+    },
+    {
+      "controlName": "Tab",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Set up default values and parameters for purchase orders",
+      "role": "VerticalTabs",
+      "tab": "Delivery"
+    },
+    {
+      "controlName": "TabUpdates",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Delivery",
+      "role": "PivotItem",
+      "tab": "Delivery"
+    },
+    {
+      "controlName": "Updates_SubDelivery",
+      "helpSource": "hover",
+      "helpText": "Select this check box to allow under deliveries to be accepted as a final delivery.",
+      "label": "Accept underdelivery",
+      "role": "CheckBox",
+      "tab": "Delivery"
+    },
+    {
+      "controlName": "Updates_OverDelivery",
+      "helpSource": "hover",
+      "helpText": "Select this check box to receive more items through the packing slip update than the quantity that you ordered on the purchase line.",
+      "label": "Accept overdelivery",
+      "role": "CheckBox",
+      "tab": "Delivery"
+    },
+    {
+      "controlName": "Updates_AccesLevelInvoiced",
+      "helpSource": "hover",
+      "helpText": "Specify whether to allow changes to a fully invoiced purchase order. None - You can add new order lines to an invoiced purchase order. Warning - you can add new order lines to an invoiced purchase order, but a warning message is displayed. Locked - you cannot make any changes to an invoiced purchase order.",
+      "label": "Safety level of invoiced orders",
+      "role": "ComboBox",
+      "tab": "Delivery"
+    },
+    {
+      "controlName": "Updates_DecimalPrecisionCheckQty",
+      "helpSource": "hover",
+      "helpText": "Select this option to prevent a receipt of a quantity different from what the decimal precision rule prescribes for the unit.",
+      "label": "Check quantity for decimal precision",
+      "role": "CheckBox",
+      "tab": "Delivery"
+    },
+    {
+      "controlName": "PurchParameters_IsSupplierShipmentDatesEnabled",
+      "helpSource": "hover",
+      "helpText": "Supplier requested and confirmed shipment dates enables you to do the following: - Determine the supplier's shipping calendar on the vendor and its subsequent default to the relevant document. - Determine the delivery transport days from the supplier to the receiving point. - Enhance the purchasing process through the incorporation of new Requested and Confirmed ship dates. - Consider the supplier's shipping calendar and transport days for the automatic calculation of supplier ship dates.",
+      "label": "Supplier requested and confirmed shipment dates",
+      "role": "CheckBox",
+      "tab": "Delivery"
+    },
+    {
+      "controlName": "Updates_ConsolidateOrders",
+      "helpSource": "hover",
+      "helpText": "Choose whether the \"Create direct delivery orders\" batch job should consolidate qualifying sales orders into a single purchase order when creating a direct delivery.",
+      "label": "Consolidate sales orders for direct deliveries",
+      "role": "CheckBox",
+      "tab": "Delivery"
+    },
+    {
+      "controlName": "Updates_FindMarkupDeliveryScheduleV1",
+      "helpSource": "hover",
+      "helpText": "During the initial conversion of the delivery schedule, any existing markup charges on the original lines are removed. When this parameter is enabled, the system automatically reapplies the appropriate markup charges to the newly generated delivery schedule lines. When disabled, which is the default behavior, the markup charges are not re-added after the original ones are deleted.",
+      "label": "Copy markup auto-charges after conversion to delivery schedule lines",
+      "role": "CheckBox",
+      "tab": "Delivery"
+    },
+    {
+      "controlName": "VendParameters_CheckPackingSlip",
+      "helpSource": "hover",
+      "helpText": "Select how duplicate product receipt numbers per vendor should be maintained.",
+      "label": "Check for product receipt number used",
+      "role": "ComboBox",
+      "tab": "Delivery"
+    },
+    {
+      "controlName": "PurchParameters_ProductReceiptCharges",
+      "helpSource": "hover",
+      "helpText": "Select this to automatically allocate charges when products are received.",
+      "label": "Generate charges on product receipt",
+      "role": "CheckBox",
+      "tab": "Delivery"
+    },
+    {
+      "controlName": "PurchParameters_PurchRegisteredQuantitySelectionRule",
+      "helpSource": "hover",
+      "helpText": "Select which quantities are posted when you process purchase order product receipts. Select Use only registered if the registered quantity is selected in the Quantity field on a product receipt, and you want to limit posting to only include registered transactions. Select Prioritize marking over registered if the limitation that you specify with the registered quantity value should be disregarded and the system will allow for transactions, other than registered transactions, to be posted.",
+      "label": "Registered quantity selection",
+      "role": "ComboBox",
+      "tab": "Delivery"
+    },
+    {
+      "controlName": "Batch_OrderBatchTaskSize",
+      "helpSource": "hover",
+      "helpText": "Enter the maximum number of purchase documents to be processed by each batch task when posting confirmations and product receipts.",
+      "label": "Documents per task",
+      "role": "Integer",
+      "tab": "Delivery"
+    },
+    {
+      "controlName": "Batch_OrderBatchTaskSizeLines",
+      "helpSource": "hover",
+      "helpText": "Enter the maximum number of purchase order lines to be processed by each batch task when posting confirmations and product receipts. Set to zero to disable this limit and use the \"Documents per task\" setting instead. When this field is set to a value other than zero, then the \"Documents per task\" setting is ignored.",
+      "label": "Lines per task",
+      "role": "Integer",
+      "tab": "Delivery"
+    },
+    {
+      "controlName": "NavigationBar",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Navigation bar",
+      "role": "NavigationBar",
+      "tab": "Prices"
+    },
+    {
+      "controlName": "NavBarOfficeWaffle",
+      "helpSource": "hover",
+      "helpText": "Go to the Office 365 site",
+      "label": "Office 365",
+      "role": "Button",
+      "tab": "Prices"
+    },
+    {
+      "controlName": "UserCompany",
+      "helpSource": "dom",
+      "helpText": "Höegh Evi",
+      "label": "Current company is hge, activate to choose a company",
+      "role": "",
+      "tab": "Prices"
+    },
+    {
+      "controlName": "2",
+      "helpSource": "hover",
+      "helpText": "(Ctrl+/) Just start typing the name of a page to see a list of similarly named pages. Choose the page you'd like to navigate to.",
+      "label": "Search",
+      "role": "Button",
+      "tab": "Prices"
+    },
+    {
+      "controlName": "navBarMessageCenter",
+      "helpSource": "dom",
+      "helpText": "Show messages",
+      "label": "Show messages (Ctrl+Shift+F7) Open to view system messages.",
+      "role": "",
+      "tab": "Prices"
+    },
+    {
+      "controlName": "navBarFeedback",
+      "helpSource": "hover",
+      "helpText": "Please send us your feedback. We really appreciate you taking the time to let us know how we can improve Finance and Operations.",
+      "label": "Feedback",
+      "role": "Button",
+      "tab": "Prices"
+    },
+    {
+      "controlName": "SystemDefinedButtonsActionPane",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Search for an action",
+      "role": "AppBarSection",
+      "tab": "Prices"
+    },
+    {
+      "controlName": "SystemDefinedCloseButton",
+      "helpSource": "hover",
+      "helpText": "(Esc)",
+      "label": "Back",
+      "role": "CommandButton",
+      "tab": "Prices"
+    },
+    {
+      "controlName": "AppBarSearch",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Search for an action",
+      "role": "AppBarSearchField",
+      "tab": "Prices"
+    },
+    {
+      "controlName": "SystemDefinedRefreshButton",
+      "helpSource": "hover",
+      "helpText": "(Shift+F5)",
+      "label": "Refresh",
+      "role": "CommandButton",
+      "tab": "Prices"
+    },
+    {
+      "controlName": "SystemDefinedPopoutButton",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Open in new window",
+      "role": "CommandButton",
+      "tab": "Prices"
+    },
+    {
+      "controlName": "Tab",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Set up default values and parameters for purchase orders",
+      "role": "VerticalTabs",
+      "tab": "Prices"
+    },
+    {
+      "controlName": "TabPrices",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Prices",
+      "role": "PivotItem",
+      "tab": "Prices"
+    },
+    {
+      "controlName": "PriceTabPage",
+      "helpSource": "hover",
+      "helpText": "Select the method to determine how the total discount is calculated if a line discount and a multiline discount are both effective for a certain purchase order line.",
+      "label": "Discount",
+      "role": "SectionPage",
+      "tab": "Prices"
+    },
+    {
+      "controlName": "Prices_Disc",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Discount",
+      "role": "ComboBox",
+      "tab": "Prices"
+    },
+    {
+      "controlName": "Prices_MarkupHeading",
+      "helpSource": "hover",
+      "helpText": "Select this check box to automatically allocate charges for purchase order headers when they are created.",
+      "label": "Find auto charges for header",
+      "role": "CheckBox",
+      "tab": "Prices"
+    },
+    {
+      "controlName": "Prices_MarkupLine",
+      "helpSource": "hover",
+      "helpText": "Select this check box to automatically allocate charges for purchase order lines according to the charges set up for the ordered items.",
+      "label": "Find auto charges for line",
+      "role": "CheckBox",
+      "tab": "Prices"
+    },
+    {
+      "controlName": "Prices_PriceDateType",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Date type",
+      "role": "ComboBox",
+      "tab": "Prices"
+    },
+    {
+      "controlName": "AutomaticTotalDiscount_AutomaticTotalDiscount",
+      "helpSource": "hover",
+      "helpText": "Select this option to automatically calculate the total discount when purchase orders are posted. Any total discount information that has been manually entered will be overwritten.",
+      "label": "Calculate total discount on posting",
+      "role": "CheckBox",
+      "tab": "Prices"
+    },
+    {
+      "controlName": "MCREnablePriceDetails_MCREnablePriceDetails",
+      "helpSource": "hover",
+      "helpText": "Select this option to let users view price details for purchase order lines. To access the Price details page, in the Purchase order page, on the Purchase order lines FastTab, click Purchase order line, and then click Price details. The Price details page displays detailed information about the prices, agreements, and trade agreements that are associated with the selected product, and calculates discounts, rebates, margins, and royalties for the order line.",
+      "label": "Enable price details",
+      "role": "CheckBox",
+      "tab": "Prices"
+    },
+    {
+      "controlName": "PriceDiscPolicyTabPage",
+      "helpSource": "",
+      "helpText": "",
+      "label": "If you change price and discount conditions, prices and discounts could get recalculated and overwritten. You could also trigger a dialog. The dialog helps you decide whether to keep the current price or discount if the price or discount is inherited from an external source. Add the types of external sources that should trigger this dialog.",
+      "role": "SectionPage",
+      "tab": "Prices"
+    },
+    {
+      "controlName": "PricesIntegrationSetupTab",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Apply price discount calculation when importing purchase order linesThis parameter will allow purchase line price discount calculation when importing sales order lines. This is useful in integration scenarios when price discount is calculated externally. No",
+      "role": "SectionPage",
+      "tab": "Prices"
+    },
+    {
+      "controlName": "PurchParameters_ApplyPriceDiscOnPurchLineEntity",
+      "helpSource": "hover",
+      "helpText": "This parameter will allow purchase line price discount calculation when importing sales order lines. This is useful in integration scenarios when price discount is calculated externally.",
+      "label": "Apply price discount calculation when importing purchase order lines",
+      "role": "CheckBox",
+      "tab": "Prices"
+    },
+    {
+      "controlName": "NavigationBar",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Navigation bar",
+      "role": "NavigationBar",
+      "tab": "Request for quotation"
+    },
+    {
+      "controlName": "NavBarOfficeWaffle",
+      "helpSource": "hover",
+      "helpText": "Go to the Office 365 site",
+      "label": "Office 365",
+      "role": "Button",
+      "tab": "Request for quotation"
+    },
+    {
+      "controlName": "UserCompany",
+      "helpSource": "dom",
+      "helpText": "Höegh Evi",
+      "label": "Current company is hge, activate to choose a company",
+      "role": "",
+      "tab": "Request for quotation"
+    },
+    {
+      "controlName": "2",
+      "helpSource": "hover",
+      "helpText": "(Ctrl+/) Just start typing the name of a page to see a list of similarly named pages. Choose the page you'd like to navigate to.",
+      "label": "Search",
+      "role": "Button",
+      "tab": "Request for quotation"
+    },
+    {
+      "controlName": "navBarMessageCenter",
+      "helpSource": "dom",
+      "helpText": "Show messages",
+      "label": "Show messages (Ctrl+Shift+F7) Open to view system messages.",
+      "role": "",
+      "tab": "Request for quotation"
+    },
+    {
+      "controlName": "navBarFeedback",
+      "helpSource": "hover",
+      "helpText": "Please send us your feedback. We really appreciate you taking the time to let us know how we can improve Finance and Operations.",
+      "label": "Feedback",
+      "role": "Button",
+      "tab": "Request for quotation"
+    },
+    {
+      "controlName": "SystemDefinedButtonsActionPane",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Search for an action",
+      "role": "AppBarSection",
+      "tab": "Request for quotation"
+    },
+    {
+      "controlName": "SystemDefinedCloseButton",
+      "helpSource": "hover",
+      "helpText": "(Esc)",
+      "label": "Back",
+      "role": "CommandButton",
+      "tab": "Request for quotation"
+    },
+    {
+      "controlName": "AppBarSearch",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Search for an action",
+      "role": "AppBarSearchField",
+      "tab": "Request for quotation"
+    },
+    {
+      "controlName": "SystemDefinedRefreshButton",
+      "helpSource": "hover",
+      "helpText": "(Shift+F5)",
+      "label": "Refresh",
+      "role": "CommandButton",
+      "tab": "Request for quotation"
+    },
+    {
+      "controlName": "SystemDefinedPopoutButton",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Open in new window",
+      "role": "CommandButton",
+      "tab": "Request for quotation"
+    },
+    {
+      "controlName": "Tab",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Set up default values and parameters for purchase orders",
+      "role": "VerticalTabs",
+      "tab": "Request for quotation"
+    },
+    {
+      "controlName": "TabRFQ",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Request for quotation",
+      "role": "PivotItem",
+      "tab": "Request for quotation"
+    },
+    {
+      "controlName": "RFQTitleTabPage",
+      "helpSource": "hover",
+      "helpText": "The purchase type assigned by default to newly created requests for quotation (RFQs). This establishes what the result will be when the RFQ is accepted. A \"purchase order\" is an agreement to purchase a specific quantity or value of product from a vendor. A \"purchase agreement\" is an agreement to purchase a specific quantity or value of product over time. The \"purchase requisition\" type can only result from RFQs that were created from a purchase requisition--you can't select this type as a default value.",
+      "label": "Purchase type",
+      "role": "SectionPage",
+      "tab": "Request for quotation"
+    },
+    {
+      "controlName": "365",
+      "helpSource": "dom",
+      "helpText": "More",
+      "label": "More",
+      "role": "OverflowButton",
+      "tab": "Request for quotation"
+    },
+    {
+      "controlName": "PurchRFQParameters_RFQType",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Purchase type",
+      "role": "ComboBox",
+      "tab": "Request for quotation"
+    },
+    {
+      "controlName": "RFQSolicitationType",
+      "helpSource": "hover",
+      "helpText": "Select a solicitation type to insert on requests for quotation by default.",
+      "label": "Solicitation type",
+      "role": "ReferenceGroup",
+      "tab": "Request for quotation"
+    },
+    {
+      "controlName": "RFQSolicitationType_Name",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Name",
+      "role": "Input",
+      "tab": "Request for quotation"
+    },
+    {
+      "controlName": "PurchRFQParameters_DefaultBidType",
+      "helpSource": "hover",
+      "helpText": "Select if RFQs by default are open, meaning visible to other vendors bidding, or sealed, meaning only visible to the vendor bidding.",
+      "label": "Bid type",
+      "role": "ComboBox",
+      "tab": "Request for quotation"
+    },
+    {
+      "controlName": "ExpiryDate_DaysOffset",
+      "helpSource": "hover",
+      "helpText": "The number of days entered in this field is added to the system date when a request for quotation is created, and results in the default expiration date for the request for quotation.",
+      "label": "Days offset",
+      "role": "Integer",
+      "tab": "Request for quotation"
+    },
+    {
+      "controlName": "ExpiryDate_ExpDateCalendarDays",
+      "helpSource": "hover",
+      "helpText": "Select this check box to use working days from the company calendar instead of all calendar days when calculating the expiration date for a request for quotation.",
+      "label": "Working days",
+      "role": "CheckBox",
+      "tab": "Request for quotation"
+    },
+    {
+      "controlName": "ExpiryDate_TimeOffset",
+      "helpSource": "hover",
+      "helpText": "Enter the time of the day when the RFQ expires.",
+      "label": "Expiration Time",
+      "role": "Time",
+      "tab": "Request for quotation"
+    },
+    {
+      "controlName": "Delivery_DlvMode",
+      "helpSource": "hover",
+      "helpText": "Select a mode of delivery to apply by default to a request for quotation.",
+      "label": "Mode of delivery",
+      "role": "Input",
+      "tab": "Request for quotation"
+    },
+    {
+      "controlName": "Delivery_DlvTerm",
+      "helpSource": "hover",
+      "helpText": "Select delivery terms to apply by default to a request for quotation.",
+      "label": "Delivery terms",
+      "role": "Input",
+      "tab": "Request for quotation"
+    },
+    {
+      "controlName": "Payment_Payment",
+      "helpSource": "hover",
+      "helpText": "Select delivery payments to apply by default to a request for quotation.",
+      "label": "Terms of payment",
+      "role": "Input",
+      "tab": "Request for quotation"
+    },
+    {
+      "controlName": "PriceDisc_PriceDiscJournalName",
+      "helpSource": "hover",
+      "helpText": "Select a trade agreement journal to apply by default to request for quotation trade agreements.",
+      "label": "Default trade agreement journal",
+      "role": "Input",
+      "tab": "Request for quotation"
+    },
+    {
+      "controlName": "PurchRFQParameters_LockRFQOnSend",
+      "helpSource": "hover",
+      "helpText": "Select this check box to lock RFQs by default when they are sent. Locked RFQs can only be changed by selecting Create in the Amendment section on the Quotation tab on the RFQ case.",
+      "label": "Lock RFQs when they are sent",
+      "role": "CheckBox",
+      "tab": "Request for quotation"
+    },
+    {
+      "controlName": "RFQLocking_PSNPurchRFQLockEdit",
+      "helpSource": "hover",
+      "helpText": "When selected, the Quantity, Unit, Description, and Charges on Purchase fields will be locked on lines that are not alternates",
+      "label": "Lock selected fields on response lines",
+      "role": "CheckBox",
+      "tab": "Request for quotation"
+    },
+    {
+      "controlName": "Amendment_SysEmailTable",
+      "helpSource": "hover",
+      "helpText": "Select a template to use by default for emails about amendment of requests for quotation.",
+      "label": "Email template for notification of amendments",
+      "role": "Input",
+      "tab": "Request for quotation"
+    },
+    {
+      "controlName": "Amendment_SysEmailMethod",
+      "helpSource": "hover",
+      "helpText": "Select the method that is used to send email. - SSRS Report: an email is sent as part of generating the report using the SSRS report. This option should be used if only a few email recipients should receive the email or if the report should be delivered as an attachment to the email. - Email distributor: an email is sent using the email distributor framework. With the email distributor option, the email can be monitored in the Batch email sending status. This option should be used when emails are sent to many recipients. When using the email distributor option, the report cannot be sent as an attachment.",
+      "label": "Email method for notification of amendments",
+      "role": "ComboBox",
+      "tab": "Request for quotation"
+    },
+    {
+      "controlName": "Cancel_CancelSysEmailTable",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Email template for notification of canceled RFQ",
+      "role": "Input",
+      "tab": "Request for quotation"
+    },
+    {
+      "controlName": "Cancel_CancelSysEmailMethod",
+      "helpSource": "hover",
+      "helpText": "Select the method that is used to send email. - SSRS Report: an email is sent as part of generating the report using the SSRS report. This option should be used if only a few email recipients should receive the email or if the report should be delivered as an attachment to the email. - Email distributor: an email is sent using the email distributor framework. With the email distributor option, the email can be monitored in the Batch email sending status. This option should be used when emails are sent to many recipients. When using the email distributor option, the report cannot be sent as an attachment.",
+      "label": "Email method for notification of canceled RFQ",
+      "role": "ComboBox",
+      "tab": "Request for quotation"
+    },
+    {
+      "controlName": "RFQReply_IsBidEditByProcurementAgentEnabled",
+      "helpSource": "hover",
+      "helpText": "Select this check box to allow purchasers to edit a vendor bid when replying to requests for quotation.",
+      "label": "Purchaser can edit vendors bid",
+      "role": "CheckBox",
+      "tab": "Request for quotation"
+    },
+    {
+      "controlName": "RFQReply_SealedBidEncryptionKeyExpirationDayOffset",
+      "helpSource": "hover",
+      "helpText": "The number of days entered in this field is added to the system date when encryption key for sealed request for quotation reply is created, and results in the default expiration date for the encryption key.",
+      "label": "Encryption key expiration day offset",
+      "role": "Integer",
+      "tab": "Request for quotation"
+    },
+    {
+      "controlName": "RFQReply_IsMarkAndProcessMultipleLinesEnabled",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Purchaser can mark and process multiple lines",
+      "role": "CheckBox",
+      "tab": "Request for quotation"
+    },
+    {
+      "controlName": "RFQReply_PSNIsEnforcedAlternateItemNameDifferent",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Require unique alternate line product names",
+      "role": "CheckBox",
+      "tab": "Request for quotation"
+    },
+    {
+      "controlName": "VendorQuestion_IsVendorQuestionEnabled",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Allow vendor question",
+      "role": "CheckBox",
+      "tab": "Request for quotation"
+    },
+    {
+      "controlName": "VendorQuestion_IsDefaultedToDirectVendorResponse",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Default direct response",
+      "role": "CheckBox",
+      "tab": "Request for quotation"
+    },
+    {
+      "controlName": "Charges_AssignAutoChargeForPO",
+      "helpSource": "hover",
+      "helpText": "This parameter lets you to include automatic charges in Purchase Orders created from RFQ bids accepted. 1. When this parameter is enabled - The automatic charges will be included in the purchase orders created from RFQ based on automatic charge codes configured for vendor and item code. 2. When this parameter is disabled - The automatic charges will not be included in the purchase orders created from RFQ, even though automatic charge codes configured for vendor and item code.",
+      "label": "Assign Automatic Charge for PO",
+      "role": "CheckBox",
+      "tab": "Request for quotation"
+    },
+    {
+      "controlName": "SendAll_DefaultFilter",
+      "helpSource": "hover",
+      "helpText": "Send ALL Lines Default Status will be applied based on below configuration 1.All - Display All Vendors irrespective of Lowest or Highest Status of Vendor 2.Created - Display Vendors with Either Lowest or Highest Status as Created 3.Sent - Display Vendors with Either Lowest or Highest Status as Sent",
+      "label": "Send All Lines Default Status",
+      "role": "ComboBox",
+      "tab": "Request for quotation"
+    },
+    {
+      "controlName": "RFQShowDescription_PSNPurchRFQShowDescription",
+      "helpSource": "hover",
+      "helpText": "Select this option to make the RFQ description FastTab visible on the Request for quotation page",
+      "label": "Show the RFQ description FastTab",
+      "role": "CheckBox",
+      "tab": "Request for quotation"
+    },
+    {
+      "controlName": "NavigationBar",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Navigation bar",
+      "role": "NavigationBar",
+      "tab": "Rebate program"
+    },
+    {
+      "controlName": "NavBarOfficeWaffle",
+      "helpSource": "hover",
+      "helpText": "Go to the Office 365 site",
+      "label": "Office 365",
+      "role": "Button",
+      "tab": "Rebate program"
+    },
+    {
+      "controlName": "UserCompany",
+      "helpSource": "dom",
+      "helpText": "Höegh Evi",
+      "label": "Current company is hge, activate to choose a company",
+      "role": "",
+      "tab": "Rebate program"
+    },
+    {
+      "controlName": "2",
+      "helpSource": "hover",
+      "helpText": "(Ctrl+/) Just start typing the name of a page to see a list of similarly named pages. Choose the page you'd like to navigate to.",
+      "label": "Search",
+      "role": "Button",
+      "tab": "Rebate program"
+    },
+    {
+      "controlName": "navBarMessageCenter",
+      "helpSource": "dom",
+      "helpText": "Show messages",
+      "label": "Show messages (Ctrl+Shift+F7) Open to view system messages.",
+      "role": "",
+      "tab": "Rebate program"
+    },
+    {
+      "controlName": "navBarFeedback",
+      "helpSource": "hover",
+      "helpText": "Please send us your feedback. We really appreciate you taking the time to let us know how we can improve Finance and Operations.",
+      "label": "Feedback",
+      "role": "Button",
+      "tab": "Rebate program"
+    },
+    {
+      "controlName": "SystemDefinedButtonsActionPane",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Search for an action",
+      "role": "AppBarSection",
+      "tab": "Rebate program"
+    },
+    {
+      "controlName": "SystemDefinedCloseButton",
+      "helpSource": "hover",
+      "helpText": "(Esc)",
+      "label": "Back",
+      "role": "CommandButton",
+      "tab": "Rebate program"
+    },
+    {
+      "controlName": "AppBarSearch",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Search for an action",
+      "role": "AppBarSearchField",
+      "tab": "Rebate program"
+    },
+    {
+      "controlName": "SystemDefinedRefreshButton",
+      "helpSource": "hover",
+      "helpText": "(Shift+F5)",
+      "label": "Refresh",
+      "role": "CommandButton",
+      "tab": "Rebate program"
+    },
+    {
+      "controlName": "SystemDefinedPopoutButton",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Open in new window",
+      "role": "CommandButton",
+      "tab": "Rebate program"
+    },
+    {
+      "controlName": "Tab",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Set up default values and parameters for purchase orders",
+      "role": "VerticalTabs",
+      "tab": "Rebate program"
+    },
+    {
+      "controlName": "TabTAMVendRebate",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Rebate program",
+      "role": "PivotItem",
+      "tab": "Rebate program"
+    },
+    {
+      "controlName": "Rebates_RebateStartingDayOfWeekPeriod",
+      "helpSource": "hover",
+      "helpText": "Specify the starting day of the week to use when the Cumulate by week option is selected.",
+      "label": "Starting day of week",
+      "role": "ComboBox",
+      "tab": "Rebate program"
+    },
+    {
+      "controlName": "Rebates_AtInvoicing",
+      "helpSource": "hover",
+      "helpText": "Select this check box to create a rebate claim when the purchase order is invoiced. If this check box is cleared, no rebate claims are created.",
+      "label": "Rebates at invoicing",
+      "role": "CheckBox",
+      "tab": "Rebate program"
+    },
+    {
+      "controlName": "Rebates_ProcurementCategory",
+      "helpSource": "hover",
+      "helpText": "Specify the procurement category to use in the lines of a vendor invoice that is created for a processed rebate. The system automatically creates a vendor invoice to debit the vendor liability after the rebate is processed.",
+      "label": "Procurement category",
+      "role": "ReferenceGroup",
+      "tab": "Rebate program"
+    },
+    {
+      "controlName": "Rebates_ProcurementCategory_Name",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Name",
+      "role": "Input",
+      "tab": "Rebate program"
+    },
+    {
+      "controlName": "Rebates_VendLedgerAccrualJournalId",
+      "helpSource": "hover",
+      "helpText": "Specify the journal to use for rebate accrual. This journal is used for interim postings that are made when a rebate is manually approved, if manual approval is required.",
+      "label": "Accrual journal name",
+      "role": "Input",
+      "tab": "Rebate program"
+    },
+    {
+      "controlName": "Rebates_ManualInvoicing",
+      "helpSource": "hover",
+      "helpText": "Select this check box if you want vendor invoices to be posted manually or automatically as part of claim processing.",
+      "label": "Manual invoice posting",
+      "role": "CheckBox",
+      "tab": "Rebate program"
+    },
+    {
+      "controlName": "NavigationBar",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Navigation bar",
+      "role": "NavigationBar",
+      "tab": "Number sequences"
+    },
+    {
+      "controlName": "NavBarOfficeWaffle",
+      "helpSource": "hover",
+      "helpText": "Go to the Office 365 site",
+      "label": "Office 365",
+      "role": "Button",
+      "tab": "Number sequences"
+    },
+    {
+      "controlName": "UserCompany",
+      "helpSource": "dom",
+      "helpText": "Höegh Evi",
+      "label": "Current company is hge, activate to choose a company",
+      "role": "",
+      "tab": "Number sequences"
+    },
+    {
+      "controlName": "2",
+      "helpSource": "hover",
+      "helpText": "(Ctrl+/) Just start typing the name of a page to see a list of similarly named pages. Choose the page you'd like to navigate to.",
+      "label": "Search",
+      "role": "Button",
+      "tab": "Number sequences"
+    },
+    {
+      "controlName": "navBarMessageCenter",
+      "helpSource": "dom",
+      "helpText": "Show messages",
+      "label": "Show messages (Ctrl+Shift+F7) Open to view system messages.",
+      "role": "",
+      "tab": "Number sequences"
+    },
+    {
+      "controlName": "navBarFeedback",
+      "helpSource": "hover",
+      "helpText": "Please send us your feedback. We really appreciate you taking the time to let us know how we can improve Finance and Operations.",
+      "label": "Feedback",
+      "role": "Button",
+      "tab": "Number sequences"
+    },
+    {
+      "controlName": "SystemDefinedButtonsActionPane",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Search for an action",
+      "role": "AppBarSection",
+      "tab": "Number sequences"
+    },
+    {
+      "controlName": "SystemDefinedCloseButton",
+      "helpSource": "hover",
+      "helpText": "(Esc)",
+      "label": "Back",
+      "role": "CommandButton",
+      "tab": "Number sequences"
+    },
+    {
+      "controlName": "AppBarSearch",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Search for an action",
+      "role": "AppBarSearchField",
+      "tab": "Number sequences"
+    },
+    {
+      "controlName": "SystemDefinedRefreshButton",
+      "helpSource": "hover",
+      "helpText": "(Shift+F5)",
+      "label": "Refresh",
+      "role": "CommandButton",
+      "tab": "Number sequences"
+    },
+    {
+      "controlName": "SystemDefinedPopoutButton",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Open in new window",
+      "role": "CommandButton",
+      "tab": "Number sequences"
+    },
+    {
+      "controlName": "Tab",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Set up default values and parameters for purchase orders",
+      "role": "VerticalTabs",
+      "tab": "Number sequences"
+    },
+    {
+      "controlName": "TabNumberSeq",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Number sequences",
+      "role": "PivotItem",
+      "tab": "Number sequences"
+    },
+    {
+      "controlName": "referenceHelp",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Description",
+      "role": "MultilineInput",
+      "tab": "Number sequences"
+    },
+    {
+      "controlName": "NavigationBar",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Navigation bar",
+      "role": "NavigationBar",
+      "tab": "Margin alerts"
+    },
+    {
+      "controlName": "NavBarOfficeWaffle",
+      "helpSource": "hover",
+      "helpText": "Go to the Office 365 site",
+      "label": "Office 365",
+      "role": "Button",
+      "tab": "Margin alerts"
+    },
+    {
+      "controlName": "UserCompany",
+      "helpSource": "dom",
+      "helpText": "Höegh Evi",
+      "label": "Current company is hge, activate to choose a company",
+      "role": "",
+      "tab": "Margin alerts"
+    },
+    {
+      "controlName": "2",
+      "helpSource": "hover",
+      "helpText": "(Ctrl+/) Just start typing the name of a page to see a list of similarly named pages. Choose the page you'd like to navigate to.",
+      "label": "Search",
+      "role": "Button",
+      "tab": "Margin alerts"
+    },
+    {
+      "controlName": "navBarMessageCenter",
+      "helpSource": "dom",
+      "helpText": "Show messages",
+      "label": "Show messages (Ctrl+Shift+F7) Open to view system messages.",
+      "role": "",
+      "tab": "Margin alerts"
+    },
+    {
+      "controlName": "navBarFeedback",
+      "helpSource": "hover",
+      "helpText": "Please send us your feedback. We really appreciate you taking the time to let us know how we can improve Finance and Operations.",
+      "label": "Feedback",
+      "role": "Button",
+      "tab": "Margin alerts"
+    },
+    {
+      "controlName": "SystemDefinedButtonsActionPane",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Search for an action",
+      "role": "AppBarSection",
+      "tab": "Margin alerts"
+    },
+    {
+      "controlName": "SystemDefinedCloseButton",
+      "helpSource": "hover",
+      "helpText": "(Esc)",
+      "label": "Back",
+      "role": "CommandButton",
+      "tab": "Margin alerts"
+    },
+    {
+      "controlName": "AppBarSearch",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Search for an action",
+      "role": "AppBarSearchField",
+      "tab": "Margin alerts"
+    },
+    {
+      "controlName": "SystemDefinedRefreshButton",
+      "helpSource": "hover",
+      "helpText": "(Shift+F5)",
+      "label": "Refresh",
+      "role": "CommandButton",
+      "tab": "Margin alerts"
+    },
+    {
+      "controlName": "SystemDefinedPopoutButton",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Open in new window",
+      "role": "CommandButton",
+      "tab": "Margin alerts"
+    },
+    {
+      "controlName": "Tab",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Set up default values and parameters for purchase orders",
+      "role": "VerticalTabs",
+      "tab": "Margin alerts"
+    },
+    {
+      "controlName": "MCRMarginAlerts",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Margin alerts",
+      "role": "PivotItem",
+      "tab": "Margin alerts"
+    },
+    {
+      "controlName": "MCRMarginAlert_MCREnableMarginAlert",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Enable margin alert",
+      "role": "CheckBox",
+      "tab": "Margin alerts"
+    },
+    {
+      "controlName": "MCRMarginAlert_MCRMarginAlertsThreshold",
+      "helpSource": "hover",
+      "helpText": "Select the type of base price that you want to use for the margin alert. The margin alert threshold that you select will determine which estimated item sales price to select for the margin alerts calculation during the purchasing process.",
+      "label": "Margin alert threshold",
+      "role": "ComboBox",
+      "tab": "Margin alerts"
+    },
+    {
+      "controlName": "NavigationBar",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Navigation bar",
+      "role": "NavigationBar",
+      "tab": "Inventory dimensions"
+    },
+    {
+      "controlName": "NavBarOfficeWaffle",
+      "helpSource": "hover",
+      "helpText": "Go to the Office 365 site",
+      "label": "Office 365",
+      "role": "Button",
+      "tab": "Inventory dimensions"
+    },
+    {
+      "controlName": "UserCompany",
+      "helpSource": "dom",
+      "helpText": "Höegh Evi",
+      "label": "Current company is hge, activate to choose a company",
+      "role": "",
+      "tab": "Inventory dimensions"
+    },
+    {
+      "controlName": "2",
+      "helpSource": "hover",
+      "helpText": "(Ctrl+/) Just start typing the name of a page to see a list of similarly named pages. Choose the page you'd like to navigate to.",
+      "label": "Search",
+      "role": "Button",
+      "tab": "Inventory dimensions"
+    },
+    {
+      "controlName": "navBarMessageCenter",
+      "helpSource": "dom",
+      "helpText": "Show messages",
+      "label": "Show messages (Ctrl+Shift+F7) Open to view system messages.",
+      "role": "",
+      "tab": "Inventory dimensions"
+    },
+    {
+      "controlName": "navBarFeedback",
+      "helpSource": "hover",
+      "helpText": "Please send us your feedback. We really appreciate you taking the time to let us know how we can improve Finance and Operations.",
+      "label": "Feedback",
+      "role": "Button",
+      "tab": "Inventory dimensions"
+    },
+    {
+      "controlName": "SystemDefinedButtonsActionPane",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Search for an action",
+      "role": "AppBarSection",
+      "tab": "Inventory dimensions"
+    },
+    {
+      "controlName": "SystemDefinedCloseButton",
+      "helpSource": "hover",
+      "helpText": "(Esc)",
+      "label": "Back",
+      "role": "CommandButton",
+      "tab": "Inventory dimensions"
+    },
+    {
+      "controlName": "AppBarSearch",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Search for an action",
+      "role": "AppBarSearchField",
+      "tab": "Inventory dimensions"
+    },
+    {
+      "controlName": "SystemDefinedRefreshButton",
+      "helpSource": "hover",
+      "helpText": "(Shift+F5)",
+      "label": "Refresh",
+      "role": "CommandButton",
+      "tab": "Inventory dimensions"
+    },
+    {
+      "controlName": "SystemDefinedPopoutButton",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Open in new window",
+      "role": "CommandButton",
+      "tab": "Inventory dimensions"
+    },
+    {
+      "controlName": "Tab",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Set up default values and parameters for purchase orders",
+      "role": "VerticalTabs",
+      "tab": "Inventory dimensions"
+    },
+    {
+      "controlName": "TabInventDimSetup",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Inventory dimensions",
+      "role": "PivotItem",
+      "tab": "Inventory dimensions"
+    },
+    {
+      "controlName": "InventDimSetupGrid_ShowGridPurchLine",
+      "helpSource": "hover",
+      "helpText": "Select this option to display the selected dimension in the overview for purchase order lines. Select the dimension in the Inventory dimensions list, and then select this option.",
+      "label": "Purchase order lines",
+      "role": "CheckBox",
+      "tab": "Inventory dimensions"
+    },
+    {
+      "controlName": "InventDimSetupGrid_ShowGridConsignmentReplenishmentOrderLine",
+      "helpSource": "hover",
+      "helpText": "Select this option to display the selected dimension in the overview for consignment replenishment orders lines. Select the dimension in the Inventory dimensions list, and then select this option.",
+      "label": "Consignment replenishment order lines",
+      "role": "CheckBox",
+      "tab": "Inventory dimensions"
+    },
+    {
+      "controlName": "NavigationBar",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Navigation bar",
+      "role": "NavigationBar",
+      "tab": "Vendor collaboration"
+    },
+    {
+      "controlName": "NavBarOfficeWaffle",
+      "helpSource": "hover",
+      "helpText": "Go to the Office 365 site",
+      "label": "Office 365",
+      "role": "Button",
+      "tab": "Vendor collaboration"
+    },
+    {
+      "controlName": "UserCompany",
+      "helpSource": "dom",
+      "helpText": "Höegh Evi",
+      "label": "Current company is hge, activate to choose a company",
+      "role": "",
+      "tab": "Vendor collaboration"
+    },
+    {
+      "controlName": "2",
+      "helpSource": "hover",
+      "helpText": "(Ctrl+/) Just start typing the name of a page to see a list of similarly named pages. Choose the page you'd like to navigate to.",
+      "label": "Search",
+      "role": "Button",
+      "tab": "Vendor collaboration"
+    },
+    {
+      "controlName": "navBarMessageCenter",
+      "helpSource": "dom",
+      "helpText": "Show messages",
+      "label": "Show messages (Ctrl+Shift+F7) Open to view system messages.",
+      "role": "",
+      "tab": "Vendor collaboration"
+    },
+    {
+      "controlName": "navBarFeedback",
+      "helpSource": "hover",
+      "helpText": "Please send us your feedback. We really appreciate you taking the time to let us know how we can improve Finance and Operations.",
+      "label": "Feedback",
+      "role": "Button",
+      "tab": "Vendor collaboration"
+    },
+    {
+      "controlName": "SystemDefinedButtonsActionPane",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Search for an action",
+      "role": "AppBarSection",
+      "tab": "Vendor collaboration"
+    },
+    {
+      "controlName": "SystemDefinedCloseButton",
+      "helpSource": "hover",
+      "helpText": "(Esc)",
+      "label": "Back",
+      "role": "CommandButton",
+      "tab": "Vendor collaboration"
+    },
+    {
+      "controlName": "AppBarSearch",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Search for an action",
+      "role": "AppBarSearchField",
+      "tab": "Vendor collaboration"
+    },
+    {
+      "controlName": "SystemDefinedRefreshButton",
+      "helpSource": "hover",
+      "helpText": "(Shift+F5)",
+      "label": "Refresh",
+      "role": "CommandButton",
+      "tab": "Vendor collaboration"
+    },
+    {
+      "controlName": "SystemDefinedPopoutButton",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Open in new window",
+      "role": "CommandButton",
+      "tab": "Vendor collaboration"
+    },
+    {
+      "controlName": "Tab",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Set up default values and parameters for purchase orders",
+      "role": "VerticalTabs",
+      "tab": "Vendor collaboration"
+    },
+    {
+      "controlName": "TabVendorCollaboration",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Vendor collaboration",
+      "role": "PivotItem",
+      "tab": "Vendor collaboration"
+    },
+    {
+      "controlName": "VendorCollaborationGeneralTabPage",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Enable vendor collaboration certification managementSet this to yes to enable vendor collaboration certification management. This will be enabled for all legal entities. Yes",
+      "role": "SectionPage",
+      "tab": "Vendor collaboration"
+    },
+    {
+      "controlName": "VendRequestManagementParameters_IsVendorCollaborationCertificationManagementEnabled",
+      "helpSource": "hover",
+      "helpText": "Set this to yes to enable vendor collaboration certification management. This will be enabled for all legal entities.",
+      "label": "Enable vendor collaboration certification management",
+      "role": "CheckBox",
+      "tab": "Vendor collaboration"
+    },
+    {
+      "controlName": "VendRequestManagementParameters_IsVendorCollaborationWorkspaceBankInformationEnabled",
+      "helpSource": "hover",
+      "helpText": "Set this to yes to maintain vendor bank information using vendor collaboration workspace. This will be enabled for all legal entities.",
+      "label": "Maintain vendor bank information",
+      "role": "CheckBox",
+      "tab": "Vendor collaboration"
+    },
+    {
+      "controlName": "VendorCollaboration",
+      "helpSource": "hover",
+      "helpText": "Select the vendor's level of access to information about vendor-owned inventory if the vendor is local.",
+      "label": "Locally owned",
+      "role": "SectionPage",
+      "tab": "Vendor collaboration"
+    },
+    {
+      "controlName": "VendorCollaborationGroup_LocallyOwnedFieldAccessLevel",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Locally owned",
+      "role": "ComboBox",
+      "tab": "Vendor collaboration"
+    },
+    {
+      "controlName": "VendorCollaborationGroup_SmallBusinessFieldAccessLevel",
+      "helpSource": "hover",
+      "helpText": "Select the vendor's level of access to information about vendor-owned inventory if the vendor is a small business.",
+      "label": "Small business",
+      "role": "ComboBox",
+      "tab": "Vendor collaboration"
+    },
+    {
+      "controlName": "VendorCollaborationGroup_FemaleOwnedFieldAccessLevel",
+      "helpSource": "hover",
+      "helpText": "Select the vendor's level of access to information about vendor-owned inventory if the vendor is a female.",
+      "label": "Female owned",
+      "role": "ComboBox",
+      "tab": "Vendor collaboration"
+    },
+    {
+      "controlName": "VendorCollaborationGroup_MinorityOwnedFieldAccessLevel",
+      "helpSource": "hover",
+      "helpText": "Select the vendor's level of access to information about vendor-owned inventory if the vendor is a minority.",
+      "label": "Minority owned",
+      "role": "ComboBox",
+      "tab": "Vendor collaboration"
+    },
+    {
+      "controlName": "VendorCollaborationGroup_EthnicOriginIdFieldAccessLevel",
+      "helpSource": "hover",
+      "helpText": "Select the vendor's level of access to information about vendor-owned inventory if the vendor is of ethnic origin.",
+      "label": "Ethnic origin",
+      "role": "ComboBox",
+      "tab": "Vendor collaboration"
+    },
+    {
+      "controlName": "VendorCollaborationGroup_VeteranOwnedFieldAccessLevel",
+      "helpSource": "hover",
+      "helpText": "Select the vendor's level of access to information about vendor-owned inventory if the vendor is a veteran of the military.",
+      "label": "Owner is a service veteran",
+      "role": "ComboBox",
+      "tab": "Vendor collaboration"
+    },
+    {
+      "controlName": "VendorCollaborationGroup_DisabledOwnedFieldAccessLevel",
+      "helpSource": "hover",
+      "helpText": "Select the vendor's level of access to information about vendor-owned inventory if the vendor is disabled.",
+      "label": "Owner is disabled",
+      "role": "ComboBox",
+      "tab": "Vendor collaboration"
+    },
+    {
+      "controlName": "VendorCollaborationGroup_HUBZoneFieldAccessLevel",
+      "helpSource": "hover",
+      "helpText": "Select the vendor's level of access to information about vendor-owned inventory if the vendor is a HUBZone.",
+      "label": "HUBZone",
+      "role": "ComboBox",
+      "tab": "Vendor collaboration"
+    },
+    {
+      "controlName": "VendRequestManagementParameters_VendorCategorySelectionLevelEnabled",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Enable vendor category selection level",
+      "role": "CheckBox",
+      "tab": "Vendor collaboration"
+    },
+    {
+      "controlName": "VendRequestManagementParameters_VendorCategorySelectionLevel",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Vendor category selection level",
+      "role": "Integer",
+      "tab": "Vendor collaboration"
+    },
+    {
+      "controlName": "VendRequestManagementParameters_IsAutoSubmitProspectiveVendorRegistrationToWorkflow",
+      "helpSource": "hover",
+      "helpText": "Select this check box to have vendor requests submitted automatically to a workflow when the vendor registration wizard is completed.",
+      "label": "Auto submit prospective vendor registration to workflow",
+      "role": "CheckBox",
+      "tab": "Vendor collaboration"
+    },
+    {
+      "controlName": "NewVendorAddProccess_ProspectiveVendorAddressBook",
+      "helpSource": "hover",
+      "helpText": "Select the address book to be used as the default address book when analyzing vendor requests to determine if the vendor is already a vendor for your organization.",
+      "label": "Default address book for prospective vendors",
+      "role": "ReferenceGroup",
+      "tab": "Vendor collaboration"
+    },
+    {
+      "controlName": "NewVendorAddProccess_ProspectiveVendorAddressBook_Name",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Name",
+      "role": "Input",
+      "tab": "Vendor collaboration"
+    },
+    {
+      "controlName": "NewVendorAddProccess_DefaultCompany",
+      "helpSource": "hover",
+      "helpText": "Select the company to be used as the default company when analyzing vendor requests to determine if the vendor is already a vendor for your organization.",
+      "label": "Default company",
+      "role": "Input",
+      "tab": "Vendor collaboration"
+    },
+    {
+      "controlName": "NavigationBar",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Navigation bar",
+      "role": "NavigationBar",
+      "tab": "Purchase requisition"
+    },
+    {
+      "controlName": "NavBarOfficeWaffle",
+      "helpSource": "hover",
+      "helpText": "Go to the Office 365 site",
+      "label": "Office 365",
+      "role": "Button",
+      "tab": "Purchase requisition"
+    },
+    {
+      "controlName": "UserCompany",
+      "helpSource": "dom",
+      "helpText": "Höegh Evi",
+      "label": "Current company is hge, activate to choose a company",
+      "role": "",
+      "tab": "Purchase requisition"
+    },
+    {
+      "controlName": "2",
+      "helpSource": "hover",
+      "helpText": "(Ctrl+/) Just start typing the name of a page to see a list of similarly named pages. Choose the page you'd like to navigate to.",
+      "label": "Search",
+      "role": "Button",
+      "tab": "Purchase requisition"
+    },
+    {
+      "controlName": "navBarMessageCenter",
+      "helpSource": "dom",
+      "helpText": "Show messages",
+      "label": "Show messages (Ctrl+Shift+F7) Open to view system messages.",
+      "role": "",
+      "tab": "Purchase requisition"
+    },
+    {
+      "controlName": "navBarFeedback",
+      "helpSource": "hover",
+      "helpText": "Please send us your feedback. We really appreciate you taking the time to let us know how we can improve Finance and Operations.",
+      "label": "Feedback",
+      "role": "Button",
+      "tab": "Purchase requisition"
+    },
+    {
+      "controlName": "SystemDefinedButtonsActionPane",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Search for an action",
+      "role": "AppBarSection",
+      "tab": "Purchase requisition"
+    },
+    {
+      "controlName": "SystemDefinedCloseButton",
+      "helpSource": "hover",
+      "helpText": "(Esc)",
+      "label": "Back",
+      "role": "CommandButton",
+      "tab": "Purchase requisition"
+    },
+    {
+      "controlName": "AppBarSearch",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Search for an action",
+      "role": "AppBarSearchField",
+      "tab": "Purchase requisition"
+    },
+    {
+      "controlName": "SystemDefinedRefreshButton",
+      "helpSource": "hover",
+      "helpText": "(Shift+F5)",
+      "label": "Refresh",
+      "role": "CommandButton",
+      "tab": "Purchase requisition"
+    },
+    {
+      "controlName": "SystemDefinedPopoutButton",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Open in new window",
+      "role": "CommandButton",
+      "tab": "Purchase requisition"
+    },
+    {
+      "controlName": "Tab",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Set up default values and parameters for purchase orders",
+      "role": "VerticalTabs",
+      "tab": "Purchase requisition"
+    },
+    {
+      "controlName": "TabPurchaseRequisition",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Purchase requisition",
+      "role": "PivotItem",
+      "tab": "Purchase requisition"
+    },
+    {
+      "controlName": "PurchParameters_UseDeliveryAddress",
+      "helpSource": "hover",
+      "helpText": "Select this option to prevent users from seeing workers' home addresses when creating category-based purchase requisition lines. Instead, only addresses marked with a “Purpose” of “Delivery” will be shown. Addresses marked for both home and delivery purposes will be available, but users will not be able to see that the address is also a home address.",
+      "label": "Show only delivery addresses for workers when creating category-based purchase requisition lines",
+      "role": "CheckBox",
+      "tab": "Purchase requisition"
+    },
+    {
+      "controlName": "PurchaseRequisitionGroup_DefaultDimensionUpdateOnModifiedItemId",
+      "helpSource": "hover",
+      "helpText": "Choose whether the financial dimensions specified on a purchase requisition line should automatically update when you change the item number for a new or existing line. Set this to \"Yes\" to update all financial dimensions to match the new item number for the line. Set to \"No\" to keep the previous financial dimension values and change only the item number.",
+      "label": "Update financial dimensions on change item",
+      "role": "CheckBox",
+      "tab": "Purchase requisition"
+    }
+  ],
+  "lookups": [
+    {
+      "tab": "Workspaces",
+      "controlName": "navBarMessageCenter",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Workspaces",
+      "controlName": "Tab",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Workspaces",
+      "controlName": "TabGeneral",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Workspaces",
+      "controlName": "GeneralTabPage",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Workspaces",
+      "controlName": "DefaultValues_PurchaseType",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Workspaces",
+      "controlName": "DefaultValues_ReturnActionDefault",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Workspaces",
+      "controlName": "DefaultValues_PurchPoolId",
+      "opened": true,
+      "values": [
+        "PoolName"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "Workspaces",
+      "controlName": "PSNPurchParameters_PSNWorkingCalendarId",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "AppsApps",
+      "controlName": "navBarMessageCenter",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "AppsApps",
+      "controlName": "Tab",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "AppsApps",
+      "controlName": "TabGeneral",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "AppsApps",
+      "controlName": "GeneralTabPage",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "AppsApps",
+      "controlName": "DefaultValues_PurchaseType",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "AppsApps",
+      "controlName": "DefaultValues_ReturnActionDefault",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "AppsApps",
+      "controlName": "DefaultValues_PurchPoolId",
+      "opened": true,
+      "values": [
+        "PoolName"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "AppsApps",
+      "controlName": "PSNPurchParameters_PSNWorkingCalendarId",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "General",
+      "controlName": "navBarMessageCenter",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "General",
+      "controlName": "Tab",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "General",
+      "controlName": "TabGeneral",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "General",
+      "controlName": "GeneralTabPage",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "General",
+      "controlName": "DefaultValues_PurchaseType",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "General",
+      "controlName": "DefaultValues_ReturnActionDefault",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "General",
+      "controlName": "DefaultValues_PurchPoolId",
+      "opened": true,
+      "values": [
+        "PoolName"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "General",
+      "controlName": "PSNPurchParameters_PSNWorkingCalendarId",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Delivery",
+      "controlName": "navBarMessageCenter",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Delivery",
+      "controlName": "Tab",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Delivery",
+      "controlName": "TabUpdates",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Delivery",
+      "controlName": "Updates_AccesLevelInvoiced",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Delivery",
+      "controlName": "VendParameters_CheckPackingSlip",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Delivery",
+      "controlName": "PurchParameters_PurchRegisteredQuantitySelectionRule",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Prices",
+      "controlName": "navBarMessageCenter",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Prices",
+      "controlName": "Tab",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Prices",
+      "controlName": "TabPrices",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Prices",
+      "controlName": "PriceTabPage",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Prices",
+      "controlName": "Prices_Disc",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Prices",
+      "controlName": "Prices_PriceDateType",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Request for quotation",
+      "controlName": "navBarMessageCenter",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Request for quotation",
+      "controlName": "Tab",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Request for quotation",
+      "controlName": "TabRFQ",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Request for quotation",
+      "controlName": "RFQTitleTabPage",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Request for quotation",
+      "controlName": "PurchRFQParameters_RFQType",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Request for quotation",
+      "controlName": "RFQSolicitationType",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Request for quotation",
+      "controlName": "PurchRFQParameters_DefaultBidType",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Request for quotation",
+      "controlName": "Delivery_DlvMode",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Request for quotation",
+      "controlName": "Delivery_DlvTerm",
+      "opened": true,
+      "values": [
+        "Delivery termsDescription"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "Request for quotation",
+      "controlName": "Payment_Payment",
+      "opened": true,
+      "values": [
+        "Terms of paymentDescription"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "Request for quotation",
+      "controlName": "PriceDisc_PriceDiscJournalName",
+      "opened": true,
+      "values": [
+        "NameDescription"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "Request for quotation",
+      "controlName": "Amendment_SysEmailTable",
+      "opened": true,
+      "values": [
+        "Email IDEmail description"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "Request for quotation",
+      "controlName": "Amendment_SysEmailMethod",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Request for quotation",
+      "controlName": "Cancel_CancelSysEmailTable",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Request for quotation",
+      "controlName": "Cancel_CancelSysEmailMethod",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Request for quotation",
+      "controlName": "SendAll_DefaultFilter",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Rebate program",
+      "controlName": "navBarMessageCenter",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Rebate program",
+      "controlName": "Tab",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Rebate program",
+      "controlName": "TabTAMVendRebate",
+      "opened": true,
+      "values": [
+        "Value Description"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "Rebate program",
+      "controlName": "TAMVendRebates_LedgerDimension",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Rebate program",
+      "controlName": "TAMVendRebates_OffsetLedgerDimension",
+      "opened": true,
+      "values": [
+        "Value Description"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "Rebate program",
+      "controlName": "Rebates_RebateStartingDayOfWeekPeriod",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Rebate program",
+      "controlName": "Rebates_ProcurementCategory",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Rebate program",
+      "controlName": "Rebates_VendLedgerAccrualJournalId",
+      "opened": true,
+      "values": [
+        "Höegh Evi procurement (Höegh Evi procurement)Direct cost (Direct cost)Indirect cost (Indirect cost)",
+        "Direct cost (Direct cost)",
+        "Indirect cost (Indirect cost)"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "Number sequences",
+      "controlName": "navBarMessageCenter",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Number sequences",
+      "controlName": "Tab",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Margin alerts",
+      "controlName": "navBarMessageCenter",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Margin alerts",
+      "controlName": "Tab",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Margin alerts",
+      "controlName": "MCRMarginAlerts",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Margin alerts",
+      "controlName": "MCRMarginAlert_MCRMarginAlertsThreshold",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Inventory dimensions",
+      "controlName": "navBarMessageCenter",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Inventory dimensions",
+      "controlName": "Tab",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Vendor collaboration",
+      "controlName": "navBarMessageCenter",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Vendor collaboration",
+      "controlName": "Tab",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Vendor collaboration",
+      "controlName": "TabVendorCollaboration",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Vendor collaboration",
+      "controlName": "VendorCollaboration",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Vendor collaboration",
+      "controlName": "VendorCollaborationGroup_LocallyOwnedFieldAccessLevel",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Vendor collaboration",
+      "controlName": "VendorCollaborationGroup_SmallBusinessFieldAccessLevel",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Vendor collaboration",
+      "controlName": "VendorCollaborationGroup_FemaleOwnedFieldAccessLevel",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Vendor collaboration",
+      "controlName": "VendorCollaborationGroup_MinorityOwnedFieldAccessLevel",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Vendor collaboration",
+      "controlName": "VendorCollaborationGroup_EthnicOriginIdFieldAccessLevel",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Vendor collaboration",
+      "controlName": "VendorCollaborationGroup_VeteranOwnedFieldAccessLevel",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Vendor collaboration",
+      "controlName": "VendorCollaborationGroup_DisabledOwnedFieldAccessLevel",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Vendor collaboration",
+      "controlName": "VendorCollaborationGroup_HUBZoneFieldAccessLevel",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Vendor collaboration",
+      "controlName": "NewVendorAddProccess_ProspectiveVendorAddressBook",
+      "opened": true,
+      "values": [
+        "NameDescription"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "Vendor collaboration",
+      "controlName": "NewVendorAddProccess_DefaultCompany",
+      "opened": true,
+      "values": [
+        "CompanyCompany name"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "Purchase requisition",
+      "controlName": "navBarMessageCenter",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Purchase requisition",
+      "controlName": "Tab",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    }
+  ]
+}
