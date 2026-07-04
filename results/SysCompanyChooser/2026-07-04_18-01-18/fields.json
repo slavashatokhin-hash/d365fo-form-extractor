@@ -1,0 +1,338 @@
+{
+  "formName": "SysCompanyChooser",
+  "url": "https://hint-sb-04a9f0283cca85a5c5devaos.cloudax.dynamics.com/?cmp=usmf&mi=pricediscadmtable_purch",
+  "scannedAt": "2026-07-04T16:01:18.635Z",
+  "deep": true,
+  "walkTabs": true,
+  "tabsFound": [],
+  "tabsScanned": 1,
+  "fields": [
+    {
+      "controlName": "Overview",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Filter",
+      "role": "SectionPage",
+      "tab": ""
+    },
+    {
+      "controlName": "QuickFilter",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Filter",
+      "role": "QuickFilter",
+      "tab": ""
+    },
+    {
+      "controlName": "QuickFilter_Input",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Filter",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "LineDetails",
+      "helpSource": "",
+      "helpText": "",
+      "label": "From date",
+      "role": "SectionPage",
+      "tab": ""
+    },
+    {
+      "controlName": "FromDate",
+      "helpSource": "",
+      "helpText": "",
+      "label": "From date",
+      "role": "Date",
+      "tab": ""
+    },
+    {
+      "controlName": "ToDate",
+      "helpSource": "",
+      "helpText": "",
+      "label": "To date",
+      "role": "Date",
+      "tab": ""
+    },
+    {
+      "controlName": "Markup",
+      "helpSource": "hover",
+      "helpText": "Price chargesThe fixed charges on the price. These charges are applied one time for each invoice.",
+      "label": "Price charges",
+      "role": "Real",
+      "tab": ""
+    },
+    {
+      "controlName": "PriceUnit",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Price unit",
+      "role": "Real",
+      "tab": ""
+    },
+    {
+      "controlName": "Percent1",
+      "helpSource": "hover",
+      "helpText": "Discount percentage 1Discount percentage 1 combined with discount percentage 2. Amount - pct. 1% - pct. 2%",
+      "label": "Discount percentage 1",
+      "role": "Real",
+      "tab": ""
+    },
+    {
+      "controlName": "Percent2",
+      "helpSource": "hover",
+      "helpText": "Discount percentage 1 combined with discount percentage 2. Amount - pct. 1% - pct. 2%",
+      "label": "Discount percentage 2",
+      "role": "Real",
+      "tab": ""
+    },
+    {
+      "controlName": "DeliveryTime",
+      "helpSource": "hover",
+      "helpText": "Lead timeThe lead time in days.",
+      "label": "Lead time",
+      "role": "Integer",
+      "tab": ""
+    },
+    {
+      "controlName": "CalendarDays",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Working days",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "DisregardLeadTime",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Disregard lead time",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "GenericCurrency",
+      "helpSource": "hover",
+      "helpText": "Include generic currencySelect this option to guarantee that the trade agreement can be converted from generic currency to other currencies. This field is available only if you select the value Price (sales) option in the Relation field, and only if the currency is the generic currency that is defined in the Generic currency field in the Accounts receivable parameters page.",
+      "label": "Include generic currency",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "SearchAgain",
+      "helpSource": "hover",
+      "helpText": "The criteria that are used to continue searching for discount combinations.",
+      "label": "Find next",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "ErrorLog",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Log",
+      "role": "SectionPage",
+      "tab": ""
+    },
+    {
+      "controlName": "INBPriceDiscAdmTrans_Log",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Log",
+      "role": "MultilineInput",
+      "tab": ""
+    },
+    {
+      "controlName": "Grid.Changed",
+      "helpSource": "dom",
+      "helpText": "Changed",
+      "label": "Changed",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "Grid.Relation",
+      "helpSource": "dom",
+      "helpText": "Relation Purchasing and sales documents use the trade agreement to apply a price or discount depending on the type. You can configure the trade agreement journal line to populate price or discount for a specific item, a specific group of items, or for all items.",
+      "label": "Relation",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "Grid.Party code type",
+      "helpSource": "dom",
+      "helpText": "Party code type",
+      "label": "Party code type",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "Grid.Account selection",
+      "helpSource": "dom",
+      "helpText": "Account selection",
+      "label": "Account selection",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "Grid.Product code type",
+      "helpSource": "dom",
+      "helpText": "Product code type",
+      "label": "Product code type",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "Grid.Item relation",
+      "helpSource": "dom",
+      "helpText": "Item relation Click to follow link",
+      "label": "Item relation",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "Grid.Configuration",
+      "helpSource": "dom",
+      "helpText": "Configuration Click to follow link",
+      "label": "Configuration",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "Grid.Size",
+      "helpSource": "dom",
+      "helpText": "Size Click to follow link",
+      "label": "Size",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "Grid.Color",
+      "helpSource": "dom",
+      "helpText": "Color Click to follow link",
+      "label": "Color",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "Grid.Style",
+      "helpSource": "dom",
+      "helpText": "Style Click to follow link",
+      "label": "Style",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "Grid.Site",
+      "helpSource": "dom",
+      "helpText": "Site Click to follow link",
+      "label": "Site",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "Grid.Warehouse",
+      "helpSource": "dom",
+      "helpText": "Warehouse Click to follow link",
+      "label": "Warehouse",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "Grid.From",
+      "helpSource": "dom",
+      "helpText": "From Enter the smallest quantity (the From quantity is inclusice, i.e. if it is set to 1 then for quantities of 1 and above this agreement is applicable) that the price, line discount, and multiline discount are valid for. This value is also the lower limit for the order balance for the total discount.",
+      "label": "From",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "Grid.To",
+      "helpSource": "dom",
+      "helpText": "To Enter the largest quantity (the To quantity is exclusive, i.e. if it is set to 3.00 then the agreement is applicable only up to 2.99) that the price, line discount, and multiline discount are valid for. This value is also the upper limit for the order balance for the total discount.",
+      "label": "To",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "Grid.Unit",
+      "helpSource": "dom",
+      "helpText": "Unit Click to follow link",
+      "label": "Unit",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "Grid.Amount in currency",
+      "helpSource": "dom",
+      "helpText": "Amount in currency",
+      "label": "Amount in currency",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "Grid.Currency",
+      "helpSource": "dom",
+      "helpText": "Currency Click to follow link",
+      "label": "Currency",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "Grid.Flat tier amount",
+      "helpSource": "dom",
+      "helpText": "Flat tier amount",
+      "label": "Flat tier amount",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "Grid.Attribute-based pricing ID",
+      "helpSource": "dom",
+      "helpText": "Attribute-based pricing ID Click to follow link",
+      "label": "Attribute-based pricing ID",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "Grid.Dimension validation",
+      "helpSource": "dom",
+      "helpText": "Dimension validation",
+      "label": "Dimension validation",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "Grid.Trade agreement validation",
+      "helpSource": "dom",
+      "helpText": "Trade agreement validation",
+      "label": "Trade agreement validation",
+      "role": "GridColumn",
+      "tab": ""
+    }
+  ],
+  "lookups": [
+    {
+      "tab": "",
+      "controlName": "LineDetails",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "FromDate",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "ToDate",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    }
+  ]
+}
