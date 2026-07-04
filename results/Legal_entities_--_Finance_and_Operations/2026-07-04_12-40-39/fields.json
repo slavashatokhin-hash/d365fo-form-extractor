@@ -1,0 +1,1619 @@
+{
+  "formName": "Legal entities -- Finance and Operations",
+  "url": "https://hint-sb-04a9f0283cca85a5c5devaos.cloudax.dynamics.com/?cmp=hge&mi=OMLegalEntities",
+  "scannedAt": "2026-07-04T10:40:39.705Z",
+  "deep": true,
+  "walkTabs": true,
+  "tabsFound": [],
+  "tabsScanned": 1,
+  "fields": [
+    {
+      "controlName": "NavigationBar",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Navigation bar",
+      "role": "NavigationBar",
+      "tab": ""
+    },
+    {
+      "controlName": "NavBarOfficeWaffle",
+      "helpSource": "hover",
+      "helpText": "Go to the Office 365 site",
+      "label": "Office 365",
+      "role": "Button",
+      "tab": ""
+    },
+    {
+      "controlName": "UserCompany",
+      "helpSource": "dom",
+      "helpText": "Höegh Evi",
+      "label": "Current company is hge, activate to choose a company",
+      "role": "",
+      "tab": ""
+    },
+    {
+      "controlName": "2",
+      "helpSource": "hover",
+      "helpText": "(Ctrl+/) Just start typing the name of a page to see a list of similarly named pages. Choose the page you'd like to navigate to.",
+      "label": "Search",
+      "role": "Button",
+      "tab": ""
+    },
+    {
+      "controlName": "navBarMessageCenter",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Show messages (Ctrl+Shift+F7) Open to view system messages.",
+      "role": "",
+      "tab": ""
+    },
+    {
+      "controlName": "navBarFeedback",
+      "helpSource": "hover",
+      "helpText": "Please send us your feedback. We really appreciate you taking the time to let us know how we can improve Finance and Operations.",
+      "label": "Feedback",
+      "role": "Button",
+      "tab": ""
+    },
+    {
+      "controlName": "MainActionPane",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Search for an action",
+      "role": "AppBarSection",
+      "tab": ""
+    },
+    {
+      "controlName": "SystemDefinedCloseButton",
+      "helpSource": "hover",
+      "helpText": "(Esc)",
+      "label": "Back",
+      "role": "CommandButton",
+      "tab": ""
+    },
+    {
+      "controlName": "SystemDefinedShowListButton",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Show list",
+      "role": "ToggleButton",
+      "tab": ""
+    },
+    {
+      "controlName": "AppBarSearch",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Search for an action",
+      "role": "AppBarSearchField",
+      "tab": ""
+    },
+    {
+      "controlName": "SystemDefinedAttachButton",
+      "helpSource": "hover",
+      "helpText": "(Ctrl+Shift+A) View or add attachments for the current record",
+      "label": "Attachments (0)",
+      "role": "CommandButton",
+      "tab": ""
+    },
+    {
+      "controlName": "SystemDefinedRefreshButton",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Refresh",
+      "role": "CommandButton",
+      "tab": ""
+    },
+    {
+      "controlName": "SystemDefinedPopoutButton",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Open in new window",
+      "role": "CommandButton",
+      "tab": ""
+    },
+    {
+      "controlName": "SystemDefinedShowFiltersButton",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Show filters",
+      "role": "ToggleButton",
+      "tab": ""
+    },
+    {
+      "controlName": "QuickFilter",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Filter",
+      "role": "QuickFilter",
+      "tab": ""
+    },
+    {
+      "controlName": "QuickFilter_Input",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Filter",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "Name",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Name",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "OMLegalEntity_DataArea1",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Company",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "General",
+      "helpSource": "hover",
+      "helpText": "Enter notes about the legal entity.",
+      "label": "Memo",
+      "role": "SectionPage",
+      "tab": ""
+    },
+    {
+      "controlName": "CopyOfOMDepartment_Memo",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Memo",
+      "role": "MultilineInput",
+      "tab": ""
+    },
+    {
+      "controlName": "CopyOfOMDepartment_NameAlias",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Search name",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "CheckBox",
+      "helpSource": "hover",
+      "helpText": "A selected option indicates that the legal entity belongs to an organization hierarchy.",
+      "label": "In hierarchy",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "CompanyInfo_IsConsolidationCompany",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Use for financial consolidation process",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "CompanyInfo_IsEliminationCompany",
+      "helpSource": "hover",
+      "helpText": "Select this option to enable elimination entries to be created in the ledger of this legal entity. You cannot change this field if the Use for financial consolidation process option is not selected and transactions exist.",
+      "label": "Use for financial elimination process",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "CompanyInfo_RFullName",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Full name",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "CompanyInfo_LocalizationCountryRegionCode",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Localized functionality region",
+      "role": "ComboBox",
+      "tab": ""
+    },
+    {
+      "controlName": "Languages_LanguageId",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Language",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "TimeZoneComboBox",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Time zone",
+      "role": "ComboBox",
+      "tab": ""
+    },
+    {
+      "controlName": "StatutoryReporting",
+      "helpSource": "hover",
+      "helpText": "Identify the branch/subsidiary that is used with the tax exempt number.",
+      "label": "Branch/Subsidiary",
+      "role": "SectionPage",
+      "tab": ""
+    },
+    {
+      "controlName": "BranchId",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Branch/Subsidiary",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "DUNS",
+      "helpSource": "",
+      "helpText": "",
+      "label": "DUNS number",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "NAICS",
+      "helpSource": "",
+      "helpText": "",
+      "label": "NAICS",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "SalesTax_TaxRepresentative",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Tax representative",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "RegistrationNumbersTab",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Accounting personnel",
+      "role": "SectionPage",
+      "tab": ""
+    },
+    {
+      "controlName": "TaxReporting_JP_AccountingPersonnel_JP",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Accounting personnel",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "TaxReporting_JP_CompanyRepresentative_JP",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Company representative",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "CNPJCPFNumber_BR",
+      "helpSource": "",
+      "helpText": "",
+      "label": "CNPJ/CPF",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "CCMNumber_BR",
+      "helpSource": "",
+      "helpText": "",
+      "label": "CCM",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "IENumber_BR",
+      "helpSource": "",
+      "helpText": "",
+      "label": "IE",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "FiscalInformation_BR_CNAE_BR",
+      "helpSource": "",
+      "helpText": "",
+      "label": "CNAE",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "BusinessNumber_CA_BusinessNumber_CA",
+      "helpSource": "hover",
+      "helpText": "Enter the registration number that is provided to the company by the Canada Revenue Agency (CRA).",
+      "label": "Registration number",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "SoftwareIdentificationCode_CA_SoftwareIdentificationCode_CA",
+      "helpSource": "hover",
+      "helpText": "Please use AX030003 as software identification code value",
+      "label": "Software identification code",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "TaxGSTHSTAccountId_CA",
+      "helpSource": "",
+      "helpText": "",
+      "label": "GST/HST account identifier",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "GreatBritain_AccountOfficeRefNum",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Accounts office reference number",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "ContactInfo_CompanyRegComFR",
+      "helpSource": "hover",
+      "helpText": "Enter the name of the French agency where the company has been registered, such as the Registre du commerce et des sociétés.",
+      "label": "Commerce registration",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "ContactInfo_LegalFormFR",
+      "helpSource": "hover",
+      "helpText": "Enter the legal type of your company, such as non-profit organization, manufacturing company, or financial institution.",
+      "label": "Legal form",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "CompanyNAFCode",
+      "helpSource": "hover",
+      "helpText": "Unique ID for the record in the database",
+      "label": "NAF code",
+      "role": "ReferenceGroup",
+      "tab": ""
+    },
+    {
+      "controlName": "CompanyNAFCode_CompanyIdNAF",
+      "helpSource": "",
+      "helpText": "",
+      "label": "NAF code",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "CompanyInfo_CompanyInitialCapital_FR",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Initial capital",
+      "role": "Real",
+      "tab": ""
+    },
+    {
+      "controlName": "GroupName_OrgId",
+      "helpSource": "",
+      "helpText": "",
+      "label": "National Registry number",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "CompanyInfo_FiscalCode_IT",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Fiscal code",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "CompanyInfo_LegalNature_IT",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Legal nature",
+      "role": "ComboBox",
+      "tab": ""
+    },
+    {
+      "controlName": "CompanyInfo_CUC_IT",
+      "helpSource": "",
+      "helpText": "",
+      "label": "CUC",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "ForeignOrganization_RU_RAlienCorpName",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Company name",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "ForeignOrganization_RU_RAlienCorpCountry",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Country/region",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "TemplateFolder_W_TemplateFolder_W",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Report folder",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "CompanyInfo_PrintINNKPPInAddress_RU",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Print INN/KPP in company address",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "CompanyInfo_BusinessCommencedDate_JP",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Start date of business",
+      "role": "Date",
+      "tab": ""
+    },
+    {
+      "controlName": "CompanyInfo_BusinessInitialCapital_JP",
+      "helpSource": "hover",
+      "helpText": "Amount in monetary standard (national currency)",
+      "label": "Initial capital investment",
+      "role": "Real",
+      "tab": ""
+    },
+    {
+      "controlName": "CompanyInfo_CertifiedTaxAccountant_JP",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Name of the certified tax accountant",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "CompanyInfo_LegalRepresentative_JP",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Name of the external legal representative",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "CompanyInfo_PersonInCharge_JP",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Contact person",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "CompanyInfo_BusinessItem_JP",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Business item",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "CompanyInfo_PrintEnterpriseregister_NO",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Print Foretaksregisteret on sales documents",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "CompanyInfo_CompanyType_MX",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Company type",
+      "role": "ComboBox",
+      "tab": ""
+    },
+    {
+      "controlName": "CompanyInfo_Rfc_MX",
+      "helpSource": "",
+      "helpText": "",
+      "label": "RFC number",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "CompanyInfo_Curp_MX",
+      "helpSource": "",
+      "helpText": "",
+      "label": "CURP number",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "CompanyInfo_StateInscription_MX",
+      "helpSource": "",
+      "helpText": "",
+      "label": "State inscription",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "LegalRepresentativeMX_LegalRepresentativeName_MX",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Legal representative",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "LegalRepresentativeMX_LegalRepresentativeRfc_MX",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Legal representative RFC",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "LegalRepresentativeMX_LegalRepresentativeCurp_MX",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Legal representative CURP",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "CompanyInfo_TaxRegimeCode_MX",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Tax regime",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "TaxAuthority_RU_TaxAuthority_RU",
+      "helpSource": "",
+      "helpText": "",
+      "label": "TDMI",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "DefaultBankSettings",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Routing number",
+      "role": "SectionPage",
+      "tab": ""
+    },
+    {
+      "controlName": "RegNum",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Routing number",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "BankCentralBankPurposeCode",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Central bank purpose code",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "BankCentralBankPurposeText",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Purpose text",
+      "role": "MultilineInput",
+      "tab": ""
+    },
+    {
+      "controlName": "CompanyInfo_FICreditorID_DK",
+      "helpSource": "hover",
+      "helpText": "Enter the creditor's unique identification number, which is provided by the financial institution. The creditor's identification number must contain eight digits.",
+      "label": "FI-Creditor ID",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "SIA_IT_SiaCode",
+      "helpSource": "hover",
+      "helpText": "Enter the Società Interbancaria per l'Automazione (SIA) code of the company for bill of exchange and promissory note remittance. The SIA code is assigned to the company by the SIA.",
+      "label": "SIA code",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "SIA_IT_IssuingSignature",
+      "helpSource": "hover",
+      "helpText": "Enter the company signature for remittance that is used by the bank for identification. The signature is stored in the remittance export file for the bill of exchange and printed in the customer remittance report.",
+      "label": "Issuing signature",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "BTL91_PaymRoutingDNB",
+      "helpSource": "hover",
+      "helpText": "Enter the registration number from the DNB (Netherlands Central Bank) for categorizing foreign payment.",
+      "label": "DNB Routing number",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "BTL91_PaymTraderNumber",
+      "helpSource": "hover",
+      "helpText": "Enter the indication code from the DNB for transit traders.",
+      "label": "Trader number",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "PaymInstruction1",
+      "helpSource": "hover",
+      "helpText": "Unique ID for the record in the database",
+      "label": "Payment instruction code 1",
+      "role": "ReferenceGroup",
+      "tab": ""
+    },
+    {
+      "controlName": "PaymInstruction1_Id",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Payment instruction code",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "PaymInstruction2",
+      "helpSource": "hover",
+      "helpText": "Unique ID for the record in the database",
+      "label": "Payment instruction code 2",
+      "role": "ReferenceGroup",
+      "tab": ""
+    },
+    {
+      "controlName": "PaymInstruction2_Id",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Payment instruction code",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "PaymInstruction3",
+      "helpSource": "hover",
+      "helpText": "Unique ID for the record in the database",
+      "label": "Payment instruction code 3",
+      "role": "ReferenceGroup",
+      "tab": ""
+    },
+    {
+      "controlName": "PaymInstruction3_Id",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Payment instruction code",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "PaymInstruction4",
+      "helpSource": "hover",
+      "helpText": "Unique ID for the record in the database",
+      "label": "Payment instruction code 4",
+      "role": "ReferenceGroup",
+      "tab": ""
+    },
+    {
+      "controlName": "PaymInstruction4_Id",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Payment instruction code",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "Bank",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Bank account",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "Giro",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Giro account",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "CompanyInfo_Resident_W",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Resident",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "ForeignTradeLogistics",
+      "helpSource": "hover",
+      "helpText": "Enter the data processing register number that is supplied by the DVR (DatenVerarbeitungsRegister).",
+      "label": "DVR",
+      "role": "SectionPage",
+      "tab": ""
+    },
+    {
+      "controlName": "DVRid",
+      "helpSource": "",
+      "helpText": "",
+      "label": "DVR",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "UPSNum",
+      "helpSource": "hover",
+      "helpText": "Enter the account number that the company has with the preferred courier service and that is used in relevant external reports.",
+      "label": "Delivery number",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "RegNumbers_ActivityCode",
+      "helpSource": "hover",
+      "helpText": "Enter the identifier of the financial activity group.",
+      "label": "Activity code",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "PackagingMaterialFee_PackMaterialFeeLicenseNum",
+      "helpSource": "hover",
+      "helpText": "Enter the packaging material fee license number of your recycling company. It is used in the ARA notification report.",
+      "label": "Packing material fee license number",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "VATNum",
+      "helpSource": "hover",
+      "helpText": "Select the number that is used for transfers relative to the European Union and in external reports. An export number is required to print an Intrastat report for Finland.",
+      "label": "VAT exempt number export",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "SalesTax_VATNumBranchId",
+      "helpSource": "hover",
+      "helpText": "Identify the branch or subsidiary that is used with the tax exempt number for export.",
+      "label": "Branch number extension export",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "ImportVATNum",
+      "helpSource": "hover",
+      "helpText": "Select the number that is used in external reports and for transfers relative to the European Union. An import number is required to print an Intrastat report for Finland.",
+      "label": "VAT exempt number import",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "SalesTax_ImportVATNumBranchId",
+      "helpSource": "hover",
+      "helpText": "Identify the branch or subsidiary that is used with the tax exempt number for import.",
+      "label": "Branch number extension import",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "RegNumbers_IntrastatCode",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Intrastat code",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "CompanyInfo_PrintCorrInvoiceLabel_DE",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Print corrective invoice on sales credit memo",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "CompanyInfo_PrintCorrInvoiceLabelEffDate_DE",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Starting date",
+      "role": "Date",
+      "tab": ""
+    },
+    {
+      "controlName": "Shipping_ShippingCalendarId",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Shipping calendar",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "NumberSeq",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Reference",
+      "role": "SectionPage",
+      "tab": ""
+    },
+    {
+      "controlName": "referenceLabel1",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Reference",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "referenceHelp",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Description",
+      "role": "MultilineInput",
+      "tab": ""
+    },
+    {
+      "controlName": "RPayRegistration",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Code of subordination",
+      "role": "SectionPage",
+      "tab": ""
+    },
+    {
+      "controlName": "FSSGroup_SubordinateCode",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Code of subordination",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "FSSGroup_FSSAccount_RU",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Territorial authority of the insurer",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "PFRegNum_RU_PFRegNum_RU",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Registration pension fund number",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "RPayOther_OrganizationLegalForm_RU",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Organizational-legal form",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "ImagesColors",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Dashboard image",
+      "role": "SectionPage",
+      "tab": ""
+    },
+    {
+      "controlName": "DashboardImage",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Dashboard image",
+      "role": "Image",
+      "tab": ""
+    },
+    {
+      "controlName": "DashboardImageType",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Dashboard company image type",
+      "role": "ComboBox",
+      "tab": ""
+    },
+    {
+      "controlName": "ReportCompanyLogo",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Logo",
+      "role": "SectionPage",
+      "tab": ""
+    },
+    {
+      "controlName": "LogoImage",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Logo",
+      "role": "Image",
+      "tab": ""
+    },
+    {
+      "controlName": "ReportDefaultPrintDestinationTab",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Screen",
+      "role": "SectionPage",
+      "tab": ""
+    },
+    {
+      "controlName": "DefaultPrintDestination",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Print destination",
+      "role": "RadioButton",
+      "tab": ""
+    },
+    {
+      "controlName": "EstablishmentActionPaneTabPage",
+      "helpSource": "hover",
+      "helpText": "Unique ID for the record in the database",
+      "label": "Regulatory establishment",
+      "role": "SectionPage",
+      "tab": ""
+    },
+    {
+      "controlName": "EEOEstablishment",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Regulatory establishment",
+      "role": "ReferenceGroup",
+      "tab": ""
+    },
+    {
+      "controlName": "EEOEstablishment_EEOEstablishment",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Regulatory establishment",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "HcmEEOEstablishmentDetail_DunsNumber",
+      "helpSource": "",
+      "helpText": "",
+      "label": "DUNS number",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "HcmEEOEstablishmentDetail_NAICSCode",
+      "helpSource": "",
+      "helpText": "",
+      "label": "NAICS",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "HcmEEOEstablishmentDetail_UnitNumber",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Unit number",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "HcmEEOEstablishmentDetail_EmployerIdentificationNumber",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Employer identification number",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "HcmEEOEstablishmentDetail_IndustryDescription",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Industry description",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "HeadquartersCheckBox",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Headquarters",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "FormPartAddress",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Address",
+      "role": "Part",
+      "tab": ""
+    },
+    {
+      "controlName": "AddressDisplay_Address",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Address",
+      "role": "MultilineInput",
+      "tab": ""
+    },
+    {
+      "controlName": "TaxRegistration",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Tax registration number",
+      "role": "SectionPage",
+      "tab": ""
+    },
+    {
+      "controlName": "CompanyInfo_CoRegNum",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Tax registration number",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "CompanyInfo_FileNumber_SA",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Zakat file number",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "CompanyInfo_BusinessActivityDesc_SA",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Business activity description:",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "CompanyInfo_BusinessActivity_SA",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Business activity:",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "CompanyInfoExtensionCN_TaxRegistrationType",
+      "helpSource": "hover",
+      "helpText": "Unique ID for the record in the database",
+      "label": "VAT registration type",
+      "role": "ReferenceGroup",
+      "tab": ""
+    },
+    {
+      "controlName": "CompanyInfoExtensionCN_TaxRegistrationType_TaxRegstrationType",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Name",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "WithholdingTaxRegistration",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Federal tax ID",
+      "role": "SectionPage",
+      "tab": ""
+    },
+    {
+      "controlName": "Misc1099_Tax1099RegNum",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Federal tax ID",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "Misc1099_validate1099OnEntry",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Validate Tax 1099 data formats",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "Misc1099_DBA",
+      "helpSource": "",
+      "helpText": "",
+      "label": "DBA",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "Misc1099_NameControl",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Name control",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "Misc1099_TCC",
+      "helpSource": "",
+      "helpText": "",
+      "label": "TCC",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "Misc1099_LastFilingIndicator",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Last filing indicator",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "Misc1099_CombinedFedStateFiler",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Combined federal/state filer",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "Misc1099_ForeignEntityIndicator",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Foreign entity indicator",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "Misc1099_BankAcctUsedFor1099",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Bank account used for 1099 payments",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "TaxInformationPage_IN",
+      "helpSource": "hover",
+      "helpText": "Select the PAN registration status",
+      "label": "Status",
+      "role": "SectionPage",
+      "tab": ""
+    },
+    {
+      "controlName": "PANInformation_PANStatus",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Status",
+      "role": "ComboBox",
+      "tab": ""
+    },
+    {
+      "controlName": "PANInformation_PANNumber",
+      "helpSource": "hover",
+      "helpText": "Enter the withholding tax registration number",
+      "label": "Permanent account number",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "PANInformation_AssessingOfficerNumber",
+      "helpSource": "hover",
+      "helpText": "Assessing officer for the TDS authority",
+      "label": "Assessing officer number",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "PANInformation_CircleNumber",
+      "helpSource": "hover",
+      "helpText": "Circle number for the TCS authority",
+      "label": "Circle number",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "PANInformation_WardNumber",
+      "helpSource": "hover",
+      "helpText": "Ward number for the TDS authority",
+      "label": "Ward number",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "WithholdingTax_TypeOfDeductor",
+      "helpSource": "hover",
+      "helpText": "Tax type for the withholding tax component group",
+      "label": "Type of deductor",
+      "role": "ComboBox",
+      "tab": ""
+    },
+    {
+      "controlName": "WithholdingTax_PAOCode",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Pay and accounts office (PAO) code",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "WithholdingTax_DDOCode",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Drawing disbursement officer (DDO) code",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "WithholdingTax_PAORegNum",
+      "helpSource": "hover",
+      "helpText": "PAO registration number for the company",
+      "label": "PAO registration number",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "WithholdingTax_DDORegNum",
+      "helpSource": "hover",
+      "helpText": "DDO registration number for the company",
+      "label": "DDO registration number",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "WithholdingTax_MinistryType",
+      "helpSource": "hover",
+      "helpText": "Identify the type of Ministry as Regular or Others",
+      "label": "Ministry details",
+      "role": "ComboBox",
+      "tab": ""
+    },
+    {
+      "controlName": "WithholdingTax_MinistryCode",
+      "helpSource": "hover",
+      "helpText": "Specify the ministry code to be updated in the e-TDS/ e-TCS files",
+      "label": "Ministry code",
+      "role": "ComboBox",
+      "tab": ""
+    },
+    {
+      "controlName": "WithholdingTax_MinistryName",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Ministry name",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "WithholdingTax_StateCode",
+      "helpSource": "hover",
+      "helpText": "Specify the state code to be updated in the e-TDS/ e-TCS files",
+      "label": "State code",
+      "role": "Input",
+      "tab": ""
+    }
+  ],
+  "lookups": [
+    {
+      "tab": "",
+      "controlName": "navBarMessageCenter",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "General",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "CompanyInfo_LocalizationCountryRegionCode",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "Languages_LanguageId",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "TimeZoneComboBox",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "RegistrationNumbersTab",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "CompanyNAFCode",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "CompanyInfo_LegalNature_IT",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "ForeignOrganization_RU_RAlienCorpCountry",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "CompanyInfo_BusinessCommencedDate_JP",
+      "opened": true,
+      "values": [
+        "SuMoTuWeThFrSa",
+        "1234",
+        "567891011",
+        "12131415161718",
+        "19202122232425",
+        "262728293031"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "CompanyInfo_CertifiedTaxAccountant_JP",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "CompanyInfo_LegalRepresentative_JP",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "CompanyInfo_PersonInCharge_JP",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "CompanyInfo_CompanyType_MX",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "CompanyInfo_TaxRegimeCode_MX",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "TaxAuthority_RU_TaxAuthority_RU",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "DefaultBankSettings",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "BankCentralBankPurposeCode",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "PaymInstruction1",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "PaymInstruction2",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "PaymInstruction3",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "PaymInstruction4",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "Bank",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "ForeignTradeLogistics",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "VATNum",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "ImportVATNum",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "CompanyInfo_PrintCorrInvoiceLabelEffDate_DE",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "Shipping_ShippingCalendarId",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "ImagesColors",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "DashboardImageType",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "EstablishmentActionPaneTabPage",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "EEOEstablishment",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "TaxRegistration",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "CompanyInfoExtensionCN_TaxRegistrationType",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "WithholdingTaxRegistration",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "Misc1099_BankAcctUsedFor1099",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "TaxInformationPage_IN",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "PANInformation_PANStatus",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "WithholdingTax_TypeOfDeductor",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "WithholdingTax_MinistryType",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "WithholdingTax_MinistryCode",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    }
+  ]
+}
