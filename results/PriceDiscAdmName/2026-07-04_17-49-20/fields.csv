@@ -1,0 +1,6 @@
+"Tab","Form","Control Name","Role","Label","Help Text","Help Source"
+"","PriceDiscAdmName","QuickFilterControl","QuickFilter","Filter","",""
+"","PriceDiscAdmName","QuickFilterControl_Input","Input","Filter","",""
+"","PriceDiscAdmName","Grid.Name","GridColumn","Name","Name Click to follow link","dom"
+"","PriceDiscAdmName","Grid.Description","GridColumn","Description","Description","dom"
+"","PriceDiscAdmName","Grid.Relation","GridColumn","Relation","Relation","dom"

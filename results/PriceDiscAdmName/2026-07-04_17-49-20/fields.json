@@ -1,0 +1,52 @@
+{
+  "formName": "PriceDiscAdmName",
+  "url": "https://hint-sb-04a9f0283cca85a5c5devaos.cloudax.dynamics.com/?cmp=hge&mi=PriceDiscAdmName_Purch",
+  "scannedAt": "2026-07-04T15:49:20.340Z",
+  "deep": true,
+  "walkTabs": true,
+  "tabsFound": [],
+  "tabsScanned": 1,
+  "fields": [
+    {
+      "controlName": "QuickFilterControl",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Filter",
+      "role": "QuickFilter",
+      "tab": ""
+    },
+    {
+      "controlName": "QuickFilterControl_Input",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Filter",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "Grid.Name",
+      "helpSource": "dom",
+      "helpText": "Name Click to follow link",
+      "label": "Name",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "Grid.Description",
+      "helpSource": "dom",
+      "helpText": "Description",
+      "label": "Description",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "Grid.Relation",
+      "helpSource": "dom",
+      "helpText": "Relation",
+      "label": "Relation",
+      "role": "GridColumn",
+      "tab": ""
+    }
+  ],
+  "lookups": []
+}
