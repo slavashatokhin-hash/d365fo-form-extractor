@@ -1,0 +1,132 @@
+{
+  "formName": "EcoResStorageDimensionGroup",
+  "url": "https://hint-sb-04a9f0283cca85a5c5devaos.cloudax.dynamics.com/?cmp=usmf&mi=EcoResStorageDimensionGroup",
+  "scannedAt": "2026-07-06T13:36:10.046Z",
+  "deep": true,
+  "walkTabs": true,
+  "tabsFound": [],
+  "tabsScanned": 1,
+  "fields": [
+    {
+      "controlName": "DetailsHeader_Name",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Name",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "DetailsHeader_Description",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Description",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "WHSSetup",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Use warehouse management processes No",
+      "role": "SectionPage",
+      "tab": ""
+    },
+    {
+      "controlName": "WHSEnabled_IsWarehouseWHSEnabled",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Use warehouse management processes",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "WarehouseSpecificSetup_IsWarehouseMandatoryEnabled",
+      "helpSource": "hover",
+      "helpText": "MandatorySelect this option to define the Warehouse dimension as a mandatory dimension for items that are associated with the dimension group. The Site dimension is always mandatory. However, the Location cannot be set to mandatory.",
+      "label": "Mandatory",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "WarehouseSpecificSetup_IsWarehousePrimaryStockingEnabled",
+      "helpSource": "hover",
+      "helpText": "Select this option to define the Warehouse dimension as the primary dimension for items that are associated with the dimension group. If the Warehouse dimension is specified as a primary dimension, this dimension is always locked when items are reserved. It cannot be unlocked.",
+      "label": "Primary stocking",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "FieldSetupGrid.Name",
+      "helpSource": "dom",
+      "helpText": "Name",
+      "label": "Name",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "FieldSetupGrid.Active",
+      "helpSource": "dom",
+      "helpText": "Active Select this option to set the storage dimension as active",
+      "label": "Active",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "FieldSetupGrid.Blank receipt allowed",
+      "helpSource": "dom",
+      "helpText": "Blank receipt allowed Select this option to indicate that the dimension does not have to be specified when physical receipts are updated. This functionality is useful if, for example, you do not want to specify the serial or lot number upon input, but you do want to do so for picking and output. This option applies only if the Primary stocking option is cleared.",
+      "label": "Blank receipt allowed",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "FieldSetupGrid.Blank issue allowed",
+      "helpSource": "hover",
+      "helpText": "Blank issue allowedSelect this option to indicate that the dimension does not have to be specified when physical issues are updated. This option applies only if the Primary stocking option is cleared.",
+      "label": "Blank issue allowed",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "FieldSetupGrid.Physical inventory",
+      "helpSource": "dom",
+      "helpText": "Physical inventory A selected option indicates that items that are assigned to this dimension group are tracked physically at this dimension level. Transactions that are generated to track physical transfers are also included in cost. A non-financial transfer is a transfer between two inventory dimensions that is not financially tracked. If items are tracked physically, a limitation for negative inventory has to be observed. By using the Physical negative inventory option in the Item model groups page, you can enable negative inventory for items that are associated with the item model group. If negative inventory is not enabled, and an item with this dimension is tracked physically, the item must be available physically to process transactions on the item.",
+      "label": "Physical inventory",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "FieldSetupGrid.Financial inventory",
+      "helpSource": "dom",
+      "helpText": "Financial inventory A selected option indicates that items that are assigned to this dimension group are included in cost calculations at this dimension level.",
+      "label": "Financial inventory",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "FieldSetupGrid.Coverage plan by dimension",
+      "helpSource": "dom",
+      "helpText": "Coverage plan by dimension Select this option to include the dimension when you create a coverage plan for a product. To create a coverage plan for a product, select the product in the Released product details page, and then click Item coverage on the Plan tab.",
+      "label": "Coverage plan by dimension",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "FieldSetupGrid.For purchase prices",
+      "helpSource": "dom",
+      "helpText": "For purchase prices Select this option to include the dimension as a criterion for determining the purchase price for an item. In the Journal lines, price/discount agreement page, you can create a trade agreement where you associate a purchase price with a specific dimension setup for an item. A dimension must be active to be available in a trade agreement setup. Select the Active option in this page to enable a dimension.",
+      "label": "For purchase prices",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "FieldSetupGrid.For sales prices",
+      "helpSource": "dom",
+      "helpText": "For sales prices Select this option to include the dimension as a criterion for determining the sales price for an item. In the Journal lines, price/discount agreement page, you can create a trade agreement where you can associate a sales price with a dimension setup for an item. A dimension must be active to be available in a trade agreement setup. Select the Active option in this page to enable a dimension.",
+      "label": "For sales prices",
+      "role": "GridColumn",
+      "tab": ""
+    }
+  ],
+  "lookups": []
+}
