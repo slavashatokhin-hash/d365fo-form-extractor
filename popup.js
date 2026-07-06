@@ -2,6 +2,9 @@ const scanBtn = document.getElementById("scanBtn");
 const csvBtn = document.getElementById("csvBtn");
 const jsonBtn = document.getElementById("jsonBtn");
 const lookupCsvBtn = document.getElementById("lookupCsvBtn");
+const githubBtn = document.getElementById("githubBtn");
+const githubSettingsBtn = document.getElementById("githubSettingsBtn");
+const githubStatusEl = document.getElementById("githubStatus");
 const deepScanEl = document.getElementById("deepScan");
 const walkTabsEl = document.getElementById("walkTabs");
 const captureScreenshotsEl = document.getElementById("captureScreenshots");
@@ -31,6 +34,9 @@ function showEmpty() {
   metaEl.style.display = "none";
   resetRowEl.style.display = "none";
   lookupCsvBtn.disabled = true;
+  githubBtn.disabled = true;
+  githubStatusEl.textContent = "";
+  githubStatusEl.className = "";
 }
 
 function showError(message) {
@@ -359,6 +365,9 @@ scanBtn.addEventListener("click", async () => {
     csvBtn.disabled = finalScan.fields.length === 0;
     jsonBtn.disabled = finalScan.fields.length === 0;
     lookupCsvBtn.disabled = !(finalScan.lookups && finalScan.lookups.length);
+    githubBtn.disabled = finalScan.fields.length === 0;
+    githubStatusEl.textContent = "";
+    githubStatusEl.className = "";
 
     const hoverCount = finalScan.fields.filter((f) => f.helpSource === "hover").length;
     const shotCount = (finalScan.screenshots || []).length;
@@ -435,8 +444,46 @@ resetBtn.addEventListener("click", () => {
   csvBtn.disabled = true;
   jsonBtn.disabled = true;
   lookupCsvBtn.disabled = true;
+  githubBtn.disabled = true;
   statusEl.textContent = "";
   showEmpty();
+});
+
+githubSettingsBtn.addEventListener("click", () => {
+  chrome.runtime.openOptionsPage();
+});
+
+githubBtn.addEventListener("click", async () => {
+  if (!lastScan || githubBtn.disabled) return;
+  // Disable synchronously, before any await, so a rapid double-click can't fire
+  // this handler twice and race two commits against the same branch.
+  githubBtn.disabled = true;
+
+  const config = await window.D365GitHub.getConfig();
+  if (!config || !config.owner || !config.repo || !config.token) {
+    githubStatusEl.textContent = "GitHub isn't configured yet — click the ⚙ button to set it up.";
+    githubStatusEl.className = "err";
+    githubBtn.disabled = false;
+    return;
+  }
+
+  githubStatusEl.className = "";
+  githubStatusEl.textContent = "Preparing files…";
+
+  try {
+    const { root, files } = window.D365GitHub.buildFiles(lastScan, toCsv, toLookupCsv);
+    const message = `Scan results: ${lastScan.formName || "form"} (${new Date().toISOString()})`;
+    const result = await window.D365GitHub.commitFiles(config, files, message, (msg) => {
+      githubStatusEl.textContent = msg;
+    });
+    githubStatusEl.innerHTML = `Saved to <code>${escapeHtml(root)}</code> — <a href="${escapeHtml(result.commitUrl)}" target="_blank" rel="noopener">view commit</a>`;
+  } catch (e) {
+    console.error(e);
+    githubStatusEl.className = "err";
+    githubStatusEl.textContent = window.D365GitHub.describeError(e);
+  } finally {
+    githubBtn.disabled = false;
+  }
 });
 
 showEmpty();

@@ -112,6 +112,35 @@ lookup isn't being detected or opened correctly, send me the outer HTML of
 that field and its lookup button (right-click → Inspect) and I'll refine the
 selector — same approach that fixed the tooltip and tab-strip detection.
 
+## Save to GitHub
+
+Click the ⚙ button next to **Save to GitHub** to configure a repository once:
+repo owner, repo name, branch, and a GitHub **fine-grained personal access
+token** scoped to just that repo with **Contents: Read and write** permission
+(create one at github.com → Settings → Developer settings → Fine-grained
+tokens). Use **Test connection** to confirm it can see the repo/branch before
+relying on it.
+
+Once configured, **Save to GitHub** commits the current scan — `fields.json`,
+`fields.csv`, `lookups.csv` (if any), and every captured screenshot — to
+`results/<form name>/<timestamp>/` in a single commit, so each scan gets its
+own timestamped folder instead of overwriting the last one. The button links
+to the resulting commit when done.
+
+The token is stored in the extension's local storage (`chrome.storage.local`,
+not synced to your Google account) and is only ever sent to `api.github.com`.
+Scoping it to one repo with contents-only access limits what's exposed if it
+were ever compromised.
+
+## Grid/list-view columns
+
+List pages (e.g. "Vendor groups") render their columns differently than form
+fields — no `data-dyn-controlname` on the header, label text nested inside a
+`.dyn-headerCellLabel` element. The scanner detects these separately and adds
+them to the results table as `<grid control name>.<column label>` (e.g.
+`Grid.Terms of payment`), with help text resolved the same way as regular
+fields — a static `title` attribute if present, hover otherwise.
+
 ## Other known limitations
 
 - **Grids**: D365FO virtualizes grid rows/columns, so only currently-rendered
@@ -126,7 +155,10 @@ selector — same approach that fixed the tooltip and tab-strip detection.
 
 ## Files
 
-- `manifest.json` — Manifest V3 config (activeTab + scripting only, no broad
-  host permissions, no background script)
+- `manifest.json` — Manifest V3 config (activeTab + scripting + storage, host
+  permission for `api.github.com` only, no background script)
 - `scanner.js` — injected into the page on demand to walk the DOM
 - `popup.html` / `popup.js` — the extension's UI, results table, and export
+- `options.html` / `options.js` — GitHub repo/token settings page
+- `github.js` — shared helper for committing scan results to GitHub, used by
+  both the popup and the options page

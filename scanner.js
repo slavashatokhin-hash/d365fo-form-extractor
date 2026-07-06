@@ -16,6 +16,24 @@ function scanD365FOFormFactory() {
     return !!el.offsetParent || el.getClientRects().length > 0;
   }
 
+  // D365FO's app shell (waffle menu, notifications, feedback, global search) also
+  // carries data-dyn-controlname attributes, and so does the current form's own
+  // command bar (Back, Refresh, Save, Options, filter pane, ...) — none of which
+  // are real fields, they're identical on every tab, and hovering some of them
+  // opens flyout panels that don't close from a synthetic mouseleave. ".rootLayout"
+  // wraps just the form's actual content/tab area, excluding both; fall back to
+  // ".conductorContent" (the whole form, still excludes the app shell) or the
+  // whole document if neither is present.
+  function getFormRoot() {
+    // Pages with an embedded form-part/preview panel (e.g. a grid + details view)
+    // can have more than one ".rootLayout" — a querySelector for the first match can
+    // land on a hidden part-form instead of the actual visible content. Pick the
+    // first one that's actually visible.
+    const rootLayouts = Array.from(document.querySelectorAll(".rootLayout"));
+    const visibleRoot = rootLayouts.find(isVisible);
+    return visibleRoot || document.querySelector(".conductorContent") || document;
+  }
+
   // ---------- label / static help text ----------
 
   function findLabelFor(el) {
@@ -86,7 +104,11 @@ function scanD365FOFormFactory() {
   function revealHoverHelp(target, waitMs) {
     return new Promise((resolve) => {
       if (!target) return resolve("");
-      const before = new Set(getVisibleStyleTooltipDivs());
+      // Snapshot both tooltip flavors before hovering — qtip-style tooltips (used for
+      // field help text here) reuse the same DOM node across hovers, so without this
+      // a still-visible tooltip left over from the previous field would be picked up
+      // again as if it belonged to this one.
+      const before = new Set([...getVisibleStyleTooltipDivs(), ...getFluentTooltipNodes()]);
       const rect = target.getBoundingClientRect();
       const pos = { bubbles: true, cancelable: true, clientX: rect.left + rect.width / 2, clientY: rect.top + rect.height / 2, view: window };
       try {
@@ -100,14 +122,12 @@ function scanD365FOFormFactory() {
 
       setTimeout(() => {
         let text = "";
-        const after = getVisibleStyleTooltipDivs().filter((n) => !before.has(n));
-        if (after.length) {
-          const best = after.sort((a, b) => cleanText(b.textContent).length - cleanText(a.textContent).length)[0];
+        const styleDivs = getVisibleStyleTooltipDivs().filter((n) => !before.has(n));
+        const fluent = getFluentTooltipNodes().filter((n) => !before.has(n));
+        const candidates = [...styleDivs, ...fluent];
+        if (candidates.length) {
+          const best = candidates.sort((a, b) => cleanText(b.textContent).length - cleanText(a.textContent).length)[0];
           text = cleanText(best.textContent);
-        }
-        if (!text) {
-          const fluent = getFluentTooltipNodes();
-          if (fluent.length) text = cleanText(fluent[0].textContent);
         }
         try {
           target.dispatchEvent(new PointerEvent("pointerout", pos));
@@ -162,7 +182,7 @@ function scanD365FOFormFactory() {
   // ---------- field collection for whatever is currently in the DOM ----------
 
   function collectFieldsFromDom() {
-    const controls = Array.from(document.querySelectorAll("[data-dyn-controlname]")).filter(isVisible);
+    const controls = Array.from(getFormRoot().querySelectorAll("[data-dyn-controlname]")).filter(isVisible);
     const fields = [];
     controls.forEach((el) => {
       const controlName = el.getAttribute("data-dyn-controlname");
@@ -174,7 +194,32 @@ function scanD365FOFormFactory() {
       if (!label && !helpText) return;
       fields.push({ el, labelNode, controlName, role, label, helpText, helpSource: helpText ? "dom" : "" });
     });
+    fields.push(...collectGridColumns());
     return fields;
+  }
+
+  // Grid/list-view columns (e.g. a "Vendor groups" list page) use a different control
+  // pattern than form fields: the header is a [role="columnheader"] with no
+  // data-dyn-controlname of its own, and its label lives in a nested
+  // ".dyn-headerCellLabel" element — which is also the element that reveals help text
+  // on hover, via the same tooltip mechanism as regular fields.
+  function collectGridColumns() {
+    const headers = Array.from(getFormRoot().querySelectorAll('[role="columnheader"]')).filter(isVisible);
+    const seen = new Set();
+    const columns = [];
+    headers.forEach((h) => {
+      const labelNode = h.querySelector(".dyn-headerCellLabel") || h;
+      const label = cleanText(labelNode.textContent);
+      if (!label) return;
+      const grid = h.closest("[data-dyn-controlname]");
+      const gridName = grid ? grid.getAttribute("data-dyn-controlname") : "Grid";
+      const controlName = `${gridName}.${label}`;
+      if (seen.has(controlName)) return;
+      seen.add(controlName);
+      const helpText = findHelpTextStatic(labelNode) || findHelpTextStatic(h);
+      columns.push({ el: h, labelNode, controlName, role: "GridColumn", label, helpText, helpSource: helpText ? "dom" : "" });
+    });
+    return columns;
   }
 
   async function hoverFillHelpText(fields) {
@@ -191,8 +236,8 @@ function scanD365FOFormFactory() {
   }
 
   function getFormName() {
-    const formEl = document.querySelector("[data-dyn-formname]");
-    return formEl ? formEl.getAttribute("data-dyn-formname") : (document.title || "");
+    const formEl = document.querySelector("[data-dyn-form-name]");
+    return formEl ? formEl.getAttribute("data-dyn-form-name") : (document.title || "");
   }
 
   function dedupeKey(tabName, controlName, id) {
@@ -280,6 +325,16 @@ window.__d365foScanForm = scanD365FOFormFactory();
     return !!el.offsetParent || el.getClientRects().length > 0;
   }
 
+  function getFormRoot() {
+    // Pages with an embedded form-part/preview panel (e.g. a grid + details view)
+    // can have more than one ".rootLayout" — a querySelector for the first match can
+    // land on a hidden part-form instead of the actual visible content. Pick the
+    // first one that's actually visible.
+    const rootLayouts = Array.from(document.querySelectorAll(".rootLayout"));
+    const visibleRoot = rootLayouts.find(isVisible);
+    return visibleRoot || document.querySelector(".conductorContent") || document;
+  }
+
   window.__d365foGetTabHeaders = function () {
     // Reuses the same detection selectors as the main scanner.
     const selectorGroups = [
@@ -289,7 +344,7 @@ window.__d365foScanForm = scanD365FOFormFactory();
     ];
     let tabs = [];
     for (const sel of selectorGroups) {
-      const nodes = Array.from(document.querySelectorAll(sel)).filter((n) => cleanText(n.textContent));
+      const nodes = Array.from(getFormRoot().querySelectorAll(sel)).filter((n) => cleanText(n.textContent));
       if (nodes.length > 1) { tabs = nodes; break; }
     }
     window.__d365foTabElements = tabs;
@@ -321,8 +376,26 @@ window.__d365foScanForm = scanD365FOFormFactory();
     const tabs = window.__d365foTabElements || [];
     const el = tabs[index];
     if (!el) return false;
+    // Defensive: a lookup/flyout panel that didn't close cleanly (see
+    // __d365foCloseLookup) can be left sitting on top of the page. Even though a
+    // programmatic .click() on the tab header still fires regardless of what's
+    // visually on top, a leftover panel covering the screen makes the switch
+    // invisible to anyone watching, and can also intercept the DOM stability wait
+    // below. Clear any stray floating UI before attempting to switch tabs.
+    if (getFloatingContainers().some((n) => n.getBoundingClientRect().width > 0)) {
+      document.body.dispatchEvent(new KeyboardEvent("keydown", { key: "Escape", code: "Escape", bubbles: true, cancelable: true }));
+      if (document.activeElement && document.activeElement.blur) document.activeElement.blur();
+      await new Promise((r) => setTimeout(r, 150));
+    }
     el.click();
     await waitForStableDom(1200, 250);
+    // waitForStableDom resolves once the DOM (layout) has settled, but the vertical
+    // tab strip animates the panel swap with a CSS transition — so the old panel can
+    // still be what's actually painted on screen for a bit after the DOM/layout side
+    // is already "done". A plain extra buffer (not requestAnimationFrame — rAF can be
+    // paused entirely while the extension's popup has focus) gives that transition
+    // time to finish before a caller (e.g. a screenshot) reads what's on screen.
+    await new Promise((r) => setTimeout(r, 350));
     return true;
   };
 
@@ -358,7 +431,7 @@ window.__d365foScanForm = scanD365FOFormFactory();
   }
 
   window.__d365foGetLookupCandidates = function () {
-    const controls = Array.from(document.querySelectorAll("[data-dyn-controlname]")).filter(isVisible);
+    const controls = Array.from(getFormRoot().querySelectorAll("[data-dyn-controlname]")).filter(isVisible);
     const seen = new Set();
     const result = [];
     controls.forEach((el) => {
@@ -416,16 +489,41 @@ window.__d365foScanForm = scanD365FOFormFactory();
       candidates = getFloatingContainers().filter((n) => !before.has(n) && n.getBoundingClientRect().width > 0);
     }
 
+    window.__d365foLookupTrigger = trigger;
+
     if (!candidates.length) return { opened: false, values: [], reason: "no lookup panel detected" };
 
     const values = extractOptionTexts(candidates[0]);
     return { opened: true, values };
   };
 
+  // A lookup panel left open after this returns would sit on top of the page and
+  // silently swallow/hide whatever runs next (most importantly, the following tab
+  // switch — see the defensive check in __d365foActivateTabByIndex). So rather than
+  // fire Escape once and hope, escalate through a few closing strategies and verify
+  // the panel is actually gone before returning.
   window.__d365foCloseLookup = async function () {
+    const isOpen = () => getFloatingContainers().some((n) => n.getBoundingClientRect().width > 0);
+
     document.body.dispatchEvent(new KeyboardEvent("keydown", { key: "Escape", code: "Escape", bubbles: true, cancelable: true }));
     if (document.activeElement && document.activeElement.blur) document.activeElement.blur();
     await new Promise((r) => setTimeout(r, 150));
-    return true;
+
+    if (isOpen() && window.__d365foLookupTrigger) {
+      // Many combo/lookup widgets toggle open/closed on a repeat click of their trigger.
+      window.__d365foLookupTrigger.click();
+      await waitForStableDom(600, 200);
+    }
+
+    if (isOpen()) {
+      // Last resort: a click on a neutral point of the page to trigger any
+      // click-outside-to-dismiss handler the panel may be listening for.
+      document.body.dispatchEvent(new MouseEvent("mousedown", { bubbles: true, cancelable: true, clientX: 2, clientY: 2 }));
+      document.body.click();
+      await new Promise((r) => setTimeout(r, 150));
+    }
+
+    window.__d365foLookupTrigger = null;
+    return !isOpen();
   };
 })();
