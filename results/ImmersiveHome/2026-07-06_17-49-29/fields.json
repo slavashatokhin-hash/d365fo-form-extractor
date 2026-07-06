@@ -1,0 +1,187 @@
+{
+  "formName": "ImmersiveHome",
+  "url": "https://hint-sb-04a9f0283cca85a5c5devaos.cloudax.dynamics.com/?cmp=usmf&mi=EcoResTrackingDimensionGroup",
+  "scannedAt": "2026-07-06T15:49:29.056Z",
+  "deep": true,
+  "walkTabs": true,
+  "tabsFound": [],
+  "tabsScanned": 1,
+  "fields": [
+    {
+      "controlName": "DetailsHeader_Name",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Name",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "DetailsHeader_Description",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Description",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "SerialNumberSetup",
+      "helpSource": "hover",
+      "helpText": "Capture serial numberWhen the field is set to Packing or Picking, the fields Blank receipt allowed and Blank issue allowed are automatically selected and disabled for editing. -If the field is set to Picking, the serial number must be captured during the picking process with the mobile device, even though blank receipt and issue are allowed. -If the field is set to Packing, the serial number must be captured in the manual packing station process. -If the field is set to None, then you are not prompted to capture the serial number in the picking or packing process. Instead, the serial number must be captured during the receiving process even if Blank receipt allowed is enabled (unless the serial number auto-generation is enabled, through the tracking number groups, for example).",
+      "label": "Capture serial number",
+      "role": "SectionPage",
+      "tab": ""
+    },
+    {
+      "controlName": "SerialNumberSetup_EcoResTrackingDimensionGroup_CaptureSerial",
+      "helpSource": "dom",
+      "helpText": "Capture serial number: None",
+      "label": "Capture serial number: None",
+      "role": "ComboBoxSummary",
+      "tab": ""
+    },
+    {
+      "controlName": "EcoResTrackingDimensionGroup_CaptureSerial",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Capture serial number",
+      "role": "ComboBox",
+      "tab": ""
+    },
+    {
+      "controlName": "EcoResTrackingDimensionGroup_IsSerialAtConsumptionEnabled",
+      "helpSource": "hover",
+      "helpText": "Register serials before consumptionTracks which component serial numbers are used in production orders. When the field is selected, you can postpone the registration of a component serial number until the time of production consumption. This can be useful for tracking non-compliance issues. The field works together with the Capture serial field. For example, when you select Picking in the Capture serial field, the serial number needs to be provided at the picking time. Notice that you should clear the Active check box in the grid of the dimensions in the sales process.",
+      "label": "Register serials before consumption",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "SerialNumberControl_IsSerialNumberControlEnabled",
+      "helpSource": "hover",
+      "helpText": "Select this option to indicate that inventory movements must have a quantity of 1. This constraint prevents one item from having two or more identical serial numbers. When items are physically received, or when they are updated as arrived, the physical on-hand quantity and the arrival quantity cannot exceed 1. Based on the value of this field, the Physical inventory option is automatically selected or cleared to handle the control correctly.",
+      "label": "Serial number control",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "FieldSetupGrid.Name",
+      "helpSource": "dom",
+      "helpText": "Name",
+      "label": "Name",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "FieldSetupGrid.Active",
+      "helpSource": "dom",
+      "helpText": "Active Select this option to set the tracking dimension as active",
+      "label": "Active",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "FieldSetupGrid.Active in sales process",
+      "helpSource": "dom",
+      "helpText": "Active in sales process",
+      "label": "Active in sales process",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "FieldSetupGrid.Primary stocking",
+      "helpSource": "dom",
+      "helpText": "Primary stocking Select this option to define the Warehouse dimension as the primary dimension for items that are associated with the dimension group. If the Warehouse dimension is the primary dimension, it is always locked when items are reserved. It cannot be unlocked.",
+      "label": "Primary stocking",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "FieldSetupGrid.Blank receipt allowed",
+      "helpSource": "dom",
+      "helpText": "Blank receipt allowed Select this option to indicate that the dimension is not specified when physical receipts are updated. This option is useful if, for example, you want to specify the serial number or lot number for picking and output, but not for input. This option applies only if the Primary stocking option is cleared.",
+      "label": "Blank receipt allowed",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "FieldSetupGrid.Blank issue allowed",
+      "helpSource": "dom",
+      "helpText": "Blank issue allowed Select this option to indicate that the dimension is not specified when physical issues are updated. This option applies only if the Primary stocking option is cleared.",
+      "label": "Blank issue allowed",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "FieldSetupGrid.Physical inventory",
+      "helpSource": "dom",
+      "helpText": "Physical inventory A selected option indicates that items that are assigned to this dimension group are physically tracked at this dimension level. Transactions that are generated to track physical transfers are also included in cost calculations. A transfer that occurs between two inventory dimensions, and that is not financially tracked, is called a nonfinancial transfer. If items are physically tracked, there is a limitation on negative inventory. Select the Physical negative inventory option in the Item model groups page to enable negative inventory for items that are associated with the item model group. If negative inventory is not enabled, and an item with this dimension is physically tracked, transactions can only be processed for the item if the item is physically available.",
+      "label": "Physical inventory",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "FieldSetupGrid.Financial inventory",
+      "helpSource": "dom",
+      "helpText": "Financial inventory A selected option indicates that items that are assigned to this dimension group are included in cost calculations at this dimension level.",
+      "label": "Financial inventory",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "FieldSetupGrid.Coverage plan by dimension",
+      "helpSource": "dom",
+      "helpText": "Coverage plan by dimension Select this option to include the dimension when you create a coverage plan for a product. To create a coverage plan for a product, select the product in the Released product details page, and then click Item coverage on the Plan tab.",
+      "label": "Coverage plan by dimension",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "FieldSetupGrid.For purchase prices",
+      "helpSource": "dom",
+      "helpText": "For purchase prices Select this option to include the dimension as a criterion for the purchase price of an item. In the Journal lines, price/discount agreement page, you can create a trade agreement in which you associate a purchase price with the setup of a dimension for an item. Only active dimensions are available in the setup of a trade agreement. Select the Active option in this page to enable a dimension.",
+      "label": "For purchase prices",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "FieldSetupGrid.For sales prices",
+      "helpSource": "dom",
+      "helpText": "For sales prices Select this option to include the dimension as a criterion for the sales price of an item. In the Journal lines, price/discount agreement page, you can create a trade agreement in which you associate a sales price with the setup of a dimension for an item. Only active dimensions are available in the setup of a trade agreement. Select the Active option in this page to enable a dimension.",
+      "label": "For sales prices",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "FieldSetupGrid.Transfer",
+      "helpSource": "dom",
+      "helpText": "Transfer",
+      "label": "Transfer",
+      "role": "GridColumn",
+      "tab": ""
+    }
+  ],
+  "lookups": [
+    {
+      "tab": "",
+      "controlName": "SerialNumberSetup",
+      "opened": true,
+      "values": [
+        "None",
+        "Picking",
+        "Packing"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "EcoResTrackingDimensionGroup_CaptureSerial",
+      "opened": true,
+      "values": [
+        "None",
+        "Picking",
+        "Packing"
+      ],
+      "reason": ""
+    }
+  ]
+}
