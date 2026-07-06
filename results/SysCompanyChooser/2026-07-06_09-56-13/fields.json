@@ -1,0 +1,332 @@
+{
+  "formName": "SysCompanyChooser",
+  "url": "https://hint-sb-04a9f0283cca85a5c5devaos.cloudax.dynamics.com/?cmp=hge&mi=inventmodelgroup",
+  "scannedAt": "2026-07-06T07:56:13.258Z",
+  "deep": true,
+  "walkTabs": true,
+  "tabsFound": [],
+  "tabsScanned": 1,
+  "fields": [
+    {
+      "controlName": "InventModelGroup_ModelGroupId",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Item model group",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "InventModelGroup_Name",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Name",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "InventoryModelSetup",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Stocked productSelect this option to indicate that the product should be handled in inventory. Products that are handled in inventory generate inventory transactions. These products can be included in cost calculations. On-hand quantities can also be maintained for these products. Stocked products include items and services. A service cannot be added to stock. However, the program requires that pro forma stock transactions be generated for services that contribute to the inventory value of tangible goods. For example, pro forma stock transactions must be generated if a service is used to subcontract production steps. No",
+      "role": "SectionPage",
+      "tab": ""
+    },
+    {
+      "controlName": "InventoryPolicy_StockedProduct",
+      "helpSource": "hover",
+      "helpText": "Stocked productSelect this option to indicate that the product should be handled in inventory. Products that are handled in inventory generate inventory transactions. These products can be included in cost calculations. On-hand quantities can also be maintained for these products. Stocked products include items and services. A service cannot be added to stock. However, the program requires that pro forma stock transactions be generated for services that contribute to the inventory value of tangible goods. For example, pro forma stock transactions must be generated if a service is used to subcontract production steps.",
+      "label": "Stocked product",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "InventoryModel_InventModel",
+      "helpSource": "hover",
+      "helpText": "Select the inventory model that is used to close and perform adjustments in the Closing and adjustment page.",
+      "label": "Inventory model",
+      "role": "ComboBox",
+      "tab": ""
+    },
+    {
+      "controlName": "CostPrice_InclPhysicalValueInCost",
+      "helpSource": "hover",
+      "helpText": "Include physical valueSelect this option to indicate that transactions that are physically updated should be included in the calculation of the average cost. At inventory close, this parameter may be used, depending on the method that is used for inventory valuation. The following inventory valuation methods use this parameter during inventory close: FIFO, LIFO, and LIFO date. The following inventory valuation methods do not use this parameter during inventory close: Weighted avg. and Weighted avg. date.",
+      "label": "Include physical value",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "CostPrice_StandardCost",
+      "helpSource": "hover",
+      "helpText": "Select this option to adjust issues and receipts to a fixed receipt price. The fixed receipt price is a principle for inventory valuation that sets the price of receipts to the active planned cost or basic cost of a product. The fixed receipt price is defined in the Price field on the Manage costs tab in the Released product details page. When this option is selected, receipts and issues are posted as follows: for purchase receipts, posting occurs at the actual cost; for purchase invoices, the price difference between the actual cost and the fixed receipt price is posted to the general ledger as a variance; the amount is posted to the loss or profit account for the fixed receipt price. Inventory is updated based on the fixed receipt price; and for sales order packing slips and sales invoices, posting occurs at the estimated cost. When you run an inventory close or a recalculation, if this option is selected, the value of issue transactions is adjusted according to the price that is specified in the Price field. If this option is cleared, the value of issue transactions is not adjusted according to this price. If the fixed receipt price is changed, and you want all new issue transactions to use the new cost, follow these steps: run an inventory close, adjust the balance for the on-hand inventory, so that the balance matches the new cost, and then activate a new planned cost.",
+      "label": "Fixed receipt price",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "LedgerIntegration_PostOnhandPhysical",
+      "helpSource": "hover",
+      "helpText": "Post physical inventorySelect this option to post physical item transactions in the ledger. The physical item transactions are posted as follows: packing slips and product receipts are posted if the Post product receipt in ledger option is selected in the Accounts payable parameters page, or if the Post packing slip in ledger option is selected in the Accounts receivable parameters form; and production orders that are reported as finished are posted if the Post report as finished in ledger option is selected in the Production control parameters page. If this option is cleared, packing slips, product receipts, and production orders that are reported as finished are not posted in the ledger, regardless of the settings in the parameter setup pages.",
+      "label": "Post physical inventory",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "LedgerIntegration_PostOnhandFinancial",
+      "helpSource": "hover",
+      "helpText": "Select this option to post the updated financial value of items in the ledger. When a purchase order is invoice-updated, the value of the items is posted to the inventory receipt account. When a sales order is invoice-updated, the value of the items is posted to the inventory issue and the consumption accounts. The inventory value that is posted can then be reconciled with the related status accounts in General ledger. If this option is cleared, when a purchase order is invoice-updated, the value of the items is posted to the item consumption account, but not to the inventory receipt account. When a sales order is invoice-updated, no posting occurs in the item consumption account or the issue account. Clear this option for service items if the item consumption should not be posted when sales orders are invoiced. When this option is cleared, the journal lines for the items do not generate ledger postings.",
+      "label": "Post financial inventory",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "LedgerIntegration_PostPhysicalRevenue",
+      "helpSource": "hover",
+      "helpText": "Post to Deferred Revenue Account on Sales DeliverySelect this option to accrue the estimated revenue for the delivered quantity of packing slip updates. The accrued revenue that is accounted on the sales delivery is offset when the customer is invoiced for the delivery.",
+      "label": "Post to Deferred Revenue Account on Sales Delivery",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "LedgerIntegration_PostPhysicalPurchase",
+      "helpSource": "hover",
+      "helpText": "Select this option to accrue the estimated expense for packing slip updates to the general ledger.",
+      "label": "Accrue liability on product receipt",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "Setup",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Physical negative inventorySelect this option to enable negative physical inventory for the item model group. The program does not verify that items are physically in inventory when items are picked. For example, production is started, but not all items for the production are in inventory. The items have been ordered, and delivery has been scheduled. Alternatively, an order for an item is updated. Even though the item is not in inventory, it has been purchased and will soon be in inventory. No",
+      "role": "SectionPage",
+      "tab": ""
+    },
+    {
+      "controlName": "NegativeInventory_NegativePhysical",
+      "helpSource": "hover",
+      "helpText": "Physical negative inventorySelect this option to enable negative physical inventory for the item model group. The program does not verify that items are physically in inventory when items are picked. For example, production is started, but not all items for the production are in inventory. The items have been ordered, and delivery has been scheduled. Alternatively, an order for an item is updated. Even though the item is not in inventory, it has been purchased and will soon be in inventory.",
+      "label": "Physical negative inventory",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "NegativeInventory_NegativeFinancial",
+      "helpSource": "hover",
+      "helpText": "Select this option to enable negative financial inventory for the item model group. Negative financial inventory is often used for services. If this option is cleared, the cost price must be known for the quantity that is financially pulled from inventory. For example, eight items are invoice-updated, and five other items are packing slip–updated. Therefore, the physical on-hand inventory is 13. If this option is cleared, negative financial inventory is not enabled. Therefore, only eight items are available when a sales order is invoice-updated, even though 13 items are available in on-hand inventory.",
+      "label": "Financial negative inventory",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "WarehouseManagement_QuarantineControl",
+      "helpSource": "hover",
+      "helpText": "Quarantine managementSelect this option to indicate that items that are associated with the item model group are subject to the rules and requirements for quarantine management. This option is used for items that are set aside and awaiting approval for distribution. If this option is cleared, items are not under quarantine management, unless a quarantine order is created manually in the Quarantine orders page. When the item is registered, a quarantine order is generated. This quarantine order has a status of Started.",
+      "label": "Quarantine management",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "PhysicalUpdate_MandatoryRegister",
+      "helpSource": "hover",
+      "helpText": "Select this option to indicate that item receipts must be registered before inventory is physically updated. The status of the inventory transaction for the item receipt must be Registered before the item's product receipt is updated. This field is used by warehouse management. Registered items are part of physical inventory. You can register items in the warehouse management journals. Alternatively, you can click Inventory, and then click Registration on the relevant journals and orders.",
+      "label": "Registration requirements",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "PhysicalUpdate_MandatoryReceive",
+      "helpSource": "hover",
+      "helpText": "Receiving requirementsSelect this option to indicate that item receipts must be physically updated before they can be financially updated. If you post a vendor invoice, a product receipt must be entered and posted before the vendor invoice for the product receipt can be posted. The received quantity on the product receipt might differ from the invoiced quantity. In this case, an icon is displayed in the Product receipt quantity match field in the Vendor invoice page.",
+      "label": "Receiving requirements",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "PhysicalUpdate_MandatoryPick",
+      "helpSource": "hover",
+      "helpText": "Select this option to indicate that item issues must be picked before inventory is physically updated. The status of the inventory transactions for the item issue must be Picked before the packing slip is updated. This field is used by warehouse management. Picked items are part of physical inventory. Items can be picked in the warehouse management system by dispatches and picking routes. Alternatively, you can click Inventory, and then click Registration on the relevant journals and orders. If you create a direct delivery from a sales order, the Picking requirements parameter is ignored, because items are transferred directly from the vendor to the customer. These items do not physically come into your company.",
+      "label": "Picking requirements",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "PhysicalUpdate_MandatoryDeduct",
+      "helpSource": "hover",
+      "helpText": "Deduction requirementsSelect this option to indicate that item deductions must be physically updated before they can be financially updated. If you post a vendor invoice, a product receipt must be entered and posted before the vendor invoice for the product receipt can be posted. The deducted quantity on the product receipt might differ from the negative invoiced quantity. In this case, an icon is displayed in the Product receipt quantity match field in the Vendor invoice page.",
+      "label": "Deduction requirements",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "Reservation_ReserveByDate",
+      "helpSource": "hover",
+      "helpText": "Controls whether inventory reservation considers the required receipt date. When enabled, items are reserved based on their availability relative to the requested delivery date.",
+      "label": "FIFO date-controlled",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "Reservation_ReserveReversed",
+      "helpSource": "hover",
+      "helpText": "Backward from ship dateSelect this option to reserve expected receipts, such as open purchase order lines, that have a date of receipt that is nearest to the delivery date of the sales order. If this option is cleared, incoming inventory transactions that have the earliest date of receipt are reserved. Items that are available in inventory are not controlled by the Backward from ship date parameter. To control the available inventory that is reserved, you can use dimensions, such as corresponding batch numbers. Alternatively, you can mark orders.",
+      "label": "Backward from ship date",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "Reservation_MCRReservation",
+      "helpSource": "hover",
+      "helpText": "Defines the reservation policy for retail transactions. Determines whether inventory is reserved automatically for sales orders, quotations, or other retail processes.",
+      "label": "Item sales reservation",
+      "role": "ComboBox",
+      "tab": ""
+    },
+    {
+      "controlName": "Reservation_PdsSameLot",
+      "helpSource": "hover",
+      "helpText": "Same batch selectionSpecifies whether items are required to be reserved from the same lot during procurement. When enabled, only items from the same lot can be used for purchase and inventory transactions",
+      "label": "Same batch selection",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "Reservation_PdsConsReq",
+      "helpSource": "hover",
+      "helpText": "Select this if future inventory that will be reserved for sales order lines should be consolidated into a single requirement.",
+      "label": "Consolidate requirement",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "Reservation_PdsCheck",
+      "helpSource": "hover",
+      "helpText": "FEFO date-controlledPerforms \"first-expired-first-out\" date-controlled reservation, which is used only for shelf life items. Select this if the oldest inventory batch that fulfills the complete order quantity should be reserved. When you set this flag you can select the Pick criteria when you perform picking, manual or automatic reservation, or master planning.",
+      "label": "FEFO date-controlled",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "Reservation_PdsPickCriteria",
+      "helpSource": "hover",
+      "helpText": "Select the option that determines the date for master planning calculations and reservation logic. This date is an internal setting that decides whether an inventory batch can be used.",
+      "label": "Pick criteria",
+      "role": "ComboBox",
+      "tab": ""
+    },
+    {
+      "controlName": "Reservation_PickingListBatchExpirationDateValidationRule",
+      "helpSource": "hover",
+      "helpText": "Validate batch expiration onChoose which date to use when validating the expiration of an ingredient batch when making a physical reservation from a bill of material (BOM) or formula line. You can choose to validate the ingredient expiration date against the date of the reservation (Reservation date), against the raw material date of the ingredient or against the date the product is scheduled to be finished (Production scheduled end date). If the system finds that the requested ingredient batch has an expiration date previous to the selected validation option, it won't allow the reservation.",
+      "label": "Validate batch expiration on",
+      "role": "ComboBox",
+      "tab": ""
+    },
+    {
+      "controlName": "pdsDispositionCode_PdsDispositionCode",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Batch disposition code",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "PdsVendBatch_PdsReqVendBatchDetail",
+      "helpSource": "hover",
+      "helpText": "Purchase registrationIf the item that is received has the tracking batch dimension active, this field enables vendor batch details to be updated during the purchase registration process.",
+      "label": "Purchase registration",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "PdsApprovedVendor_PdsVendorCheckItem",
+      "helpSource": "hover",
+      "helpText": "Controls whether item procurement is restricted to approved vendors. When enabled, only vendors listed in the approved vendor list can be used for purchasing this item.",
+      "label": "Approved vendor check method",
+      "role": "ComboBox",
+      "tab": ""
+    },
+    {
+      "controlName": "ItemProdReservation_FrameOptionCheckBox",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Override item production reservation",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "ItemProdReservation_ItemProdReservation",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Reservation",
+      "role": "ComboBox",
+      "tab": ""
+    }
+  ],
+  "lookups": [
+    {
+      "tab": "",
+      "controlName": "InventoryModelSetup",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "InventoryModel_InventModel",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "Setup",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "Reservation_MCRReservation",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "Reservation_PdsPickCriteria",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "Reservation_PickingListBatchExpirationDateValidationRule",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "pdsDispositionCode_PdsDispositionCode",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "PdsApprovedVendor_PdsVendorCheckItem",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "ItemProdReservation_ItemProdReservation",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    }
+  ]
+}
