@@ -1,0 +1,329 @@
+{
+  "formName": "InventItemGroup",
+  "url": "https://hint-sb-04a9f0283cca85a5c5devaos.cloudax.dynamics.com/?cmp=hge&mi=InventItemGroup",
+  "scannedAt": "2026-07-06T11:39:19.024Z",
+  "deep": true,
+  "walkTabs": true,
+  "tabsFound": [],
+  "tabsScanned": 1,
+  "fields": [
+    {
+      "controlName": "InventItemGroup_ItemGroup",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Item group",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "InventItemGroup_GroupName",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Name",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "Setup",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Default item allocation key",
+      "role": "SectionPage",
+      "tab": ""
+    },
+    {
+      "controlName": "Forecast_StandardItemAllocateId",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Default item allocation key",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "PurchaseTax_TaxItemGroupIdPurch",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Item sales tax group",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "SalesTax_TaxItemGroupIdSales",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Item sales tax group",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "RetailSAFT_RetailSAFTStandardVATCode",
+      "helpSource": "",
+      "helpText": "",
+      "label": "SAF-T Cash register code",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "WHSFilters",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Use filter code 1Indicates whether filtering is required for this item group. When enabled, the system applies predefined filter criteria to limit the selection of items based on specific conditions. No",
+      "role": "SectionPage",
+      "tab": ""
+    },
+    {
+      "controlName": "FilterRequired_FilterRequired_1",
+      "helpSource": "hover",
+      "helpText": "Use filter code 1Indicates whether filtering is required for this item group. When enabled, the system applies predefined filter criteria to limit the selection of items based on specific conditions.",
+      "label": "Use filter code 1",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "FilterRequired_FilterRequired_2",
+      "helpSource": "hover",
+      "helpText": "Indicates whether filtering is required for this item group. When enabled, the system applies predefined filter criteria to limit the selection of items based on specific conditions.",
+      "label": "Use filter code 2",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "FilterRequired_FilterRequired_3",
+      "helpSource": "hover",
+      "helpText": "Use filter code 3Indicates whether filtering is required for this item group. When enabled, the system applies predefined filter criteria to limit the selection of items based on specific conditions.",
+      "label": "Use filter code 3",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "FilterRequired_FilterRequired_4",
+      "helpSource": "hover",
+      "helpText": "Indicates whether filtering is required for this item group. When enabled, the system applies predefined filter criteria to limit the selection of items based on specific conditions.",
+      "label": "Use filter code 4",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "FilterRequired_FilterRequired[5]",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Use filter code 5",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "FilterRequired_FilterRequired[6]",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Use filter code 6",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "FilterRequired_FilterRequired[7]",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Use filter code 7",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "FilterRequired_FilterRequired[8]",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Use filter code 8",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "FilterRequired_FilterRequired[9]",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Use filter code 9",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "FilterRequired_FilterRequired[10]",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Use filter code 10",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "FilterUsedForGroup_FilterUsedForGroup_1",
+      "helpSource": "hover",
+      "helpText": "Assign filter code 1 for item groupSpecifies whether the filter is applied at the item group level. When enabled, the system uses the defined filter criteria to control item selection within the group.",
+      "label": "Assign filter code 1 for item group",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "FilterUsedForGroup_FilterUsedForGroup_2",
+      "helpSource": "hover",
+      "helpText": "Specifies whether the filter is applied at the item group level. When enabled, the system uses the defined filter criteria to control item selection within the group.",
+      "label": "Assign filter code 2 for item group",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "FilterUsedForGroup_FilterUsedForGroup_3",
+      "helpSource": "hover",
+      "helpText": "Assign filter code 3 for item groupSpecifies whether the filter is applied at the item group level. When enabled, the system uses the defined filter criteria to control item selection within the group.",
+      "label": "Assign filter code 3 for item group",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "FilterUsedForGroup_FilterUsedForGroup_4",
+      "helpSource": "hover",
+      "helpText": "Specifies whether the filter is applied at the item group level. When enabled, the system uses the defined filter criteria to control item selection within the group.",
+      "label": "Assign filter code 4 for item group",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "FilterUsedForGroup_FilterUsedForGroup[5]",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Assign filter code 5 for item group",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "FilterUsedForGroup_FilterUsedForGroup[6]",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Assign filter code 6 for item group",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "FilterUsedForGroup_FilterUsedForGroup[7]",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Assign filter code 7 for item group",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "FilterUsedForGroup_FilterUsedForGroup[8]",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Assign filter code 8 for item group",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "FilterUsedForGroup_FilterUsedForGroup[9]",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Assign filter code 9 for item group",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "FilterUsedForGroup_FilterUsedForGroup[10]",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Assign filter code 10 for item group",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "SalesLedgerDimensionGrid.Account type",
+      "helpSource": "dom",
+      "helpText": "Account type",
+      "label": "Account type",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "SalesLedgerDimensionGrid.Main account",
+      "helpSource": "dom",
+      "helpText": "Main account",
+      "label": "Main account",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "PurchLedgerDimensionGrid.Account type",
+      "helpSource": "dom",
+      "helpText": "Account type",
+      "label": "Account type",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "PurchLedgerDimensionGrid.Main account",
+      "helpSource": "dom",
+      "helpText": "Main account",
+      "label": "Main account",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "InventLedgerDimensionGrid.Account type",
+      "helpSource": "dom",
+      "helpText": "Account type",
+      "label": "Account type",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "InventLedgerDimensionGrid.Main account",
+      "helpSource": "dom",
+      "helpText": "Main account",
+      "label": "Main account",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "ProdLedgerDimensionGrid.Account type",
+      "helpSource": "dom",
+      "helpText": "Account type",
+      "label": "Account type",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "ProdLedgerDimensionGrid.Main account",
+      "helpSource": "dom",
+      "helpText": "Main account",
+      "label": "Main account",
+      "role": "GridColumn",
+      "tab": ""
+    }
+  ],
+  "lookups": [
+    {
+      "tab": "",
+      "controlName": "Setup",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "Forecast_StandardItemAllocateId",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "PurchaseTax_TaxItemGroupIdPurch",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "SalesTax_TaxItemGroupIdSales",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    }
+  ]
+}
