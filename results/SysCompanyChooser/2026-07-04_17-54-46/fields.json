@@ -1,0 +1,108 @@
+{
+  "formName": "SysCompanyChooser",
+  "url": "https://hint-sb-04a9f0283cca85a5c5devaos.cloudax.dynamics.com/?cmp=usmf&mi=pricediscadmtable_purch",
+  "scannedAt": "2026-07-04T15:54:46.591Z",
+  "deep": true,
+  "walkTabs": true,
+  "tabsFound": [],
+  "tabsScanned": 1,
+  "fields": [
+    {
+      "controlName": "QuickFilterControl",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Filter",
+      "role": "QuickFilter",
+      "tab": ""
+    },
+    {
+      "controlName": "QuickFilterControl_Input",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Filter",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "AllOpenPosted",
+      "helpSource": "hover",
+      "helpText": "ShowSpecify which journals to show based on posting status",
+      "label": "Show",
+      "role": "ComboBox",
+      "tab": ""
+    },
+    {
+      "controlName": "Grid.Name",
+      "helpSource": "dom",
+      "helpText": "Name Click to follow link",
+      "label": "Name",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "Grid.Price/discount journal number",
+      "helpSource": "dom",
+      "helpText": "Price/discount journal number Click to follow link",
+      "label": "Price/discount journal number",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "Grid.Description",
+      "helpSource": "dom",
+      "helpText": "Description",
+      "label": "Description",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "Grid.Posted",
+      "helpSource": "dom",
+      "helpText": "Posted",
+      "label": "Posted",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "Grid.Posted on",
+      "helpSource": "dom",
+      "helpText": "Posted on",
+      "label": "Posted on",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "Grid.Default relation",
+      "helpSource": "dom",
+      "helpText": "Default relation",
+      "label": "Default relation",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "Grid.Export current price",
+      "helpSource": "dom",
+      "helpText": "Export current price",
+      "label": "Export current price",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "Grid.Price group",
+      "helpSource": "dom",
+      "helpText": "Price group Click to follow link",
+      "label": "Price group",
+      "role": "GridColumn",
+      "tab": ""
+    }
+  ],
+  "lookups": [
+    {
+      "tab": "",
+      "controlName": "AllOpenPosted",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    }
+  ]
+}

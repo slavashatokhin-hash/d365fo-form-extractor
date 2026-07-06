@@ -1,0 +1,524 @@
+{
+  "formName": "EcoResProductParameters",
+  "url": "https://hint-sb-04a9f0283cca85a5c5devaos.cloudax.dynamics.com/?cmp=hge&mi=EcoResProductParameters",
+  "scannedAt": "2026-07-04T13:55:37.038Z",
+  "deep": true,
+  "walkTabs": true,
+  "tabsFound": [
+    "General",
+    "Constraint-Based product configuration models",
+    "Number sequences",
+    "Shared number sequences",
+    "Product attributes"
+  ],
+  "tabsScanned": 5,
+  "fields": [
+    {
+      "controlName": "SystemDefinedButtonsActionPane",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Search for an action",
+      "role": "AppBarSection",
+      "tab": "General"
+    },
+    {
+      "controlName": "SystemDefinedCloseButton",
+      "helpSource": "hover",
+      "helpText": "Back(Esc)",
+      "label": "Back",
+      "role": "CommandButton",
+      "tab": "General"
+    },
+    {
+      "controlName": "AppBarSearch",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Search for an action",
+      "role": "AppBarSearchField",
+      "tab": "General"
+    },
+    {
+      "controlName": "SystemDefinedRefreshButton",
+      "helpSource": "hover",
+      "helpText": "Refresh(Shift+F5)",
+      "label": "Refresh",
+      "role": "CommandButton",
+      "tab": "General"
+    },
+    {
+      "controlName": "SystemDefinedPopoutButton",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Open in new window",
+      "role": "CommandButton",
+      "tab": "General"
+    },
+    {
+      "controlName": "Tab",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Setup product information parameters",
+      "role": "VerticalTabs",
+      "tab": "General"
+    },
+    {
+      "controlName": "TabGeneral",
+      "helpSource": "",
+      "helpText": "",
+      "label": "General",
+      "role": "PivotItem",
+      "tab": "General"
+    },
+    {
+      "controlName": "EcoResProductParameters_ShowProductNumber",
+      "helpSource": "hover",
+      "helpText": "Show product numbers on formsSelect this check box to have product numbers appear on transactional pages, such as sales orders and purchase orders.",
+      "label": "Show product numbers on forms",
+      "role": "CheckBox",
+      "tab": "General"
+    },
+    {
+      "controlName": "EcoResProductParameters_DefaultOrderQuantitiesValidation",
+      "helpSource": "hover",
+      "helpText": "Choose how the system validates default order quantities. Select \"Standard\" to apply the following rules: the minimum order quantity must be above the standard order quantity and below the maximum order quantity, and the standard order quantity must be below the maximum order quantity. Select \"Strict\" to apply standard validation and also ensure that each standard order quantity is a multiple of the \"Multiple\" setting on the related FastTab (Purchase order, Inventory, or Sales) in the \"Default order settings\" for products.",
+      "label": "Validation on default order quantities",
+      "role": "ComboBox",
+      "tab": "General"
+    },
+    {
+      "controlName": "VersionControl_AllowInActiveVersion",
+      "helpSource": "hover",
+      "helpText": "Allow invalid versionsAllow inactive and/or not-effective engineering versions on transactions",
+      "label": "Allow invalid versions",
+      "role": "CheckBox",
+      "tab": "General"
+    },
+    {
+      "controlName": "SystemDefinedButtonsActionPane",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Search for an action",
+      "role": "AppBarSection",
+      "tab": "Constraint-Based product configuration models"
+    },
+    {
+      "controlName": "SystemDefinedCloseButton",
+      "helpSource": "hover",
+      "helpText": "Back(Esc)",
+      "label": "Back",
+      "role": "CommandButton",
+      "tab": "Constraint-Based product configuration models"
+    },
+    {
+      "controlName": "AppBarSearch",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Search for an action",
+      "role": "AppBarSearchField",
+      "tab": "Constraint-Based product configuration models"
+    },
+    {
+      "controlName": "SystemDefinedRefreshButton",
+      "helpSource": "hover",
+      "helpText": "Refresh(Shift+F5)",
+      "label": "Refresh",
+      "role": "CommandButton",
+      "tab": "Constraint-Based product configuration models"
+    },
+    {
+      "controlName": "SystemDefinedPopoutButton",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Open in new window",
+      "role": "CommandButton",
+      "tab": "Constraint-Based product configuration models"
+    },
+    {
+      "controlName": "Tab",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Setup product information parameters",
+      "role": "VerticalTabs",
+      "tab": "Constraint-Based product configuration models"
+    },
+    {
+      "controlName": "ProductConfiguration",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Constraint-Based product configuration models",
+      "role": "PivotItem",
+      "tab": "Constraint-Based product configuration models"
+    },
+    {
+      "controlName": "EcoResProductParameters_PCLookupMethod",
+      "helpSource": "hover",
+      "helpText": "Item lookup methodSet up an item lookup method. The following values are used: Default (display product configuration models on a list together with other items that are available when you select an item on a sales order line) and Configurable (display product configuration models on a separate tab when you select an item on a sales order line).",
+      "label": "Item lookup method",
+      "role": "ComboBox",
+      "tab": "Constraint-Based product configuration models"
+    },
+    {
+      "controlName": "EcoResProductParameters_PCDocuTypeId",
+      "helpSource": "hover",
+      "helpText": "Select a code for identification of document types such as correction reports or nonconformance tags.",
+      "label": "Configuration documentation type",
+      "role": "Input",
+      "tab": "Constraint-Based product configuration models"
+    },
+    {
+      "controlName": "EcoResProductParameters_ConfigurationName",
+      "helpSource": "hover",
+      "helpText": "Default configuration IDThe initial name of the configuration for product variants that, as a standard, are released together with constraint-based product masters.",
+      "label": "Default configuration ID",
+      "role": "Input",
+      "tab": "Constraint-Based product configuration models"
+    },
+    {
+      "controlName": "EcoResProductParameters_PCRuntimeCacheEnable",
+      "helpSource": "hover",
+      "helpText": "Use a cache to reduce the amount of time it takes to launch the Product configuration models page.",
+      "label": "Use cache for configuration",
+      "role": "ComboBox",
+      "tab": "Constraint-Based product configuration models"
+    },
+    {
+      "controlName": "PC_IsPriceBreakdownEnabled",
+      "helpSource": "hover",
+      "helpText": "AttachFrom a sales order line, you can attach a sales price breakdown that is created for a product configuration model. Select this option to choose a format for the sales price break down.",
+      "label": "Attach",
+      "role": "CheckBox",
+      "tab": "Constraint-Based product configuration models"
+    },
+    {
+      "controlName": "EcoResProductParameters_PriceBreakdownDocuTypeId",
+      "helpSource": "hover",
+      "helpText": "Select the file format of the sales price breakdown.",
+      "label": "Document type",
+      "role": "Input",
+      "tab": "Constraint-Based product configuration models"
+    },
+    {
+      "controlName": "EcoResProductParameters_Currency",
+      "helpSource": "hover",
+      "helpText": "Default currencyThe default currency for a price configuration model. You must specify a default currency if you want to set up a price model for a product configuration model.",
+      "label": "Default currency",
+      "role": "Input",
+      "tab": "Constraint-Based product configuration models"
+    },
+    {
+      "controlName": "EcoResProductParameters_PCPriceModelSelectionCriteriaImportExportEnable",
+      "helpSource": "hover",
+      "helpText": "This enables price model selection criteria import and export. Note that product configuration models exported in this manner will be larger.",
+      "label": "Enable price model selection criteria import/export",
+      "role": "CheckBox",
+      "tab": "Constraint-Based product configuration models"
+    },
+    {
+      "controlName": "SystemDefinedButtonsActionPane",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Search for an action",
+      "role": "AppBarSection",
+      "tab": "Number sequences"
+    },
+    {
+      "controlName": "SystemDefinedCloseButton",
+      "helpSource": "hover",
+      "helpText": "Back(Esc)",
+      "label": "Back",
+      "role": "CommandButton",
+      "tab": "Number sequences"
+    },
+    {
+      "controlName": "AppBarSearch",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Search for an action",
+      "role": "AppBarSearchField",
+      "tab": "Number sequences"
+    },
+    {
+      "controlName": "SystemDefinedRefreshButton",
+      "helpSource": "hover",
+      "helpText": "Refresh(Shift+F5)",
+      "label": "Refresh",
+      "role": "CommandButton",
+      "tab": "Number sequences"
+    },
+    {
+      "controlName": "SystemDefinedPopoutButton",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Open in new window",
+      "role": "CommandButton",
+      "tab": "Number sequences"
+    },
+    {
+      "controlName": "Tab",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Setup product information parameters",
+      "role": "VerticalTabs",
+      "tab": "Number sequences"
+    },
+    {
+      "controlName": "TabNumberSeqCompany",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Number sequences",
+      "role": "PivotItem",
+      "tab": "Number sequences"
+    },
+    {
+      "controlName": "SystemDefinedButtonsActionPane",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Search for an action",
+      "role": "AppBarSection",
+      "tab": "Shared number sequences"
+    },
+    {
+      "controlName": "SystemDefinedCloseButton",
+      "helpSource": "hover",
+      "helpText": "Back(Esc)",
+      "label": "Back",
+      "role": "CommandButton",
+      "tab": "Shared number sequences"
+    },
+    {
+      "controlName": "AppBarSearch",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Search for an action",
+      "role": "AppBarSearchField",
+      "tab": "Shared number sequences"
+    },
+    {
+      "controlName": "SystemDefinedRefreshButton",
+      "helpSource": "hover",
+      "helpText": "Refresh(Shift+F5)",
+      "label": "Refresh",
+      "role": "CommandButton",
+      "tab": "Shared number sequences"
+    },
+    {
+      "controlName": "SystemDefinedPopoutButton",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Open in new window",
+      "role": "CommandButton",
+      "tab": "Shared number sequences"
+    },
+    {
+      "controlName": "Tab",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Setup product information parameters",
+      "role": "VerticalTabs",
+      "tab": "Shared number sequences"
+    },
+    {
+      "controlName": "TabNumberSeq",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Shared number sequences",
+      "role": "PivotItem",
+      "tab": "Shared number sequences"
+    },
+    {
+      "controlName": "SystemDefinedButtonsActionPane",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Search for an action",
+      "role": "AppBarSection",
+      "tab": "Product attributes"
+    },
+    {
+      "controlName": "SystemDefinedCloseButton",
+      "helpSource": "hover",
+      "helpText": "Back(Esc)",
+      "label": "Back",
+      "role": "CommandButton",
+      "tab": "Product attributes"
+    },
+    {
+      "controlName": "AppBarSearch",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Search for an action",
+      "role": "AppBarSearchField",
+      "tab": "Product attributes"
+    },
+    {
+      "controlName": "SystemDefinedRefreshButton",
+      "helpSource": "hover",
+      "helpText": "Refresh(Shift+F5)",
+      "label": "Refresh",
+      "role": "CommandButton",
+      "tab": "Product attributes"
+    },
+    {
+      "controlName": "SystemDefinedPopoutButton",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Open in new window",
+      "role": "CommandButton",
+      "tab": "Product attributes"
+    },
+    {
+      "controlName": "Tab",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Setup product information parameters",
+      "role": "VerticalTabs",
+      "tab": "Product attributes"
+    },
+    {
+      "controlName": "ProductAttributes",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Product attributes",
+      "role": "PivotItem",
+      "tab": "Product attributes"
+    },
+    {
+      "controlName": "HazardousMaterialRegulation_UpdateShippingPrintTextItem",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Update Shipping Print text Items",
+      "role": "CheckBox",
+      "tab": "Product attributes"
+    },
+    {
+      "controlName": "EcoResProductParameters_ProductEntityAttributeMasterCompanyId",
+      "helpSource": "hover",
+      "helpText": "Master companyTo export product master data or create product attributes from the released product data, you must select a master company. The master company is only used to export the product definitions and doesn’t have any impact on functionalities.",
+      "label": "Master company",
+      "role": "Input",
+      "tab": "Product attributes"
+    },
+    {
+      "controlName": "AttributeSearch_SearchShowOnHand",
+      "helpSource": "hover",
+      "helpText": "Show on-hand inventory in the product search",
+      "label": "Show on-hand inventory",
+      "role": "CheckBox",
+      "tab": "Product attributes"
+    }
+  ],
+  "lookups": [
+    {
+      "tab": "General",
+      "controlName": "Tab",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "General",
+      "controlName": "TabGeneral",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "General",
+      "controlName": "EcoResProductParameters_DefaultOrderQuantitiesValidation",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Constraint-Based product configuration models",
+      "controlName": "Tab",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Constraint-Based product configuration models",
+      "controlName": "ProductConfiguration",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Constraint-Based product configuration models",
+      "controlName": "EcoResProductParameters_PCLookupMethod",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Constraint-Based product configuration models",
+      "controlName": "EcoResProductParameters_PCDocuTypeId",
+      "opened": true,
+      "values": [
+        "TypeNameGroup"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "Constraint-Based product configuration models",
+      "controlName": "EcoResProductParameters_PCRuntimeCacheEnable",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Constraint-Based product configuration models",
+      "controlName": "EcoResProductParameters_PriceBreakdownDocuTypeId",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Constraint-Based product configuration models",
+      "controlName": "EcoResProductParameters_Currency",
+      "opened": true,
+      "values": [
+        "CurrencyName"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "Number sequences",
+      "controlName": "Tab",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Shared number sequences",
+      "controlName": "Tab",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Product attributes",
+      "controlName": "Tab",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Product attributes",
+      "controlName": "ProductAttributes",
+      "opened": true,
+      "values": [
+        "CompanyName"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "Product attributes",
+      "controlName": "EcoResProductParameters_ProductEntityAttributeMasterCompanyId",
+      "opened": true,
+      "values": [
+        "CompanyName"
+      ],
+      "reason": ""
+    }
+  ]
+}
