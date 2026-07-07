@@ -1,0 +1,60 @@
+{
+  "formName": "EcoResCategoryHierarchyListPage",
+  "url": "https://hint-sb-04a9f0283cca85a5c5devaos.cloudax.dynamics.com/?cmp=usmf&mi=EcoResCategoryHierarchyListPage",
+  "scannedAt": "2026-07-07T12:17:26.242Z",
+  "deep": true,
+  "walkTabs": true,
+  "tabsFound": [],
+  "tabsScanned": 1,
+  "fields": [
+    {
+      "controlName": "QuickFilterControl",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Filter",
+      "role": "QuickFilter",
+      "tab": ""
+    },
+    {
+      "controlName": "QuickFilterControl_Input",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Filter",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "HierarchyDetails.Name",
+      "helpSource": "dom",
+      "helpText": "Name Click to follow link",
+      "label": "Name",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "HierarchyDetails.Description",
+      "helpSource": "dom",
+      "helpText": "Description",
+      "label": "Description",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "HierarchyDetails.Last modified date",
+      "helpSource": "dom",
+      "helpText": "Last modified date",
+      "label": "Last modified date",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "HierarchyDetails.Last modified by",
+      "helpSource": "dom",
+      "helpText": "Last modified by",
+      "label": "Last modified by",
+      "role": "GridColumn",
+      "tab": ""
+    }
+  ],
+  "lookups": []
+}
