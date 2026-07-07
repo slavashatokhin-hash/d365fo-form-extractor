@@ -1,0 +1,44 @@
+{
+  "formName": "EcoResCategoryHierarchyRole",
+  "url": "https://hint-sb-04a9f0283cca85a5c5devaos.cloudax.dynamics.com/?cmp=usmf&mi=EcoResCategoryHierarchyRole",
+  "scannedAt": "2026-07-07T14:05:04.941Z",
+  "deep": true,
+  "walkTabs": true,
+  "tabsFound": [],
+  "tabsScanned": 1,
+  "fields": [
+    {
+      "controlName": "QuickFilterControl",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Filter",
+      "role": "QuickFilter",
+      "tab": ""
+    },
+    {
+      "controlName": "QuickFilterControl_Input",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Filter",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "Grid.Category hierarchy type",
+      "helpSource": "dom",
+      "helpText": "Category hierarchy type",
+      "label": "Category hierarchy type",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "Grid.Category hierarchy",
+      "helpSource": "dom",
+      "helpText": "Category hierarchy",
+      "label": "Category hierarchy",
+      "role": "GridColumn",
+      "tab": ""
+    }
+  ],
+  "lookups": []
+}

@@ -1,0 +1,5 @@
+"Tab","Form","Control Name","Role","Label","Help Text","Help Source"
+"","EcoResCategoryHierarchyRole","QuickFilterControl","QuickFilter","Filter","",""
+"","EcoResCategoryHierarchyRole","QuickFilterControl_Input","Input","Filter","",""
+"","EcoResCategoryHierarchyRole","Grid.Category hierarchy type","GridColumn","Category hierarchy type","Category hierarchy type","dom"
+"","EcoResCategoryHierarchyRole","Grid.Category hierarchy","GridColumn","Category hierarchy","Category hierarchy","dom"
