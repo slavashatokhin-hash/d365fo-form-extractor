@@ -1,0 +1,382 @@
+{
+  "formName": "EcoResCategoryHierarchyListPage",
+  "url": "https://hint-sb-04a9f0283cca85a5c5devaos.cloudax.dynamics.com/?cmp=usmf&mi=EcoResCategoryHierarchyListPage",
+  "scannedAt": "2026-07-07T11:59:28.781Z",
+  "deep": true,
+  "walkTabs": true,
+  "tabsFound": [],
+  "tabsScanned": 1,
+  "fields": [
+    {
+      "controlName": "EcoResCategory_Name",
+      "helpSource": "hover",
+      "helpText": "NameCategory name",
+      "label": "Name",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "EcoResCategory_Code",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Code",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "EcoResCategory_IsActive",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Active",
+      "role": "ComboBox",
+      "tab": ""
+    },
+    {
+      "controlName": "EcoResCategory_ChangeStatus",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Import status",
+      "role": "ComboBox",
+      "tab": ""
+    },
+    {
+      "controlName": "HierarchyDetails",
+      "helpSource": "hover",
+      "helpText": "Created dateThe date and time that the category was created",
+      "label": "Created date",
+      "role": "SectionPage",
+      "tab": ""
+    },
+    {
+      "controlName": "EcoResCategory_createdDateTime",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Created date",
+      "role": "DateTime",
+      "tab": ""
+    },
+    {
+      "controlName": "EcoResCategory_createdBy",
+      "helpSource": "hover",
+      "helpText": "Created byThe name of the person who created the category",
+      "label": "Created by",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "EcoResCategory_modifiedDateTime",
+      "helpSource": "hover",
+      "helpText": "The date and time of the most recent change to the category",
+      "label": "Modified date",
+      "role": "DateTime",
+      "tab": ""
+    },
+    {
+      "controlName": "EcoResCategory_modifiedBy",
+      "helpSource": "hover",
+      "helpText": "Modified byName of the person who most recently modified the category",
+      "label": "Modified by",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "EcoResCategory_IsTangible",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Classify as tangible product",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "EcoResCategoryTranslation_Description",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Description",
+      "role": "MultilineInput",
+      "tab": ""
+    },
+    {
+      "controlName": "EcoResCategoryTranslation_FriendlyName",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Friendly name",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "EcoResCategoryTranslation_SearchText",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Keywords",
+      "role": "MultilineInput",
+      "tab": ""
+    },
+    {
+      "controlName": "EcoResCategory_DisplayOrder",
+      "helpSource": "hover",
+      "helpText": "Category Display OrderThis value helps determine the sort order for the category.",
+      "label": "Category Display Order",
+      "role": "Real",
+      "tab": ""
+    },
+    {
+      "controlName": "EcoResCategoryAttributeCategoryTabPage",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Inherit category attributes from parent category: No",
+      "role": "SectionPage",
+      "tab": ""
+    },
+    {
+      "controlName": "EcoResCategory_IsCategoryAttributesInherited",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Inherit category attributes from parent category:",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "CategoryPagesTabPage",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Name",
+      "role": "SectionPage",
+      "tab": ""
+    },
+    {
+      "controlName": "ProcCategoryPage_NameCopy1",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Name",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "ProcCategoryPage_DescriptionCopy1",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Description",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "ProjectCategoriesTabPage",
+      "helpSource": "hover",
+      "helpText": "Project categoryUnique ID for the record in the database",
+      "label": "Project category",
+      "role": "SectionPage",
+      "tab": ""
+    },
+    {
+      "controlName": "ReferenceGroup",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Project category",
+      "role": "ReferenceGroup",
+      "tab": ""
+    },
+    {
+      "controlName": "ReferenceGroup_CategoryId",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Category ID",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "SalesCategory",
+      "helpSource": "hover",
+      "helpText": "Sales categoryUnique ID for the record in the database",
+      "label": "Sales category",
+      "role": "ReferenceGroup",
+      "tab": ""
+    },
+    {
+      "controlName": "SalesCategory_Name",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Name",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "CategoryProductsGrid.Product number",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Product number",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "CategoryProductsGrid.Product name",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Product name",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "CategoryProductsGrid.Product Display Order",
+      "helpSource": "dom",
+      "helpText": "Product Display Order This value helps determine the sort order for the products under category.",
+      "label": "Product Display Order",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "EcoResCategoryAttributeCategoryGrid.Name",
+      "helpSource": "dom",
+      "helpText": "Name",
+      "label": "Name",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "EcoResCategoryAttributeCategoryGrid.Type",
+      "helpSource": "dom",
+      "helpText": "Type",
+      "label": "Type",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "EcoResCategoryAttributeCategoryGrid.Attribute type",
+      "helpSource": "dom",
+      "helpText": "Attribute type",
+      "label": "Attribute type",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "EcoResCategoryAttributeCategoryGrid.Inherited from",
+      "helpSource": "dom",
+      "helpText": "Inherited from",
+      "label": "Inherited from",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "CategoryCommodityCodesGrid.Commodity codes",
+      "helpSource": "dom",
+      "helpText": "Commodity codes",
+      "label": "Commodity codes",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "CategoryCommodityCodesGrid.Description",
+      "helpSource": "dom",
+      "helpText": "Description",
+      "label": "Description",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "CategoryCommodityCodesGrid.Hierarchy name",
+      "helpSource": "dom",
+      "helpText": "Hierarchy name",
+      "label": "Hierarchy name",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "GridCategoryNameDesc.Name",
+      "helpSource": "dom",
+      "helpText": "Name",
+      "label": "Name",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "GridCategoryNameDesc.Description",
+      "helpSource": "dom",
+      "helpText": "Description",
+      "label": "Description",
+      "role": "GridColumn",
+      "tab": ""
+    }
+  ],
+  "lookups": [
+    {
+      "tab": "",
+      "controlName": "EcoResCategory_IsActive",
+      "opened": true,
+      "values": [
+        "No",
+        "Yes"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "EcoResCategory_ChangeStatus",
+      "opened": true,
+      "values": [
+        "No change",
+        "Changed",
+        "Newly added",
+        "No longer valid",
+        "Not applicable",
+        "All"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "HierarchyDetails",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "EcoResCategory_createdDateTime",
+      "opened": true,
+      "values": [
+        "SuMoTuWeThFrSa",
+        "12",
+        "3456789",
+        "10111213141516",
+        "17181920212223",
+        "24252627282930",
+        "31"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "EcoResCategory_modifiedDateTime",
+      "opened": true,
+      "values": [
+        "SuMoTuWeThFrSa",
+        "1234",
+        "567891011",
+        "12131415161718",
+        "19202122232425",
+        "262728293031"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "ProjectCategoriesTabPage",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "ReferenceGroup",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "SalesCategory",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    }
+  ]
+}
