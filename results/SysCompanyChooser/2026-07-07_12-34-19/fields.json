@@ -1,0 +1,3724 @@
+{
+  "formName": "SysCompanyChooser",
+  "url": "https://hint-sb-04a9f0283cca85a5c5devaos.cloudax.dynamics.com/?cmp=usmf&mi=EcoResProductDetailsExtendedGrid",
+  "scannedAt": "2026-07-07T10:34:19.256Z",
+  "deep": true,
+  "walkTabs": true,
+  "tabsFound": [],
+  "tabsScanned": 1,
+  "fields": [
+    {
+      "controlName": "Tab",
+      "helpSource": "hover",
+      "helpText": "Product typeDetermines the type of the product",
+      "label": "Product type",
+      "role": "Pivot",
+      "tab": ""
+    },
+    {
+      "controlName": "Details",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Product type",
+      "role": "PivotItem",
+      "tab": ""
+    },
+    {
+      "controlName": "TabPageGeneral",
+      "helpSource": "hover",
+      "helpText": "Product typeDetermines the type of the product",
+      "label": "Product type",
+      "role": "SectionPage",
+      "tab": ""
+    },
+    {
+      "controlName": "TabPageGeneral_InventTable_Product_DisplayProductNumber",
+      "helpSource": "dom",
+      "helpText": "Product number: 000002",
+      "label": "Product number: 000002",
+      "role": "InputSummary",
+      "tab": ""
+    },
+    {
+      "controlName": "EcoResProduct_ProductTypeTitle",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Product type",
+      "role": "ComboBox",
+      "tab": ""
+    },
+    {
+      "controlName": "EcoResProduct_M_productSubtypeTitle",
+      "helpSource": "hover",
+      "helpText": "Product subtypeDetermines the subtype title of the product",
+      "label": "Product subtype",
+      "role": "ComboBox",
+      "tab": ""
+    },
+    {
+      "controlName": "EcoResProduct_ServiceTypeTitle",
+      "helpSource": "hover",
+      "helpText": "Determines the service type of the product",
+      "label": "Product service type",
+      "role": "ComboBox",
+      "tab": ""
+    },
+    {
+      "controlName": "InventTable_ItemId",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Item number",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "InventTable_Product_DisplayProductNumber",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Product number",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "EcoResProduct_EngChgProductCategoryDetails",
+      "helpSource": "hover",
+      "helpText": "Engineering product category detailsA record Id of a engineering product category details record.",
+      "label": "Engineering product category details",
+      "role": "ReferenceGroup",
+      "tab": ""
+    },
+    {
+      "controlName": "EcoResProduct_EngChgProductCategoryDetails_EcoResCategory_Name",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Name",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "EcoResProduct_EngChgProductOwnerIdIdentification",
+      "helpSource": "hover",
+      "helpText": "Product ownerProduct owner identification",
+      "label": "Product owner",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "EcoResProductTranslation_Name",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Product name",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "EcoResProduct_SearchName",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Search name",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "EcoResProductTranslation_Description",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Description",
+      "role": "MultilineInput",
+      "tab": ""
+    },
+    {
+      "controlName": "EcoResStorageDimensionGroupItem_StorageDimensionGroup",
+      "helpSource": "hover",
+      "helpText": "Storage dimension groupUnique ID for the record in the database",
+      "label": "Storage dimension group",
+      "role": "ReferenceGroup",
+      "tab": ""
+    },
+    {
+      "controlName": "EcoResStorageDimensionGroupItem_StorageDimensionGroup_Name",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Name",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "EcoResTrackingDimensionGroupItem_TrackingDimensionGroup",
+      "helpSource": "hover",
+      "helpText": "Tracking dimension groupUnique ID for the record in the database",
+      "label": "Tracking dimension group",
+      "role": "ReferenceGroup",
+      "tab": ""
+    },
+    {
+      "controlName": "EcoResTrackingDimensionGroupItem_TrackingDimensionGroup_Name",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Name",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "InventModelGroupItem_ModelGroupId",
+      "helpSource": "hover",
+      "helpText": "Item model groupThe item model group that is associated with the product. The item model group controls how products are handled on item receipts and issues. The item model group includes settings to allow or disallow negative inventory. For retail products, the Financial negative inventory and the Physical negative inventory options in the Warehouses page override these settings for the item model group but only for warehouses that are designated as retail stores. For warehouses that are not designated as retail stores, the item model group settings for the product are applied.",
+      "label": "Item model group",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "InventTable_whsReservationHierarchyName",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Reservation hierarchy",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "InventTableInventCountingReasonCodePolicy_CountingReasonCodePolicy",
+      "helpSource": "hover",
+      "helpText": "Counting reason code policyThe counting reason code policy assigned to the item.",
+      "label": "Counting reason code policy",
+      "role": "ReferenceGroup",
+      "tab": ""
+    },
+    {
+      "controlName": "InventTableInventCountingReasonCodePolicy_CountingReasonCodePolicy_Name",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Name",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "InventTable_ProductLifecycleStateId",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Product lifecycle state",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "InventTable_FreeNotesGroup_IT",
+      "helpSource": "hover",
+      "helpText": "Advanced notes groupAdvanced notes group that the item is attached to",
+      "label": "Advanced notes group",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "EcoResProduct_EngChgProductReleasePolicy",
+      "helpSource": "hover",
+      "helpText": "Unique ID for the record in the database",
+      "label": "Release policy",
+      "role": "ReferenceGroup",
+      "tab": ""
+    },
+    {
+      "controlName": "EcoResProduct_EngChgProductReleasePolicy_Name",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Name",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "EcoResProduct_EngChgReadinessPolicy",
+      "helpSource": "hover",
+      "helpText": "Product readiness policyUnique ID for the record in the database",
+      "label": "Product readiness policy",
+      "role": "ReferenceGroup",
+      "tab": ""
+    },
+    {
+      "controlName": "EcoResProduct_EngChgReadinessPolicy_Name",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Name",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "TabPagePurchase",
+      "helpSource": "hover",
+      "helpText": "UnitUnit for purchase of the product",
+      "label": "Unit",
+      "role": "SectionPage",
+      "tab": ""
+    },
+    {
+      "controlName": "TabPagePurchase_PurchaseSetup_UnitId",
+      "helpSource": "dom",
+      "helpText": "Unit: ea",
+      "label": "Unit: ea",
+      "role": "InputSummary",
+      "tab": ""
+    },
+    {
+      "controlName": "TabPagePurchase_PurchaseTaxation_TaxItemGroupId",
+      "helpSource": "dom",
+      "helpText": "Item sales tax group: ALL",
+      "label": "Item sales tax group: ALL",
+      "role": "InputSummary",
+      "tab": ""
+    },
+    {
+      "controlName": "TabPagePurchase_PurchaseBasePrice_Price",
+      "helpSource": "dom",
+      "helpText": "Price: 0.00",
+      "label": "Price: 0.00",
+      "role": "RealSummary",
+      "tab": ""
+    },
+    {
+      "controlName": "PurchaseSetup_UnitId",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Unit",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "PurchaseSetup_OverDeliveryPct",
+      "helpSource": "hover",
+      "helpText": "OverdeliveryThe percentage by which the quantity of the product receipt can exceed the order quantity.",
+      "label": "Overdelivery",
+      "role": "Real",
+      "tab": ""
+    },
+    {
+      "controlName": "PurchaseSetup_UnderDeliveryPct",
+      "helpSource": "hover",
+      "helpText": "The percentage by which the quantity of the product receipt can be less than the order quantity.",
+      "label": "Underdelivery",
+      "role": "Real",
+      "tab": ""
+    },
+    {
+      "controlName": "PurchaseSetup_InterCompanyBlocked",
+      "helpSource": "hover",
+      "helpText": "Intercompany stoppedSelect this option to stop intercompany transactions.",
+      "label": "Intercompany stopped",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "PurchaseAdministration_ItemBuyerGroupId",
+      "helpSource": "hover",
+      "helpText": "Select a buyer group to associate employees and products with purchases.",
+      "label": "Buyer group",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "PurchaseAdministration_ItemPriceToleranceGroupId",
+      "helpSource": "hover",
+      "helpText": "Item price tolerance groupSelect the item price tolerance group that is used for invoice matching.",
+      "label": "Item price tolerance group",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "PurchaseAdministration_PrimaryVendorId",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Vendor",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "PurchaseTaxation_TaxItemGroupId",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Item sales tax group",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "PurchasePriceUpdateInventTable_PurchModel",
+      "helpSource": "hover",
+      "helpText": "Latest purchase priceSelect this option to indicate that the system updates the price in the Price field by using the unit price of the most recent purchase order for the product. This update excludes discounts and miscellaneous charges. The new value of the Price field becomes the default unit price that is applied the next time that the product is included on a purchase order.",
+      "label": "Latest purchase price",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "PurchasePriceUpdatePurch_PriceDate",
+      "helpSource": "hover",
+      "helpText": "The date when the price of the product was last changed. The price can be changed manually, or when a sales order or a purchase order is updated.",
+      "label": "Date of price",
+      "role": "Date",
+      "tab": ""
+    },
+    {
+      "controlName": "PurchaseBasePrice_Price",
+      "helpSource": "hover",
+      "helpText": "PriceAmount in monetary standard (national currency)",
+      "label": "Price",
+      "role": "Real",
+      "tab": ""
+    },
+    {
+      "controlName": "PurchaseBasePrice_PriceUnit",
+      "helpSource": "hover",
+      "helpText": "The number of units to which the price applies. When you enter purchase order lines, sales order lines, and inventory journal lines, the unit price is converted for the quantity that you specify for each line.",
+      "label": "Price quantity",
+      "role": "Real",
+      "tab": ""
+    },
+    {
+      "controlName": "Purch_BasePricePurchase",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Base price - purchase price",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "PurchaseMiscellaneousCharges_Markup",
+      "helpSource": "hover",
+      "helpText": "Price chargesA fixed amount that is added to the price. The amount is added independently of the quantity.",
+      "label": "Price charges",
+      "role": "Real",
+      "tab": ""
+    },
+    {
+      "controlName": "PurchaseMiscellaneousCharges_PriceQty",
+      "helpSource": "hover",
+      "helpText": "The quantity that is used when the specified miscellaneous charges are allocated to the price per unit. This field is used only if the Incl. in unit price option is selected.",
+      "label": "Charges quantity",
+      "role": "Real",
+      "tab": ""
+    },
+    {
+      "controlName": "PurchaseMiscellaneousCharges_MarkupGroupId",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Charges group",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "PurchaseMiscellaneousCharges_AllocateMarkup",
+      "helpSource": "hover",
+      "helpText": "Incl. in unit priceA selected option indicates that the price charges are divided by the quantity in the Charges quantity field. The result is then added to the amount in the Price charges field.",
+      "label": "Incl. in unit price",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "PurchaseDiscount_LineDisc",
+      "helpSource": "hover",
+      "helpText": "Specify the line discount group that the product is associated with. The line discount group is used to calculate discounts when you create sales orders or purchase orders. A line discount is proportional to the volume that is discounted. For example, if you purchase 10 units, an amount of 50 USD is discounted. If you purchase 20 units, an amount of 100 USD is discounted, and so on.",
+      "label": "Line discount group",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "PurchaseDiscount_MultiLineDisc",
+      "helpSource": "hover",
+      "helpText": "Multiline discountSpecify the multiline discount that the product is associated with. The multiline discount group is used to calculate discounts when you create sales orders or purchase orders.",
+      "label": "Multiline discount",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "PurchaseDiscount_EndDisc",
+      "helpSource": "hover",
+      "helpText": "Select this option to include the product when the total discount on the sales order or the purchase order is calculated. For example, an order total that exceeds 10,000 USD can prompt a total discount of 1,000 USD.",
+      "label": "Total discount",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "PurchaseDiscount_SuppItemGroupId",
+      "helpSource": "hover",
+      "helpText": "Supplementary item groupOptional: Specify a supplementary item group for the product. For example, use supplementary items if the purchase or sale of 100 pieces of a product qualifies for a bonus of an extra product.",
+      "label": "Supplementary item group",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "Group1_PDSPricingPrecision",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Pricing precision",
+      "role": "Integer",
+      "tab": ""
+    },
+    {
+      "controlName": "TAMVendRebate_ItemVendRebateGroupId",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Vendor rebate item group",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "InventTable_PdsVendorCheckItem",
+      "helpSource": "hover",
+      "helpText": "Approved vendor check methodSelect the type of policy for what should happen if the product is added to a purchase order line where the vendor isn't an approved vendor.",
+      "label": "Approved vendor check method",
+      "role": "ComboBox",
+      "tab": ""
+    },
+    {
+      "controlName": "ITM_ITMCostTypeGroupId",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Cost type group",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "ITM_ITMCustomsDescId",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Customs description",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "ITM_ITMArrivalGroupId",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Arrival group",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "ITM_ITMCommodityCodeId",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Commodity code",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "ITM_ITMOverUnderToleranceGroupId",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Over/under tolerance group",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "ITM_ITMCostTransferGroupId",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Transfer order cost group",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "MCRPromote",
+      "helpSource": "",
+      "helpText": "",
+      "label": "ExcludeThis is a legacy configuration that is not supported with the current version of the coupons. No",
+      "role": "SectionPage",
+      "tab": ""
+    },
+    {
+      "controlName": "MCRCoupon_CouponUse",
+      "helpSource": "hover",
+      "helpText": "ExcludeThis is a legacy configuration that is not supported with the current version of the coupons.",
+      "label": "Exclude",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "MCRTabPageDeliver",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Ship alone No",
+      "role": "SectionPage",
+      "tab": ""
+    },
+    {
+      "controlName": "MCRShipAlone_ShipAlone",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Ship alone",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "MCRInventTable_DropShipment",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Direct delivery",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "MCRInventTable_DefaultDropShipmentWarehouse",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Direct delivery warehouse",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "MCRPackingBox_IsPackingBoxable",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Apply boxing logic for picking work bench",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "MCRShipDates_ShipStartDate",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Ship start date",
+      "role": "Date",
+      "tab": ""
+    },
+    {
+      "controlName": "TabPageSales",
+      "helpSource": "hover",
+      "helpText": "UnitUnit for sale of the product",
+      "label": "Unit",
+      "role": "SectionPage",
+      "tab": ""
+    },
+    {
+      "controlName": "TabPageSales_SalesSetup_UnitId",
+      "helpSource": "dom",
+      "helpText": "Unit: ea",
+      "label": "Unit: ea",
+      "role": "InputSummary",
+      "tab": ""
+    },
+    {
+      "controlName": "TabPageSales_SalesTaxation_TaxItemGroupId",
+      "helpSource": "dom",
+      "helpText": "Item sales tax group: ALL",
+      "label": "Item sales tax group: ALL",
+      "role": "InputSummary",
+      "tab": ""
+    },
+    {
+      "controlName": "TabPageSales_SalesBasePrice_Price",
+      "helpSource": "dom",
+      "helpText": "Price: 0.00",
+      "label": "Price: 0.00",
+      "role": "RealSummary",
+      "tab": ""
+    },
+    {
+      "controlName": "SalesSetup_UnitId",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Unit",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "SalesSetup_OverDeliveryPct",
+      "helpSource": "hover",
+      "helpText": "OverdeliveryThe percentage by which the quantity of the product receipt can exceed the order quantity.",
+      "label": "Overdelivery",
+      "role": "Real",
+      "tab": ""
+    },
+    {
+      "controlName": "SalesSetup_UnderDeliveryPct",
+      "helpSource": "hover",
+      "helpText": "The percentage by which the quantity of the product receipt can be less than the order quantity.",
+      "label": "Underdelivery",
+      "role": "Real",
+      "tab": ""
+    },
+    {
+      "controlName": "SalesSetup_InterCompanyBlocked",
+      "helpSource": "hover",
+      "helpText": "Intercompany stoppedSelect this option to stop intercompany transactions.",
+      "label": "Intercompany stopped",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "SalesAdministration_CommissionGroupId",
+      "helpSource": "hover",
+      "helpText": "The commission group that is associated with the product. A commission group is used to calculate the commissions that are given to the salespeople who are responsible for the sales.",
+      "label": "Commission group",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "SalesTaxation_TaxItemGroupId",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Item sales tax group",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "SalesPriceUpdateInventTable_SalesModel",
+      "helpSource": "hover",
+      "helpText": "Sales price modelSelect the model that is used to control adjustments of the sales price of products. If you select None, the sales price is changed, regardless of the production cost or the purchase price. If you use a fixed contribution ratio, select Contribution ratio. Then, in the Contribution ratio field, specify the contribution that is used to calculate the sales price.",
+      "label": "Sales price model",
+      "role": "ComboBox",
+      "tab": ""
+    },
+    {
+      "controlName": "SalesPriceUpdateInventTable_SalesPriceModelBasic",
+      "helpSource": "hover",
+      "helpText": "Select whether the purchase price or the cost price is used as the basis for the calculation of the sales price. If you selected None in the Sales price model field, the value of the Base price field is irrelevant.",
+      "label": "Base price",
+      "role": "ComboBox",
+      "tab": ""
+    },
+    {
+      "controlName": "SalesPriceUpdateInventTable_SalesContributionRatio",
+      "helpSource": "hover",
+      "helpText": "Contribution ratioIf you selected Contribution ratio in the Sales price model field, enter the margin ratio that is used to calculate the sales price.",
+      "label": "Contribution ratio",
+      "role": "Real",
+      "tab": ""
+    },
+    {
+      "controlName": "SalesPriceUpdateInventTable_SalesPercentMarkup",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Charges percentage",
+      "role": "Real",
+      "tab": ""
+    },
+    {
+      "controlName": "SalesPriceUpdateSales_PriceDate",
+      "helpSource": "hover",
+      "helpText": "Date of priceThe date when the price of the product was last changed. The price can be changed manually, or when a sales order or a purchase order is updated.",
+      "label": "Date of price",
+      "role": "Date",
+      "tab": ""
+    },
+    {
+      "controlName": "SalesBasePrice_Price",
+      "helpSource": "hover",
+      "helpText": "Amount in monetary standard (national currency)",
+      "label": "Price",
+      "role": "Real",
+      "tab": ""
+    },
+    {
+      "controlName": "SalesBasePrice_PriceUnit",
+      "helpSource": "hover",
+      "helpText": "Price quantityThe number of units to which the price applies. When you enter purchase order lines, sales order lines, and inventory journal lines, the unit price is converted for the quantity that you specify for each line.",
+      "label": "Price quantity",
+      "role": "Real",
+      "tab": ""
+    },
+    {
+      "controlName": "SalesMiscellaneousCharges_Markup",
+      "helpSource": "hover",
+      "helpText": "A fixed amount that is added to the price. The amount is added independently of the quantity.",
+      "label": "Price charges",
+      "role": "Real",
+      "tab": ""
+    },
+    {
+      "controlName": "SalesMiscellaneousCharges_PriceQty",
+      "helpSource": "hover",
+      "helpText": "Charges quantityThe quantity that is used when the specified miscellaneous charges are allocated to the price per unit. This field is used only if the Incl. in unit price option is selected.",
+      "label": "Charges quantity",
+      "role": "Real",
+      "tab": ""
+    },
+    {
+      "controlName": "SalesMiscellaneousCharges_MarkupGroupId",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Charges group",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "SalesMiscellaneousCharges_AllocateMarkup",
+      "helpSource": "hover",
+      "helpText": "Incl. in unit priceA selected option indicates that the price charges are divided by the quantity in the Charges quantity field. The result is then added to the amount in the Price charges field.",
+      "label": "Incl. in unit price",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "SalesDiscount_LineDisc",
+      "helpSource": "hover",
+      "helpText": "Specify the line discount group that the product is associated with. The line discount group is used to calculate discounts when you create sales orders or purchase orders. A line discount is proportional to the volume that is discounted. For example, if you purchase 10 units, an amount of 50 USD is discounted. If you purchase 20 units, an amount of 100 USD is discounted, and so on.",
+      "label": "Line discount group",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "SalesDiscount_MultiLineDisc",
+      "helpSource": "hover",
+      "helpText": "Multiline discountSpecify the multiline discount that the product is associated with. The multiline discount group is used to calculate discounts when you create sales orders or purchase orders.",
+      "label": "Multiline discount",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "SalesDiscount_EndDisc",
+      "helpSource": "hover",
+      "helpText": "Select this option to include the product when the total discount on the sales order or the purchase order is calculated. For example, an order total that exceeds 10,000 USD can prompt a total discount of 1,000 USD.",
+      "label": "Total discount",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "SalesDiscount_SuppItemGroupId",
+      "helpSource": "hover",
+      "helpText": "Supplementary item groupOptional: Specify a supplementary item group for the product. For example, use supplementary items if the purchase or sale of 100 pieces of a product qualifies for a bonus of an extra product.",
+      "label": "Supplementary item group",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "SalesAlternativeProduct_UseAltItemId",
+      "helpSource": "hover",
+      "helpText": "Select a schedule to specify when an alternative item number is used for the current product.",
+      "label": "When to use",
+      "role": "ComboBox",
+      "tab": ""
+    },
+    {
+      "controlName": "SalesAlternativeProduct_AltItemId",
+      "helpSource": "hover",
+      "helpText": "Alternative item numberIf you selected Nothing in inventory or Always in the When to use field, select the alternative item number that is used.",
+      "label": "Alternative item number",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "SalesAlternativeProduct_AltConfigId",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Configuration",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "SalesAlternativeProduct_AltInventSizeId",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Size",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "SalesAlternativeProduct_AltInventColorId",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Color",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "SalesAlternativeProduct_AltInventStyleId",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Style",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "MCRInventTable_InstallmentEligible",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Installment eligible",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "PDSPotencyPrecisionSales_PDSPricingPrecision",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Pricing precision",
+      "role": "Integer",
+      "tab": ""
+    },
+    {
+      "controlName": "MCRFTCExempt_FTCExempt",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Automatic notification and cancellation exempt",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "MCRAllowPriceAdjust_AllowPriceAdjust",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Allow price adjust",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "MCRInventTable_ContinuityScheduleID3",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Continuity schedule ID",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "MCRInventTable_ContEventDuration",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Event duration",
+      "role": "Integer",
+      "tab": ""
+    },
+    {
+      "controlName": "MCRSellStartEndDates_SellStartDate",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Sell start date",
+      "role": "Date",
+      "tab": ""
+    },
+    {
+      "controlName": "MCRSellStartEndDates_SellEndDate",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Sell end date",
+      "role": "Date",
+      "tab": ""
+    },
+    {
+      "controlName": "PdsItemRebateGroup_PdsItemRebateGroupId",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Item rebate group",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "PdsItemCustomData_PdsFreightAllocationGroupId",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Freight allocation group",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "SalesRetailInventory_RetailInventoryAvailabilityBuffer",
+      "helpSource": "hover",
+      "helpText": "Inventory bufferSpecify a non-negative value to be subtracted from original inventory quantity to compute an estimated quantity. The estimated inventory quantity can be compared with inventory level profile to determine the inventory level.",
+      "label": "Inventory buffer",
+      "role": "Real",
+      "tab": ""
+    },
+    {
+      "controlName": "SalesRetailInventory_RetailInventoryAvailabilityLevelProfile",
+      "helpSource": "hover",
+      "helpText": "Select an inventory level profile that is used to determine the inventory level for a given quantity. Each inventory level profile defines a set of inventory quantity ranges and their mapped levels (in stock, out of stock, etc.).",
+      "label": "Inventory level profile",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "QMSACL_QMSCustomerCheckItem",
+      "helpSource": "hover",
+      "helpText": "Approved customer list check methodThe type of validation that is done against the approved customer list.",
+      "label": "Approved customer list check method",
+      "role": "ComboBox",
+      "tab": ""
+    },
+    {
+      "controlName": "QMSACL_QMSApprovedItemGroupId",
+      "helpSource": "hover",
+      "helpText": "The id of the group of items use for Approved Customer List purposes.",
+      "label": "Approved item group",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "TabPageForeignTrade",
+      "helpSource": "hover",
+      "helpText": "CommodityThe product's code for Intrastat reporting about trade between countries in the European Union.",
+      "label": "Commodity",
+      "role": "SectionPage",
+      "tab": ""
+    },
+    {
+      "controlName": "TabPageForeignTrade_ForeignTradeOrigin_OrigCountryRegionId",
+      "helpSource": "dom",
+      "helpText": "Country/region: (blank)",
+      "label": "Country/region: (blank)",
+      "role": "InputSummary",
+      "tab": ""
+    },
+    {
+      "controlName": "TabPageForeignTrade_ForeignTradeOrigin_OrigStateId",
+      "helpSource": "dom",
+      "helpText": "State/province: (blank)",
+      "label": "State/province: (blank)",
+      "role": "InputSummary",
+      "tab": ""
+    },
+    {
+      "controlName": "ForeignTradeIntrastat_IntrastatCommodity",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Commodity",
+      "role": "ReferenceGroup",
+      "tab": ""
+    },
+    {
+      "controlName": "ForeignTradeIntrastat_IntrastatCommodity_Code",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Commodity code",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "ForeignTradeIntrastat_StatisticsFactor",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Charges percentage",
+      "role": "Real",
+      "tab": ""
+    },
+    {
+      "controlName": "ForeignTradeOrigin_OrigCountryRegionId",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Country/region",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "ForeignTradeOrigin_OrigStateId",
+      "helpSource": "",
+      "helpText": "",
+      "label": "State/province",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "InventTable_COODualUseProduct",
+      "helpSource": "hover",
+      "helpText": "Dual Use ProductsEnable to identify the product as a dual-use good",
+      "label": "Dual Use Products",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "InventTable_COODualUseCode",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Dual Use Code",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "TabPageInventory",
+      "helpSource": "hover",
+      "helpText": "Net weightThe net weight in the selected inventory unit. This information is used for printed records, such as packing slips, on which the weight is included as shipping information. If a BOM is assigned to the inventory unit, the net weight can be calculated as the sum of the net weight for the products on the BOM. Net weight can also be used when a product's indirect cost is calculated.",
+      "label": "Net weight",
+      "role": "SectionPage",
+      "tab": ""
+    },
+    {
+      "controlName": "TabPageInventory_InventoryQuantity_UnitId",
+      "helpSource": "dom",
+      "helpText": "Unit: ea",
+      "label": "Unit: ea",
+      "role": "InputSummary",
+      "tab": ""
+    },
+    {
+      "controlName": "InventoryWeightMeasurements_NetWeight",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Net weight",
+      "role": "Real",
+      "tab": ""
+    },
+    {
+      "controlName": "InventoryWeightMeasurements_TaraWeight",
+      "helpSource": "hover",
+      "helpText": "Tare weightThe tare weight of the product for one inventory unit.",
+      "label": "Tare weight",
+      "role": "Real",
+      "tab": ""
+    },
+    {
+      "controlName": "InventoryWeightMeasurements_M_grossWeight",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Gross weight",
+      "role": "Real",
+      "tab": ""
+    },
+    {
+      "controlName": "InventoryPhysicalDimensions_grossDepth",
+      "helpSource": "hover",
+      "helpText": "Gross depthThe depth of one inventory unit that includes packaging.",
+      "label": "Gross depth",
+      "role": "Real",
+      "tab": ""
+    },
+    {
+      "controlName": "InventoryPhysicalDimensions_grossWidth",
+      "helpSource": "hover",
+      "helpText": "The width of one inventory unit that includes packaging.",
+      "label": "Gross width",
+      "role": "Real",
+      "tab": ""
+    },
+    {
+      "controlName": "InventoryPhysicalDimensions_grossHeight",
+      "helpSource": "hover",
+      "helpText": "Gross heightThe height of one inventory unit that includes packaging.",
+      "label": "Gross height",
+      "role": "Real",
+      "tab": ""
+    },
+    {
+      "controlName": "InventoryPhysicalDimensions_UnitVolume",
+      "helpSource": "hover",
+      "helpText": "The volume of one unit of the product, in inventory units. This information is used as shipping information when the product's volume is indicated, such as on packing slips. Volume can also be used when a product's indirect cost is calculated.",
+      "label": "Volume",
+      "role": "Real",
+      "tab": ""
+    },
+    {
+      "controlName": "InventoryTracking_BatchNumGroupId",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Batch number group",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "InventoryTracking_SerialNumGroupId",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Serial number group",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "InventoryDeliveryPercent_OverDeliveryPct",
+      "helpSource": "hover",
+      "helpText": "OverdeliveryThe percentage by which the quantity of the product receipt can exceed the order quantity.",
+      "label": "Overdelivery",
+      "role": "Real",
+      "tab": ""
+    },
+    {
+      "controlName": "InventoryDeliveryPercent_UnderDeliveryPct",
+      "helpSource": "hover",
+      "helpText": "The percentage by which the quantity of the product receipt can be less than the order quantity.",
+      "label": "Underdelivery",
+      "role": "Real",
+      "tab": ""
+    },
+    {
+      "controlName": "InventoryCounting_CountGroupId",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Counting group",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "InventoryQuantity_UnitId",
+      "helpSource": "hover",
+      "helpText": "UnitUnit for the product in inventory",
+      "label": "Unit",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "InventoryShippingAndReceiving_WMSArrivalHandlingTime",
+      "helpSource": "hover",
+      "helpText": "The time that is required to receive the standard order quantity of the product. This information is used during item arrival.",
+      "label": "Arrival handling time",
+      "role": "Time",
+      "tab": ""
+    },
+    {
+      "controlName": "InventoryShippingAndReceiving_sortCode",
+      "helpSource": "hover",
+      "helpText": "Sort codeThe sequence in which the item is picked relative to other items. The higher the value, the earlier the item should be picked on the picking route.",
+      "label": "Sort code",
+      "role": "Integer",
+      "tab": ""
+    },
+    {
+      "controlName": "PDSPotency_PDSBaseAttributeId",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Base attribute",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "PDSPotency_PDSTargetFactor",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Target",
+      "role": "Real",
+      "tab": ""
+    },
+    {
+      "controlName": "PDSPotency_PDSPotencyAttribRecording",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Record the attribute value",
+      "role": "ComboBox",
+      "tab": ""
+    },
+    {
+      "controlName": "InventoryPackaging_PackagingGroupId",
+      "helpSource": "hover",
+      "helpText": "Packing groupSelect the packaging group that is associated with the product. Packaging groups can be used to classify products that are subject to packing material fees.",
+      "label": "Packing group",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "InventoryPackaging_TaxPackagingQty",
+      "helpSource": "hover",
+      "helpText": "The amount, in inventory units, on which packing duty is calculated.",
+      "label": "Packing quantity",
+      "role": "Real",
+      "tab": ""
+    },
+    {
+      "controlName": "PdsShelf_PdsShelfAdvice",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Shelf advice period in days",
+      "role": "Integer",
+      "tab": ""
+    },
+    {
+      "controlName": "PdsShelf_PdsShelfLife",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Shelf life period in days",
+      "role": "Integer",
+      "tab": ""
+    },
+    {
+      "controlName": "PdsShelf_PdsBestBefore",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Best before period in days",
+      "role": "Integer",
+      "tab": ""
+    },
+    {
+      "controlName": "PdsShelf_BatchMergeDateCalculationMethod",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Batch merge date calculation",
+      "role": "ComboBox",
+      "tab": ""
+    },
+    {
+      "controlName": "PmfYield_PmfYieldPct",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Yield percent",
+      "role": "Real",
+      "tab": ""
+    },
+    {
+      "controlName": "PdsCWItem",
+      "helpSource": "hover",
+      "helpText": "Catch weight itemIs item catch weight-enabled?",
+      "label": "Catch weight item",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "PdsCatchWeightItem_PdsCWUnitId",
+      "helpSource": "",
+      "helpText": "",
+      "label": "CW unit",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "PdsNominalQty",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Nominal quantity",
+      "role": "Real",
+      "tab": ""
+    },
+    {
+      "controlName": "PdsCatchWeightItem_PdsCWMin",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Minimum quantity",
+      "role": "Real",
+      "tab": ""
+    },
+    {
+      "controlName": "PdsCatchWeightItem_PdsCWMax",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Maximum quantity",
+      "role": "Real",
+      "tab": ""
+    },
+    {
+      "controlName": "PdsMRCRegulated",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Regulated product",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "PdsMRCRestricted",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Restricted product",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "HMIMHazardousMaterial_HMIMIndicator",
+      "helpSource": "hover",
+      "helpText": "Hazardous materialEnable if the product is a hazardous material",
+      "label": "Hazardous material",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "QMSDispensing_QMSDispensingControl",
+      "helpSource": "hover",
+      "helpText": "Indicates if the released product is to have dispensing control functionality applied",
+      "label": "Dispensing control",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "QMSDispensing_QMSUnderDispensePct",
+      "helpSource": "hover",
+      "helpText": "UnderdispenseThe percentage by which the dispensed quantity is allowed to be less than the proposed quantity",
+      "label": "Underdispense",
+      "role": "Real",
+      "tab": ""
+    },
+    {
+      "controlName": "QMSDispensing_QMSOverDispensePct",
+      "helpSource": "hover",
+      "helpText": "The percentage by which the dispensed quantity is allowed to exceed the proposed quantity",
+      "label": "Overdispense",
+      "role": "Real",
+      "tab": ""
+    },
+    {
+      "controlName": "QMSDispensing_QMSAuthorizedPersonnel",
+      "helpSource": "hover",
+      "helpText": "Authorized personnelIndicates if the dispensing controlled item is to be posted only by an authorized employee",
+      "label": "Authorized personnel",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "TabPageEngineer",
+      "helpSource": "hover",
+      "helpText": "Select the consumption unit of the product. The consumption unit is used on the BOM line when you add the product to the BOM.",
+      "label": "BOM unit",
+      "role": "SectionPage",
+      "tab": ""
+    },
+    {
+      "controlName": "TabPageEngineer_EngineerBOM_BOMUnitId",
+      "helpSource": "dom",
+      "helpText": "BOM unit: ea",
+      "label": "BOM unit: ea",
+      "role": "InputSummary",
+      "tab": ""
+    },
+    {
+      "controlName": "TabPageEngineer_PmfFormulaPlanning_PmfProductType",
+      "helpSource": "dom",
+      "helpText": "Production type: BOM",
+      "label": "Production type: BOM",
+      "role": "ComboBoxSummary",
+      "tab": ""
+    },
+    {
+      "controlName": "EngineerBOM_BOMUnitId",
+      "helpSource": "",
+      "helpText": "",
+      "label": "BOM unit",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "EngineerBOM_ScrapConst",
+      "helpSource": "hover",
+      "helpText": "Constant scrapA constant scrap value. Scrap is calculated in the unit that is specified on the BOM line, such as cm or liters. Scrap is used to calculate adjusted raw material consumption on BOM lines.",
+      "label": "Constant scrap",
+      "role": "Real",
+      "tab": ""
+    },
+    {
+      "controlName": "EngineerBOM_ScrapVar",
+      "helpSource": "hover",
+      "helpText": "The variable scrap as a percentage. By default, this value is used when you add the product to BOMs.",
+      "label": "Variable scrap",
+      "role": "Real",
+      "tab": ""
+    },
+    {
+      "controlName": "EngineerBOM_BOMLevel",
+      "helpSource": "hover",
+      "helpText": "Costing levelThe lowest BOM level at which the product was processed during the last master scheduling. This value is displayed for products that appear in BOMs.",
+      "label": "Costing level",
+      "role": "Integer",
+      "tab": ""
+    },
+    {
+      "controlName": "EngineerBOM_ItemBOMLevel",
+      "helpSource": "hover",
+      "helpText": "The lowest BOM level at which the product was processed during the last master planning run or BOM level calculation run. This value is set to 0 for products with subtype \"Product Master\", since master planning plans on the variant level.",
+      "label": "Planning level",
+      "role": "Integer",
+      "tab": ""
+    },
+    {
+      "controlName": "EngineerBOM_CostBOMLevel",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Cost calculation level",
+      "role": "Integer",
+      "tab": ""
+    },
+    {
+      "controlName": "EngineerBOM_Phantom",
+      "helpSource": "hover",
+      "helpText": "PhantomIf a BOM is assigned to the product, select this option to indicate that you want the product to be treated as a phantom item. A phantom item is a kind of pseudo-item that is exploded for productions, so that the items that make up the phantom item are shown in the production BOM. However, the actual phantom item is not used directly after the explosion.",
+      "label": "Phantom",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "EngineerBOM_AutoReportFinished",
+      "helpSource": "hover",
+      "helpText": "Specifies if the BOM should be automatically reported as finished.",
+      "label": "Auto-report as finished",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "EngineerMeasurement_Height",
+      "helpSource": "hover",
+      "helpText": "HeightThe measurement conversion factor for the height dimension.",
+      "label": "Height",
+      "role": "Real",
+      "tab": ""
+    },
+    {
+      "controlName": "EngineerMeasurement_Width",
+      "helpSource": "hover",
+      "helpText": "The measurement conversion factor for the width dimension.",
+      "label": "Width",
+      "role": "Real",
+      "tab": ""
+    },
+    {
+      "controlName": "EngineerMeasurement_Depth",
+      "helpSource": "hover",
+      "helpText": "DepthThe measurement conversion factor for the depth dimension.",
+      "label": "Depth",
+      "role": "Real",
+      "tab": ""
+    },
+    {
+      "controlName": "EngineerMeasurement_Density",
+      "helpSource": "hover",
+      "helpText": "The measurement conversion factor for the density dimension.",
+      "label": "Density",
+      "role": "Real",
+      "tab": ""
+    },
+    {
+      "controlName": "EngineerBOMCalculation_BOMCalcGroupId",
+      "helpSource": "hover",
+      "helpText": "Calculation groupThe calculation group of the product. A calculation group controls the BOM calculation policies that are applied to the product during a BOM calculation. For example, the calculation group defines the cost and sales price model that is applied to the product components of a BOM, and the issues that generate a warning message during the calculation.",
+      "label": "Calculation group",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "EngineerProduction_ProdPoolId",
+      "helpSource": "hover",
+      "helpText": "The production pool that the product is a component of. Pools are used as extra criteria for sorting, and they are also used for production.",
+      "label": "Production pool",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "EngineerProduction_ProdGroupId",
+      "helpSource": "hover",
+      "helpText": "Production groupThe production group that is suggested when you create production orders for a product. Production groups can be used to limit reports and to control posting in the ledger.",
+      "label": "Production group",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "EngineerProduction_PropertyId",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Property",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "EngineerProduction_BOMManualReceipt",
+      "helpSource": "hover",
+      "helpText": "ArrivalSelect this option if item gains that are BOM lines that have negative sales quantities must be manually returned to production. If you do not select this option, item gains are put in inventory by the system when the production is started.",
+      "label": "Arrival",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "EngineerProduction_ProdFlushingPrincip",
+      "helpSource": "hover",
+      "helpText": "Select the method that is used to register item consumption against a production order. The following options are available: Start (consumption is automatically registered when you update a production order to the start phase; this option is the default setting for a new product, and for an existing product that is updated), Finish (consumption is automatically registered when you update a production order to the report as finished phase), Manual (consumption is not automatically registered; you must manually enter consumption on the picking list), and Available on location (consumption is automatically registered when you complete warehouse work for the material line, or when material is available on the production input location and the material line is released from the production order).",
+      "label": "Flushing principle",
+      "role": "ComboBox",
+      "tab": ""
+    },
+    {
+      "controlName": "EngineerProduction_BomWHSReleasePolicy",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Release to warehouse",
+      "role": "ComboBox",
+      "tab": ""
+    },
+    {
+      "controlName": "PmfFormulaPlanning_PmfProductType",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Production type",
+      "role": "ComboBox",
+      "tab": ""
+    },
+    {
+      "controlName": "PmfFormulaPlanning_PmfPlanningItemId",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Planning formula",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "TabPagePlan",
+      "helpSource": "hover",
+      "helpText": "Coverage groupSelect a coverage group for the product. The coverage group controls how net requirements are calculated for the product. Coverage groups are used to group products that have similar characteristics, so that the products are scheduled in the same manner. The grouping can be based on factors such as the main supplier or the length of the delivery time.",
+      "label": "Coverage group",
+      "role": "SectionPage",
+      "tab": ""
+    },
+    {
+      "controlName": "TabPagePlan_PlanCoverage_ReqGroupId",
+      "helpSource": "dom",
+      "helpText": "Coverage group: (blank)",
+      "label": "Coverage group: (blank)",
+      "role": "InputSummary",
+      "tab": ""
+    },
+    {
+      "controlName": "PlanCoverage_ReqGroupId",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Coverage group",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "TabPageCost",
+      "helpSource": "hover",
+      "helpText": "Item groupSelect an item group for the product. An item group can be used to classify structure products by characteristics. An item group can also be used to control the ledger accounts for transactions that are generated by product receipts and product issues.",
+      "label": "Item group",
+      "role": "SectionPage",
+      "tab": ""
+    },
+    {
+      "controlName": "TabPageCost_CostCosting_CostGroupId",
+      "helpSource": "dom",
+      "helpText": "Cost group: (blank)",
+      "label": "Cost group: (blank)",
+      "role": "InputSummary",
+      "tab": ""
+    },
+    {
+      "controlName": "TabPageCost_CostBasePrice_Price",
+      "helpSource": "dom",
+      "helpText": "Price: 3.20",
+      "label": "Price: 3.20",
+      "role": "RealSummary",
+      "tab": ""
+    },
+    {
+      "controlName": "CostPosting_ItemGroupId",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Item group",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "CostCosting_CostGroupId",
+      "helpSource": "hover",
+      "helpText": "Cost groupSelect a cost group for the product. A cost group can be used to trace the cost contribution of an inventory item in the calculated cost of a manufactured product.",
+      "label": "Cost group",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "CostCosting_ItemDimCostPrice",
+      "helpSource": "hover",
+      "helpText": "Select this option to report on the production costs of product variants instead of products. Select the option if the cost of production for each variant varies so much that pricing must be specified by variant instead of by product.",
+      "label": "Use cost price by variant",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "CostPriceUpdateInventTable_CostModel",
+      "helpSource": "hover",
+      "helpText": "Latest cost priceSelect this option to update the price in the Price field. During the update, the Price field is populated either with the price for the last receipt from the inventory journal or with the price that is applied when you post negative reporting as finished for a BOM because a BOM line is returned to inventory. If this option is cleared, you must change the production cost manually.",
+      "label": "Latest cost price",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "CostPriceUpdateInvent_PriceDate",
+      "helpSource": "hover",
+      "helpText": "The date when the price of the product was last changed. The price can be changed manually, or when a sales order or a purchase order is updated.",
+      "label": "Date of price",
+      "role": "Date",
+      "tab": ""
+    },
+    {
+      "controlName": "CostBasePrice_UnitId",
+      "helpSource": "hover",
+      "helpText": "UnitInventory unit used for the product cost price",
+      "label": "Unit",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "CostBasePrice_Price",
+      "helpSource": "hover",
+      "helpText": "Amount in monetary standard (national currency)",
+      "label": "Price",
+      "role": "Real",
+      "tab": ""
+    },
+    {
+      "controlName": "CostBasePrice_PriceUnit",
+      "helpSource": "hover",
+      "helpText": "Price quantityThe number of units to which the price applies. When you enter purchase order lines, sales order lines, and inventory journal lines, the unit price is converted for the quantity that you specify for each line.",
+      "label": "Price quantity",
+      "role": "Real",
+      "tab": ""
+    },
+    {
+      "controlName": "CostMiscellaneousChargesInvent_Markup",
+      "helpSource": "hover",
+      "helpText": "A fixed amount that is added to the price. The amount is added independently of the quantity.",
+      "label": "Price charges",
+      "role": "Real",
+      "tab": ""
+    },
+    {
+      "controlName": "CostMiscellaneousChargesInvent_PriceQty",
+      "helpSource": "hover",
+      "helpText": "Charges quantityThe quantity that is used when the specified miscellaneous charges are allocated to the price per unit. This field is used only if the Incl. in unit price option is selected.",
+      "label": "Charges quantity",
+      "role": "Real",
+      "tab": ""
+    },
+    {
+      "controlName": "CostMiscellaneousChargesInvent_AllocateMarkup",
+      "helpSource": "hover",
+      "helpText": "A selected option indicates that the price charges are divided by the quantity in the Charges quantity field. The result is then added to the amount in the Price charges field.",
+      "label": "Incl. in unit price",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "CostABC_ABCValue",
+      "helpSource": "hover",
+      "helpText": "ValueItem ABC classification based on value.",
+      "label": "Value",
+      "role": "ComboBox",
+      "tab": ""
+    },
+    {
+      "controlName": "CostABC_ABCContributionMargin",
+      "helpSource": "hover",
+      "helpText": "Item ABC classification based on margin.",
+      "label": "Margin",
+      "role": "ComboBox",
+      "tab": ""
+    },
+    {
+      "controlName": "CostABC_ABCRevenue",
+      "helpSource": "hover",
+      "helpText": "RevenueItem ABC classification based on revenue.",
+      "label": "Revenue",
+      "role": "ComboBox",
+      "tab": ""
+    },
+    {
+      "controlName": "CostABC_ABCTieUp",
+      "helpSource": "hover",
+      "helpText": "Item ABC classification based on carrying cost.",
+      "label": "Carrying cost",
+      "role": "ComboBox",
+      "tab": ""
+    },
+    {
+      "controlName": "TabPageProject",
+      "helpSource": "hover",
+      "helpText": "Project categoryThe project category that is suggested when the product is used in an item requirement in the Project management and accounting module.",
+      "label": "Project category",
+      "role": "SectionPage",
+      "tab": ""
+    },
+    {
+      "controlName": "TabPageProject_ProjectAdministration_projCategoryId",
+      "helpSource": "dom",
+      "helpText": "Project category: (blank)",
+      "label": "Project category: (blank)",
+      "role": "InputSummary",
+      "tab": ""
+    },
+    {
+      "controlName": "ProjectAdministration_projCategoryId",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Project category",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "TabFinancialDimensions",
+      "helpSource": "",
+      "helpText": "",
+      "label": "BusinessUnit value",
+      "role": "SectionPage",
+      "tab": ""
+    },
+    {
+      "controlName": "DimensionEntryControl_DECValue_BusinessUnit",
+      "helpSource": "",
+      "helpText": "",
+      "label": "BusinessUnit value",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "DimensionEntryControl_DECDesc_BusinessUnit",
+      "helpSource": "",
+      "helpText": "",
+      "label": "BusinessUnit description",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "DimensionEntryControl_DECValue_CostCenter",
+      "helpSource": "",
+      "helpText": "",
+      "label": "CostCenter value",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "DimensionEntryControl_DECDesc_CostCenter",
+      "helpSource": "",
+      "helpText": "",
+      "label": "CostCenter description",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "DimensionEntryControl_DECValue_Department",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Department value",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "DimensionEntryControl_DECDesc_Department",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Department description",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "DimensionEntryControl_DECValue_ItemGroup",
+      "helpSource": "",
+      "helpText": "",
+      "label": "ItemGroup value",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "DimensionEntryControl_DECDesc_ItemGroup",
+      "helpSource": "",
+      "helpText": "",
+      "label": "ItemGroup description",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "DimensionEntryControl_DECValue_Project",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Project value",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "DimensionEntryControl_DECDesc_Project",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Project description",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "TabWHS",
+      "helpSource": "hover",
+      "helpText": "Unit sequence group IDThe unit sequence group defines the sequence of units that are available for warehouse operations. The sequence determines the order of units in which warehouse work is generated. It is applied when work is created for quantities on purchase order lines or transfer order lines. The unit sequence group should include units of measure that range from the smallest to the largest unit and can be used for the product in warehouse operations.",
+      "label": "Unit sequence group ID",
+      "role": "SectionPage",
+      "tab": ""
+    },
+    {
+      "controlName": "WHSPhysDim_UOMSeqGroupId",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Unit sequence group ID",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "WHSPhysDim_MaxPickQty",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Maximum pick quantity",
+      "role": "Real",
+      "tab": ""
+    },
+    {
+      "controlName": "WHSPhysDim_PackSizeCateogryId",
+      "helpSource": "hover",
+      "helpText": "Pack size category IDYou can create pack size categories and associate the pack size categories with one or more location stocking limits. You also can associate a pack size category with a specific item in the released product details for that item.",
+      "label": "Pack size category ID",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "WHSPhysDim_PhysDimId",
+      "helpSource": "hover",
+      "helpText": "Select a physical dimension group ID for this product. This is used to group products by physical dimension. For example, a physical dimension might be the weight and volume of a box containing six pieces of an item.",
+      "label": "Physical dimension group ID",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "WHSInventTable_RFDescription1",
+      "helpSource": "hover",
+      "helpText": "Mobile device description line 1This can be used as an additional description of the item to be shown on mobile devices that are used to process work containing this item. Note that you can only use 20 characters. Use the Warehouse app field priorities page to specify where this field should be displayed on a mobile device.",
+      "label": "Mobile device description line 1",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "WHSInventTable_RFDescription2",
+      "helpSource": "hover",
+      "helpText": "This can be used as an additional description of the item to be shown on mobile devices that are used to process work containing this item. Note that you can only use 20 characters. Use the Warehouse app field priorities page to specify where this field should be displayed on a mobile device.",
+      "label": "Mobile device description line 2",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "WHSFilterCode1_FilterCode",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Code 1",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "WHSFilterCode1_FilterCode2",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Code 2",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "WHSFilterCode1_FilterCode3",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Code 3",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "WHSFilterCode1_FilterCode4",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Code 4",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "WHSFilterCode1_FilterCode5",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Code 5",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "WHSFilterCode1_FilterCode6",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Code 6",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "WHSFilterCode1_FilterCode7",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Code 7",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "WHSFilterCode1_FilterCode8",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Code 8",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "WHSFilterCode1_FilterCode9",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Code 9",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "WHSFilterCode1_FilterCode10",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Code 10",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "WHSFilterGroup1_FilterGroup",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Group 1",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "WHSFilterGroup1_FilterGroup[2]",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Group 2",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "WhsProduction_AllowMaterialOverPick",
+      "helpSource": "hover",
+      "helpText": "Material picking in license plate locationsConfigure the raw material picking principle for a license plate location. Select Order picking to specify that only the ordered quantity should be picked. Select Staging to specify that the full quantity should be picked from the license plate.",
+      "label": "Material picking in license plate locations",
+      "role": "ComboBox",
+      "tab": ""
+    },
+    {
+      "controlName": "WhsProduction_AllowMaterialOverpickNonLP",
+      "helpSource": "hover",
+      "helpText": "Configure the raw material picking principle for a non license plate location. Select Order picking to specify that only the ordered quantity should be picked. Select Staging to specify that the over picked quantity should be picked from the license plate.",
+      "label": "Material picking in non-license plate locations",
+      "role": "ComboBox",
+      "tab": ""
+    },
+    {
+      "controlName": "WhsProduction_PickWCNeg",
+      "helpSource": "hover",
+      "helpText": "Allow pick work center negativeSelect this option to allow for a negative quantity of a product when the product is picked to production. Allowing for a physical negative inventory can help avoid blocking issues when products are back flushed in production. This is, for example, relevant for low-value materials that are tracked only periodically. This option must be selected in combination with allowing for physical negative inventory on the Inventory model group on the warehouse where the material is consumed and on the location directive for raw material picking.",
+      "label": "Allow pick work center negative",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "WhsProduction_ProdQty",
+      "helpSource": "hover",
+      "helpText": "Select the quantity that should be defaulted for receipt when a production is reported as finished or when a product receipt is done from a mobile device.",
+      "label": "Default production or receiving quantity",
+      "role": "Real",
+      "tab": ""
+    },
+    {
+      "controlName": "WhsProduction_MaterialOverpickPercentage",
+      "helpSource": "hover",
+      "helpText": "Material over picking (%)Specify the over picking threshold (as percentage of the requested quantity) allowed when picking raw materials for manufacturing this item.",
+      "label": "Material over picking (%)",
+      "role": "Real",
+      "tab": ""
+    },
+    {
+      "controlName": "WHSEcoResProductTrnsCodes_NMFCCode",
+      "helpSource": "",
+      "helpText": "",
+      "label": "NMFC code",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "WHSEcoResProductTrnsCodes_STCCCode",
+      "helpSource": "",
+      "helpText": "",
+      "label": "STCC code",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "WHSEcoResProductTrnsCodes_HarmonizedCode",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Harmonized Tariff Schedule",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "WHSInventTable_PackageClassId",
+      "helpSource": "hover",
+      "helpText": "Package class IDThis value can be used in some warehouse processes to filter on item master data and any advanced query, that uses item master data.",
+      "label": "Package class ID",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "WHSRelease_SalesUnitRestricted",
+      "helpSource": "hover",
+      "helpText": "On release to warehouse, round all order line quantities down to the nearest whole unit specified here, and reject order lines that include quantities less than a single whole unit.",
+      "label": "Restrict to unit",
+      "role": "ComboBox",
+      "tab": ""
+    },
+    {
+      "controlName": "WhsBatchDetails_BatchDetailsCapturePolicyId",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Batch details capture policy",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "TabPageRetail",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Color group",
+      "role": "SectionPage",
+      "tab": ""
+    },
+    {
+      "controlName": "EcoResProduct_EcoResProductMaster_RetailColorGroupId",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Color group",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "EcoResProduct_EcoResProductMaster_RetailSizeGroupId",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Size group",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "EcoResProduct_EcoResProductMaster_RetailStyleGroupId",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Style group",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "Variants_PrintVariantsShelfLabels",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Print variants shelf labels",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "RBOInventTable_baseComparisonUnitCode",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Base comparison unit",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "getComparisonPrice",
+      "helpSource": "hover",
+      "helpText": "Comparison priceAmount in monetary standard (national currency)",
+      "label": "Comparison price",
+      "role": "Real",
+      "tab": ""
+    },
+    {
+      "controlName": "Blocking_blockedOnPOS",
+      "helpSource": "hover",
+      "helpText": "Specifies if the product is blocked on POS.",
+      "label": "Blocked at register",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "Blocking_dateBlocked",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Date blocked",
+      "role": "Date",
+      "tab": ""
+    },
+    {
+      "controlName": "Blocking_dateToBeBlocked",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Date to be blocked",
+      "role": "Date",
+      "tab": ""
+    },
+    {
+      "controlName": "Barcode_BarcodeSetupId",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Bar code setup",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "Barcode_M_getDefaultBarcode",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Bar code",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "Activation_dateToActivateItem",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Issue date",
+      "role": "Date",
+      "tab": ""
+    },
+    {
+      "controlName": "ItemLifeCycle_seasonCode",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Season",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "ItemLifeCycle_lifeFrom",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Valid from",
+      "role": "Date",
+      "tab": ""
+    },
+    {
+      "controlName": "ItemLifeCycle_lifeTo",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Valid to",
+      "role": "Date",
+      "tab": ""
+    },
+    {
+      "controlName": "POSTerminal_scaleItem",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Scale product",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "POSTerminal_keyingInPrice",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Key in price",
+      "role": "ComboBox",
+      "tab": ""
+    },
+    {
+      "controlName": "POSTerminal_keyingInQty",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Key in quantity",
+      "role": "ComboBox",
+      "tab": ""
+    },
+    {
+      "controlName": "POSTerminal_mustKeyInComment",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Must key in comment",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "POSTerminal_zeroPriceValid",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Zero price valid",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "POSTerminal_qtyBecomesNegative",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Quantity becomes negative",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "POSTerminal_noDiscountAllowed",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Prevent all discounts",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "POSTerminal_noManualDiscountAllowed",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Prevent manual discounts",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "POSTerminal_noPeriodicDiscountAllowed",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Prevent retail discounts",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "POSTerminal_noTenderDiscountsAllowed",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Prevent tender based discounts",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "TabTMS",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Use transportation management processes No",
+      "role": "SectionPage",
+      "tab": ""
+    },
+    {
+      "controlName": "TMSInventEnabled_Enabled",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Use transportation management processes",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "TabPageVariants",
+      "helpSource": "hover",
+      "helpText": "The configuration technology for the product master. A configuration technology is associated with product masters and used to configure product variants.",
+      "label": "Configuration technology",
+      "role": "SectionPage",
+      "tab": ""
+    },
+    {
+      "controlName": "TabPageVariants_General_EcoResProductMaster_VariantConfigurationTechnology",
+      "helpSource": "dom",
+      "helpText": "Configuration technology: (blank)",
+      "label": "Configuration technology: (blank)",
+      "role": "ComboBoxSummary",
+      "tab": ""
+    },
+    {
+      "controlName": "General_EcoResProductMaster_VariantConfigurationTechnology",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Configuration technology",
+      "role": "ComboBox",
+      "tab": ""
+    },
+    {
+      "controlName": "General_EcoResProductMasterModelingPolicy_IsReuseExistingConfigurationEnabled",
+      "helpSource": "hover",
+      "helpText": "Allow identical configurationsSelect this option if product variants that are identical to existing product variants can be created for a product master. This option is available only if the configuration technology for the product master is set to Dimension-based configuration.",
+      "label": "Allow identical configurations",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "General_EcoResProductMasterModelingPolicy_IsAutomaticVariantGenerationEnabled",
+      "helpSource": "hover",
+      "helpText": "Select this option to generate new product variants when a product dimension is created for a product master. This option is available only if the configuration technology for the product master is set to Dimension-based configuration or Predefined variant.",
+      "label": "Generate variants automatically",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "EcoResProductDimensionGroupProduct_ProductDimensionGroup_Name",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Product dimension groups",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "DefaultProductDimensions_StandardConfigId",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Configuration",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "DefaultProductDimensions_StandardInventSizeId",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Size",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "DefaultProductDimensions_StandardInventColorId",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Color",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "DefaultProductDimensions_StandardInventStyleId",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Style",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "FixedLocationsGrid.Warehouse",
+      "helpSource": "dom",
+      "helpText": "Warehouse Click to follow link",
+      "label": "Warehouse",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "FixedLocationsGrid.Site",
+      "helpSource": "dom",
+      "helpText": "Site Click to follow link",
+      "label": "Site",
+      "role": "GridColumn",
+      "tab": ""
+    },
+    {
+      "controlName": "FixedLocationsGrid.Location",
+      "helpSource": "dom",
+      "helpText": "Location Click to follow link",
+      "label": "Location",
+      "role": "GridColumn",
+      "tab": ""
+    }
+  ],
+  "lookups": [
+    {
+      "tab": "",
+      "controlName": "Tab",
+      "opened": true,
+      "values": [
+        "Item",
+        "Service"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "Details",
+      "opened": true,
+      "values": [
+        "Item",
+        "Service"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "TabPageGeneral",
+      "opened": true,
+      "values": [
+        "Item",
+        "Service"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "EcoResProduct_ProductTypeTitle",
+      "opened": true,
+      "values": [
+        "Item",
+        "Service"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "EcoResProduct_M_productSubtypeTitle",
+      "opened": true,
+      "values": [
+        "Product",
+        "Product master",
+        "Product variant"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "EcoResProduct_ServiceTypeTitle",
+      "opened": true,
+      "values": [
+        "Not specified",
+        "Warranty"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "InventTable_ItemId",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "EcoResProduct_EngChgProductCategoryDetails",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "EcoResProduct_EngChgProductOwnerIdIdentification",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "EcoResStorageDimensionGroupItem_StorageDimensionGroup",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "EcoResTrackingDimensionGroupItem_TrackingDimensionGroup",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "InventModelGroupItem_ModelGroupId",
+      "opened": true,
+      "values": [
+        "Item model groupName"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "InventTableInventCountingReasonCodePolicy_CountingReasonCodePolicy",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "InventTable_ProductLifecycleStateId",
+      "opened": true,
+      "values": [
+        "StateDescription"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "InventTable_FreeNotesGroup_IT",
+      "opened": true,
+      "values": [
+        "Advanced notes groupName"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "EcoResProduct_EngChgProductReleasePolicy",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "EcoResProduct_EngChgReadinessPolicy",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "TabPagePurchase",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "PurchaseSetup_UnitId",
+      "opened": true,
+      "values": [
+        "Convertible",
+        "All",
+        "UnitDescriptionTranslated description"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "PurchaseAdministration_ItemBuyerGroupId",
+      "opened": true,
+      "values": [
+        "Buyer groupDescription"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "PurchaseAdministration_ItemPriceToleranceGroupId",
+      "opened": true,
+      "values": [
+        "Item price tolerance groupName"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "PurchaseAdministration_PrimaryVendorId",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "PurchaseTaxation_TaxItemGroupId",
+      "opened": true,
+      "values": [
+        "Item sales tax groupDescription"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "PurchasePriceUpdatePurch_PriceDate",
+      "opened": true,
+      "values": [
+        "SuMoTuWeThFrSa",
+        "1234",
+        "567891011",
+        "12131415161718",
+        "19202122232425",
+        "262728293031"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "PurchaseMiscellaneousCharges_MarkupGroupId",
+      "opened": true,
+      "values": [
+        "Charges groupDescription"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "PurchaseDiscount_LineDisc",
+      "opened": true,
+      "values": [
+        "Price groupsModulePrice/Discount group typeName"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "PurchaseDiscount_MultiLineDisc",
+      "opened": true,
+      "values": [
+        "Price groupsModulePrice/Discount group typeName"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "PurchaseDiscount_SuppItemGroupId",
+      "opened": true,
+      "values": [
+        "Supplementary item groupName"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "TAMVendRebate_ItemVendRebateGroupId",
+      "opened": true,
+      "values": [
+        "Vendor rebate item groupDescription"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "InventTable_PdsVendorCheckItem",
+      "opened": true,
+      "values": [
+        "No check",
+        "Warning only",
+        "Not allowed"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "ITM_ITMCostTypeGroupId",
+      "opened": true,
+      "values": [
+        "Cost type groupDescription"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "ITM_ITMCustomsDescId",
+      "opened": true,
+      "values": [
+        "Customs descriptionDescription"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "ITM_ITMArrivalGroupId",
+      "opened": true,
+      "values": [
+        "Arrival groupDescription"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "ITM_ITMCommodityCodeId",
+      "opened": true,
+      "values": [
+        "Commodity codeDescription"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "ITM_ITMOverUnderToleranceGroupId",
+      "opened": true,
+      "values": [
+        "Over/under tolerance groupDescription"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "ITM_ITMCostTransferGroupId",
+      "opened": true,
+      "values": [
+        "Transfer order cost groupDescription"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "MCRTabPageDeliver",
+      "opened": true,
+      "values": [
+        "WarehouseNameSite"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "MCRInventTable_DefaultDropShipmentWarehouse",
+      "opened": true,
+      "values": [
+        "WarehouseNameSite"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "MCRShipDates_ShipStartDate",
+      "opened": true,
+      "values": [
+        "SuMoTuWeThFrSa",
+        "1234",
+        "567891011",
+        "12131415161718",
+        "19202122232425",
+        "262728293031"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "TabPageSales",
+      "opened": true,
+      "values": [
+        "Convertible",
+        "All",
+        "UnitDescriptionTranslated description"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "SalesSetup_UnitId",
+      "opened": true,
+      "values": [
+        "Convertible",
+        "All",
+        "UnitDescriptionTranslated description"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "SalesAdministration_CommissionGroupId",
+      "opened": true,
+      "values": [
+        "GroupName"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "SalesTaxation_TaxItemGroupId",
+      "opened": true,
+      "values": [
+        "Item sales tax groupDescription"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "SalesPriceUpdateInventTable_SalesModel",
+      "opened": true,
+      "values": [
+        "None",
+        "Contribution ratio",
+        "Charges percentage"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "SalesPriceUpdateInventTable_SalesPriceModelBasic",
+      "opened": true,
+      "values": [
+        "Purchase price",
+        "Cost"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "SalesPriceUpdateSales_PriceDate",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "SalesMiscellaneousCharges_MarkupGroupId",
+      "opened": true,
+      "values": [
+        "Charges groupDescription"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "SalesDiscount_LineDisc",
+      "opened": true,
+      "values": [
+        "Price groupsModulePrice/Discount group typeName"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "SalesDiscount_MultiLineDisc",
+      "opened": true,
+      "values": [
+        "Price groupsModulePrice/Discount group typeName"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "SalesDiscount_SuppItemGroupId",
+      "opened": true,
+      "values": [
+        "Supplementary item groupName"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "SalesAlternativeProduct_UseAltItemId",
+      "opened": true,
+      "values": [
+        "Never",
+        "Nothing in inventory",
+        "Always"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "SalesAlternativeProduct_AltItemId",
+      "opened": true,
+      "values": [
+        "Item numberSearch nameProduct nameItem groupItem type"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "SalesAlternativeProduct_AltConfigId",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "SalesAlternativeProduct_AltInventSizeId",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "SalesAlternativeProduct_AltInventColorId",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "SalesAlternativeProduct_AltInventStyleId",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "MCRInventTable_ContinuityScheduleID3",
+      "opened": true,
+      "values": [
+        "Schedule ID"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "MCRSellStartEndDates_SellStartDate",
+      "opened": true,
+      "values": [
+        "SuMoTuWeThFrSa",
+        "1234",
+        "567891011",
+        "12131415161718",
+        "19202122232425",
+        "262728293031"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "MCRSellStartEndDates_SellEndDate",
+      "opened": true,
+      "values": [
+        "SuMoTuWeThFrSa",
+        "1234",
+        "567891011",
+        "12131415161718",
+        "19202122232425",
+        "262728293031"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "PdsItemRebateGroup_PdsItemRebateGroupId",
+      "opened": true,
+      "values": [
+        "Item rebate groupDescription"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "PdsItemCustomData_PdsFreightAllocationGroupId",
+      "opened": true,
+      "values": [
+        "Freight allocation groupDescription"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "SalesRetailInventory_RetailInventoryAvailabilityLevelProfile",
+      "opened": true,
+      "values": [
+        "Profile IDDescription"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "QMSACL_QMSCustomerCheckItem",
+      "opened": true,
+      "values": [
+        "No check",
+        "Warning only",
+        "Not allowed"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "QMSACL_QMSApprovedItemGroupId",
+      "opened": true,
+      "values": [
+        "Approved item groupDescription"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "TabPageForeignTrade",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "ForeignTradeIntrastat_IntrastatCommodity",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "ForeignTradeOrigin_OrigCountryRegionId",
+      "opened": true,
+      "values": [
+        "Country/regionDescriptionAddress format"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "ForeignTradeOrigin_OrigStateId",
+      "opened": true,
+      "values": [
+        "Country/regionStateDescription"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "InventTable_COODualUseCode",
+      "opened": true,
+      "values": [
+        "Dual Use Code"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "TabPageInventory",
+      "opened": true,
+      "values": [
+        "Number groupName"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "InventoryTracking_BatchNumGroupId",
+      "opened": true,
+      "values": [
+        "Number groupName"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "InventoryTracking_SerialNumGroupId",
+      "opened": true,
+      "values": [
+        "Number groupName"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "InventoryCounting_CountGroupId",
+      "opened": true,
+      "values": [
+        "Counting groupName"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "InventoryQuantity_UnitId",
+      "opened": true,
+      "values": [
+        "UnitDescriptionTranslated description"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "PDSPotency_PDSBaseAttributeId",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "PDSPotency_PDSPotencyAttribRecording",
+      "opened": true,
+      "values": [
+        "Receipt entry",
+        "Quality order result"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "InventoryPackaging_PackagingGroupId",
+      "opened": true,
+      "values": [
+        "Packing groupName"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "PdsShelf_BatchMergeDateCalculationMethod",
+      "opened": true,
+      "values": [
+        "Manual",
+        "Earliest",
+        "Latest"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "PdsCatchWeightItem_PdsCWUnitId",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "TabPageEngineer",
+      "opened": true,
+      "values": [
+        "Convertible",
+        "All",
+        "UnitDescriptionTranslated description"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "EngineerBOM_BOMUnitId",
+      "opened": true,
+      "values": [
+        "Convertible",
+        "All",
+        "UnitDescriptionTranslated description"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "EngineerBOMCalculation_BOMCalcGroupId",
+      "opened": true,
+      "values": [
+        "Calculation groupName"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "EngineerProduction_ProdPoolId",
+      "opened": true,
+      "values": [
+        "PoolName"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "EngineerProduction_ProdGroupId",
+      "opened": true,
+      "values": [
+        "Production groupName"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "EngineerProduction_PropertyId",
+      "opened": true,
+      "values": [
+        "PropertyName"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "EngineerProduction_ProdFlushingPrincip",
+      "opened": true,
+      "values": [
+        "Start",
+        "Finish",
+        "Manual",
+        "Available on location"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "EngineerProduction_BomWHSReleasePolicy",
+      "opened": true,
+      "values": [
+        "Allow partial reservation",
+        "Require full reservation"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "PmfFormulaPlanning_PmfProductType",
+      "opened": true,
+      "values": [
+        "Co-product",
+        "By-product",
+        "None",
+        "Planning item",
+        "BOM",
+        "Formula"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "PmfFormulaPlanning_PmfPlanningItemId",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "TabPagePlan",
+      "opened": true,
+      "values": [
+        "Coverage groupName"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "PlanCoverage_ReqGroupId",
+      "opened": true,
+      "values": [
+        "Coverage groupName"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "TabPageCost",
+      "opened": true,
+      "values": [
+        "Item groupName"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "CostPosting_ItemGroupId",
+      "opened": true,
+      "values": [
+        "Item groupName"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "CostCosting_CostGroupId",
+      "opened": true,
+      "values": [
+        "Cost groupNameCost group type"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "CostPriceUpdateInvent_PriceDate",
+      "opened": true,
+      "values": [
+        "SuMoTuWeThFrSa",
+        "12",
+        "3456789",
+        "10111213141516",
+        "17181920212223",
+        "24252627282930",
+        "31"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "CostBasePrice_UnitId",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "CostABC_ABCValue",
+      "opened": true,
+      "values": [
+        "None",
+        "A",
+        "B",
+        "C"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "CostABC_ABCContributionMargin",
+      "opened": true,
+      "values": [
+        "None",
+        "A",
+        "B",
+        "C"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "CostABC_ABCRevenue",
+      "opened": true,
+      "values": [
+        "None",
+        "A",
+        "B",
+        "C"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "CostABC_ABCTieUp",
+      "opened": true,
+      "values": [
+        "None",
+        "A",
+        "B",
+        "C"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "TabPageProject",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "ProjectAdministration_projCategoryId",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "TabFinancialDimensions",
+      "opened": true,
+      "values": [
+        "CategoryCategory nameTransaction type"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "DimensionEntryControl_DECValue_BusinessUnit",
+      "opened": true,
+      "values": [
+        "Operating unit numberName"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "DimensionEntryControl_DECValue_CostCenter",
+      "opened": true,
+      "values": [
+        "Operating unit numberName"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "DimensionEntryControl_DECValue_Department",
+      "opened": true,
+      "values": [
+        "Operating unit numberName"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "DimensionEntryControl_DECValue_ItemGroup",
+      "opened": true,
+      "values": [
+        "Item groupName"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "DimensionEntryControl_DECValue_Project",
+      "opened": true,
+      "values": [
+        "Project IDProject name"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "TabWHS",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "WHSPhysDim_UOMSeqGroupId",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "WHSPhysDim_PackSizeCateogryId",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "WHSPhysDim_PhysDimId",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "WHSFilterCode1_FilterCode",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "WHSFilterCode1_FilterCode2",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "WHSFilterCode1_FilterCode3",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "WHSFilterCode1_FilterCode4",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "WHSFilterCode1_FilterCode5",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "WHSFilterCode1_FilterCode6",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "WHSFilterCode1_FilterCode7",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "WHSFilterCode1_FilterCode8",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "WHSFilterCode1_FilterCode9",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "WHSFilterCode1_FilterCode10",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "WhsProduction_AllowMaterialOverPick",
+      "opened": true,
+      "values": [
+        "Staging",
+        "Order picking"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "WhsProduction_AllowMaterialOverpickNonLP",
+      "opened": true,
+      "values": [
+        "Staging",
+        "Order picking"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "WHSEcoResProductTrnsCodes_NMFCCode",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "WHSEcoResProductTrnsCodes_STCCCode",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "WHSEcoResProductTrnsCodes_HarmonizedCode",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "WHSInventTable_PackageClassId",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "WHSRelease_SalesUnitRestricted",
+      "opened": true,
+      "values": [
+        "No restrictions",
+        "Sales unit"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "WhsBatchDetails_BatchDetailsCapturePolicyId",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "TabPageRetail",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "EcoResProduct_EcoResProductMaster_RetailColorGroupId",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "EcoResProduct_EcoResProductMaster_RetailSizeGroupId",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "EcoResProduct_EcoResProductMaster_RetailStyleGroupId",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "RBOInventTable_baseComparisonUnitCode",
+      "opened": true,
+      "values": [
+        "Convertible",
+        "All",
+        "UnitDescriptionTranslated description"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "Blocking_dateBlocked",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "Blocking_dateToBeBlocked",
+      "opened": true,
+      "values": [
+        "SuMoTuWeThFrSa",
+        "1234",
+        "567891011",
+        "12131415161718",
+        "19202122232425",
+        "262728293031"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "Barcode_BarcodeSetupId",
+      "opened": true,
+      "values": [
+        "Bar code setupDescriptionBar code typeSizeMask"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "Barcode_M_getDefaultBarcode",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "Activation_dateToActivateItem",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "ItemLifeCycle_seasonCode",
+      "opened": true,
+      "values": [
+        "SeasonDescriptionStart dateEnd date"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "ItemLifeCycle_lifeFrom",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "ItemLifeCycle_lifeTo",
+      "opened": true,
+      "values": [
+        "SuMoTuWeThFrSa",
+        "1234",
+        "567891011",
+        "12131415161718",
+        "19202122232425",
+        "262728293031"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "POSTerminal_keyingInPrice",
+      "opened": true,
+      "values": [
+        "Not mandatory",
+        "Must key in new price",
+        "Must key in higher/equal price",
+        "Must key in lower/equal price",
+        "Must not key in price"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "POSTerminal_keyingInQty",
+      "opened": true,
+      "values": [
+        "Not mandatory",
+        "Must key in quantity",
+        "Must not key in quantity"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "TabPageVariants",
+      "opened": true,
+      "values": [],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "General_EcoResProductMaster_VariantConfigurationTechnology",
+      "opened": true,
+      "values": [],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "EcoResProductDimensionGroupProduct_ProductDimensionGroup_Name",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "DefaultProductDimensions_StandardConfigId",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "DefaultProductDimensions_StandardInventSizeId",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "DefaultProductDimensions_StandardInventColorId",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "DefaultProductDimensions_StandardInventStyleId",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    }
+  ]
+}
