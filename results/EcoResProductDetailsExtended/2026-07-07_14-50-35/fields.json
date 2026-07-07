@@ -1,0 +1,689 @@
+{
+  "formName": "EcoResProductDetailsExtended",
+  "url": "https://hint-sb-04a9f0283cca85a5c5devaos.cloudax.dynamics.com/?cmp=usmf&mi=EcoResProductDetailsExtendedGrid",
+  "scannedAt": "2026-07-07T12:50:35.186Z",
+  "deep": true,
+  "walkTabs": true,
+  "tabsFound": [],
+  "tabsScanned": 1,
+  "fields": [
+    {
+      "controlName": "ViewModeTab",
+      "helpSource": "hover",
+      "helpText": "RankSpecify the importance of the default order settings rule. The higher the rank, the more important the rule is and it will be used before the rules with lower ranks. The general default order settings have rank zero, which can't be modified. There can only be one rule with rank zero.",
+      "label": "Rank",
+      "role": "Pivot",
+      "tab": ""
+    },
+    {
+      "controlName": "DetailsViewTabPage",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Rank",
+      "role": "PivotItem",
+      "tab": ""
+    },
+    {
+      "controlName": "IdentificationGrp_InventItemPurchSetup_Sequence",
+      "helpSource": "hover",
+      "helpText": "RankSpecify the importance of the default order settings rule. The higher the rank, the more important the rule is and it will be used before the rules with lower ranks. The general default order settings have rank zero, which can't be modified. There can only be one rule with rank zero.",
+      "label": "Rank",
+      "role": "Int64",
+      "tab": ""
+    },
+    {
+      "controlName": "IdentificationGrp_ItemId",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Item number",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "IdentificationGrp_M_itemName",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Product name",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "InventDim_InventSiteId",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Site",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "ctrlDefaultOrderType",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Default order type",
+      "role": "ComboBox",
+      "tab": ""
+    },
+    {
+      "controlName": "PurchTab",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Unit",
+      "role": "SectionPage",
+      "tab": ""
+    },
+    {
+      "controlName": "PurchUnitId",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Unit",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "InventDimPurch_InventSiteIdPurch",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Default site",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "InventItemPurchSetup_MandatoryInventSite",
+      "helpSource": "hover",
+      "helpText": "Mandatory siteSelect this option to make the selected warehouse mandatory. A mandatory purchase warehouse results in the following conditions: Manually created purchase orders can only be for the specified mandatory warehouse, and the warehouse is also used in the purchase lines. In master planning, the warehouse from the requirement is used. However, when you firm a planned purchase order, the mandatory purchase warehouse is used. A mandatory inventory warehouse is used for newly created orders and transactions, and you cannot change the warehouse. A mandatory sales warehouse results in the following conditions: you can enter any warehouse on a sales order header. However, when you enter a sales order line, the mandatory sales warehouse is used in the line.",
+      "label": "Mandatory site",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "InventDimPurch_InventLocationIdPurch",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Default warehouse",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "InventItemPurchSetup_MandatoryInventLocation",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Mandatory warehouse",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "PurchQtyGrp_M_editMultipleQty",
+      "helpSource": "hover",
+      "helpText": "MultipleEnter the default quantity to use for requirement calculations. This is the default quantity in which the item is produced. You can change the default quantity. You can set the default quantity per site.",
+      "label": "Multiple",
+      "role": "Real",
+      "tab": ""
+    },
+    {
+      "controlName": "PurchQtyGrp_M_editLowestQty",
+      "helpSource": "hover",
+      "helpText": "Enter the minimum allowed number of receipts or issues for the item. This value is used in purchase lines, sales lines, production orders, inventory journals, and item coverage. You can set the default quantity per site.",
+      "label": "Min. order quantity",
+      "role": "Real",
+      "tab": ""
+    },
+    {
+      "controlName": "PurchQtyGrp_M_editHighestQty",
+      "helpSource": "hover",
+      "helpText": "Max. order quantityEnter the maximum allowed number of receipts or issues for the item. This is the largest quantity that will be accepted in purchase orders, inventory journals, and productions. You can set the default quantity per site.",
+      "label": "Max. order quantity",
+      "role": "Real",
+      "tab": ""
+    },
+    {
+      "controlName": "PurchQtyGrp_M_editStandardQty",
+      "helpSource": "hover",
+      "helpText": "Enter a default quantity to use when you create a purchase line, inventory line, or sales line. You can set the default quantity per site.",
+      "label": "Standard order quantity",
+      "role": "Real",
+      "tab": ""
+    },
+    {
+      "controlName": "PurchOtherGrp_M_editLeadTime",
+      "helpSource": "hover",
+      "helpText": "Purchase lead timeThe standard acquisition time for the item. The time that is entered here is the default time that is used if the acquisition time is not specified elsewhere. This is typically used by companies or organizations that need simple lead times. This field is used for item coverage planning and for determining the latest order date for planned purchase orders. If the field displays bill of materials (BOM) items without routes, this field is used to move requirements forward for incoming items when planned production orders are generated. You can define the lead time for a site. If no site-specific lead time is defined, the default setting for the item is used. The lead time that is defined in the Item coverage page takes precedence over this field. This field is active only when there is not a primary vendor for the item or when no lead time is entered on a trade agreement.",
+      "label": "Purchase lead time",
+      "role": "Integer",
+      "tab": ""
+    },
+    {
+      "controlName": "PurchOtherGrp_M_editCalendarDays",
+      "helpSource": "hover",
+      "helpText": "Select this option to define days as open days. Open days exclude, for example, weekends, company or organization shutdowns, and public holidays. You can define site-specific working days You cannot define working days for sales orders.",
+      "label": "Working days",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "PurchOtherGrp_M_editStopped",
+      "helpSource": "hover",
+      "helpText": "StoppedSelect this option if an item is blocked. When an item is blocked and you enter a purchase or sales line, a warning message appears. When the item is blocked, inventory transactions that are related to the purchase or sales order line cannot be modified, for example, when you post a packing slip or an invoice. You can block a purchased item, and at the same time, sell the item. In this case, this field is selected on a purchase order, but it is not blocked in inventory or on a sales order. An item number can be blocked from being sold, for example, if: The item is still under development or manufacture, and you do not want the item to be sold or reserved. You have received many defective items. The defects must be corrected before the item can be sold. Therefore, you can block the item until the issue is resolved. When an item is blocked and you create a return order line, a message is displayed. To post the line that you have created, you must clear the option. You cannot block a series or a lot of the item. If parts of the item are to be blocked, you can block them by moving inventory or by blocking the full stock of the item for that period.",
+      "label": "Stopped",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "InventTab",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Unit",
+      "role": "SectionPage",
+      "tab": ""
+    },
+    {
+      "controlName": "InventUnitId",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Unit",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "InventDimInvent_InventSiteIdInvent",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Default site",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "InventItemInventSetup_MandatoryInventSite",
+      "helpSource": "hover",
+      "helpText": "Mandatory siteSelect this option to make the selected warehouse mandatory. A mandatory purchase warehouse results in the following conditions: Manually created purchase orders can only be for the specified mandatory warehouse, and the warehouse is also used in the purchase lines. In master planning, the warehouse from the requirement is used. However, when you firm a planned purchase order, the mandatory purchase warehouse is used. A mandatory inventory warehouse is used for newly created orders and transactions, and you cannot change the warehouse. A mandatory sales warehouse results in the following conditions: you can enter any warehouse on a sales order header. However, when you enter a sales order line, the mandatory sales warehouse is used in the line.",
+      "label": "Mandatory site",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "InventDimInvent_InventLocationIdInvent",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Default warehouse",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "InventItemInventSetup_MandatoryInventLocation",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Mandatory warehouse",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "InventQtyGrp_M_editMultipleQty",
+      "helpSource": "hover",
+      "helpText": "MultipleEnter the default quantity to use for requirement calculations. This is the default quantity in which the item is produced. You can change the default quantity. You can set the default quantity per site.",
+      "label": "Multiple",
+      "role": "Real",
+      "tab": ""
+    },
+    {
+      "controlName": "InventQtyGrp_M_editLowestQty",
+      "helpSource": "hover",
+      "helpText": "Enter the minimum allowed number of receipts or issues for the item. This value is used in purchase lines, sales lines, production orders, inventory journals, and item coverage. You can set the default quantity per site.",
+      "label": "Min. order quantity",
+      "role": "Real",
+      "tab": ""
+    },
+    {
+      "controlName": "InventQtyGrp_M_editHighestQty",
+      "helpSource": "hover",
+      "helpText": "Max. order quantityEnter the maximum allowed number of receipts or issues for the item. This is the largest quantity that will be accepted in purchase orders, inventory journals, and productions. You can set the default quantity per site.",
+      "label": "Max. order quantity",
+      "role": "Real",
+      "tab": ""
+    },
+    {
+      "controlName": "InventQtyGrp_M_editStandardQty",
+      "helpSource": "hover",
+      "helpText": "Enter a default quantity to use when you create a purchase line, inventory line, or sales line. You can set the default quantity per site.",
+      "label": "Standard order quantity",
+      "role": "Real",
+      "tab": ""
+    },
+    {
+      "controlName": "InventOtherGrp_M_editLeadTime",
+      "helpSource": "hover",
+      "helpText": "Inventory lead timeThe standard lead time for produced items. The times entered here are default times if times are not specified elsewhere. This is typically used by companies or organizations that need simple lead times. The lead time for an item in production is the time that is required to manufacture an item from the first operation to the last. You only need to use this field when no routes are to be created for the item. If a route has been created, the production time is calculated during item coverage planning. You can define the lead time for a site. If no site-specific lead time is defined, the default setting for the item is used. The lead time that is defined in the Item coverage page takes precedence over this field. Weekends are not included in the lead time as available work capacity. Therefore, the actual lead time might be longer than the time that appears in the field. The work capacity depends on the calendar that is assigned in the Coverage groups page.",
+      "label": "Inventory lead time",
+      "role": "Integer",
+      "tab": ""
+    },
+    {
+      "controlName": "InventOtherGrp_M_editCalendarDays",
+      "helpSource": "hover",
+      "helpText": "Select this option to define days as open days. Open days exclude, for example, weekends, company or organization shutdowns, and public holidays. You can define site-specific working days You cannot define working days for sales orders.",
+      "label": "Working days",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "InventOtherGrp_M_editStopped",
+      "helpSource": "hover",
+      "helpText": "StoppedSelect this option if an item is blocked. When an item is blocked and you enter a purchase or sales line, a warning message appears. When the item is blocked, inventory transactions that are related to the purchase or sales order line cannot be modified, for example, when you post a packing slip or an invoice. You can block a purchased item, and at the same time, sell the item. In this case, this field is selected on a purchase order, but it is not blocked in inventory or on a sales order. An item number can be blocked from being sold, for example, if: The item is still under development or manufacture, and you do not want the item to be sold or reserved. You have received many defective items. The defects must be corrected before the item can be sold. Therefore, you can block the item until the issue is resolved. When an item is blocked and you create a return order line, a message is displayed. To post the line that you have created, you must clear the option. You cannot block a series or a lot of the item. If parts of the item are to be blocked, you can block them by moving inventory or by blocking the full stock of the item for that period.",
+      "label": "Stopped",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "InventParametersOverrideCheckbox",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Override delivery control",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "InventDeliveryControlGrp_M_editDeliveryDateControlType",
+      "helpSource": "hover",
+      "helpText": "Delivery date controlSelect the method to use to calculate possible ship and receipt dates. If you select the ATP + Issue margin option, the shipping date is equal to the available-to-promise (ATP) date plus the issue margin for the item. The issue margin is the time that is required to prepare the items to ship.",
+      "label": "Delivery date control",
+      "role": "ComboBox",
+      "tab": ""
+    },
+    {
+      "controlName": "InventDeliveryControlGrp_M_editATPTimeFence",
+      "helpSource": "hover",
+      "helpText": "Calculate ATP by using this period (in days) if you selected the ATP calculation method in the Delivery date control field.",
+      "label": "ATP time fence",
+      "role": "Integer",
+      "tab": ""
+    },
+    {
+      "controlName": "InventDeliveryControlGrp_M_editATPBackwardDemandTimeFence",
+      "helpSource": "hover",
+      "helpText": "ATP backward demand time fenceEnter the number of days backward from today that past due demand (that is, inventory issues) will be considered when calculating the earliest available delivery dates for inventory. For example, if you enter 0, no past due demand will be considered. If you enter 1, yesterday's demand will be considered.",
+      "label": "ATP backward demand time fence",
+      "role": "Integer",
+      "tab": ""
+    },
+    {
+      "controlName": "InventDeliveryControlGrp_M_editATPBackwardSupplyTimeFence",
+      "helpSource": "hover",
+      "helpText": "Enter the number of days backward from today that past due supply (that is, inventory receipts) will be considered when calculating the earliest available delivery dates for inventory. For example, if you enter 0, no past due supply will be considered. If you enter 1, yesterday's supply will be considered.",
+      "label": "ATP backward supply time fence",
+      "role": "Integer",
+      "tab": ""
+    },
+    {
+      "controlName": "InventDeliveryControlGrp_M_editATPApplyDemandTimeFence",
+      "helpSource": "hover",
+      "helpText": "ATP delayed demand offset timeThe number of days into the future from today when past due demand on inventory issues will be considered as having its delivery date. For example, if you enter 0, items with a past due delivery date will be considered as delivered today. If you enter 1, items with a past due delivery date will be considered as delivered tomorrow.",
+      "label": "ATP delayed demand offset time",
+      "role": "Integer",
+      "tab": ""
+    },
+    {
+      "controlName": "InventDeliveryControlGrp_M_editATPApplySupplyTimeFence",
+      "helpSource": "hover",
+      "helpText": "The number of days into the future from today when items on past due inventory receipts will be considered as received. For example, if you enter 0, the item will be considered as received today. If you enter 1, the item will be considered as received tomorrow.",
+      "label": "ATP delayed supply offset time",
+      "role": "Integer",
+      "tab": ""
+    },
+    {
+      "controlName": "InventDeliveryControlGrp_M_editATPInclPlannedOrders",
+      "helpSource": "hover",
+      "helpText": "ATP incl. planned ordersInclude planned orders in ATP calculations if you selected the ATP calculation method in the Delivery date control field.",
+      "label": "ATP incl. planned orders",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "SalesTab",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Unit",
+      "role": "SectionPage",
+      "tab": ""
+    },
+    {
+      "controlName": "SalesUnitId",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Unit",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "InventDimSales_InventSiteIdSales",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Default site",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "InventItemSalesSetup_MandatoryInventSite",
+      "helpSource": "hover",
+      "helpText": "Mandatory siteSelect this option to make the selected warehouse mandatory. A mandatory purchase warehouse results in the following conditions: Manually created purchase orders can only be for the specified mandatory warehouse, and the warehouse is also used in the purchase lines. In master planning, the warehouse from the requirement is used. However, when you firm a planned purchase order, the mandatory purchase warehouse is used. A mandatory inventory warehouse is used for newly created orders and transactions, and you cannot change the warehouse. A mandatory sales warehouse results in the following conditions: you can enter any warehouse on a sales order header. However, when you enter a sales order line, the mandatory sales warehouse is used in the line.",
+      "label": "Mandatory site",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "GUPDiscountClaimVendorAccount",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Discount claim vendor account",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "InventDimSales_InventLocationIdSales",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Default warehouse",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "InventItemSalesSetup_MandatoryInventLocation",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Mandatory warehouse",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "SalesQtyGrp_M_editMultipleQty",
+      "helpSource": "hover",
+      "helpText": "MultipleEnter the default quantity to use for requirement calculations. This is the default quantity in which the item is produced. You can change the default quantity. You can set the default quantity per site.",
+      "label": "Multiple",
+      "role": "Real",
+      "tab": ""
+    },
+    {
+      "controlName": "SalesQtyGrp_M_editLowestQty",
+      "helpSource": "hover",
+      "helpText": "Enter the minimum allowed number of receipts or issues for the item. This value is used in purchase lines, sales lines, production orders, inventory journals, and item coverage. You can set the default quantity per site.",
+      "label": "Min. order quantity",
+      "role": "Real",
+      "tab": ""
+    },
+    {
+      "controlName": "SalesQtyGrp_M_editHighestQty",
+      "helpSource": "hover",
+      "helpText": "Max. order quantityEnter the maximum allowed number of receipts or issues for the item. This is the largest quantity that will be accepted in purchase orders, inventory journals, and productions. You can set the default quantity per site.",
+      "label": "Max. order quantity",
+      "role": "Real",
+      "tab": ""
+    },
+    {
+      "controlName": "SalesQtyGrp_M_editStandardQty",
+      "helpSource": "hover",
+      "helpText": "Enter a default quantity to use when you create a purchase line, inventory line, or sales line. You can set the default quantity per site.",
+      "label": "Standard order quantity",
+      "role": "Real",
+      "tab": ""
+    },
+    {
+      "controlName": "SalesOtherGrp_M_editStopped",
+      "helpSource": "hover",
+      "helpText": "StoppedSelect this option if an item is blocked. When an item is blocked and you enter a purchase or sales line, a warning message appears. When the item is blocked, inventory transactions that are related to the purchase or sales order line cannot be modified, for example, when you post a packing slip or an invoice. You can block a purchased item, and at the same time, sell the item. In this case, this field is selected on a purchase order, but it is not blocked in inventory or on a sales order. An item number can be blocked from being sold, for example, if: The item is still under development or manufacture, and you do not want the item to be sold or reserved. You have received many defective items. The defects must be corrected before the item can be sold. Therefore, you can block the item until the issue is resolved. When an item is blocked and you create a return order line, a message is displayed. To post the line that you have created, you must clear the option. You cannot block a series or a lot of the item. If parts of the item are to be blocked, you can block them by moving inventory or by blocking the full stock of the item for that period.",
+      "label": "Stopped",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "SalesLeadTimeOverrideCheckbox",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Override sales lead time",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "SalesOtherGrp_M_editLeadTimeDefault",
+      "helpSource": "hover",
+      "helpText": "Sales lead timeThe standard delivery time for sold items. The times that are entered here are default times if times are not specified elsewhere. This is typically used by companies or organizations that need simple lead times. Handling time is the number of days it takes from the time that a customer orders an item until the item is sent. Handling time is not considered during coverage planning. You can define the lead time for a site. If no site-specific lead time is defined, the default setting for the item is used.",
+      "label": "Sales lead time",
+      "role": "Integer",
+      "tab": ""
+    },
+    {
+      "controlName": "SalesParametersOverrideCheckbox",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Override delivery control",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "SalesDeliveryControlGrp_M_editDeliveryDateControlType",
+      "helpSource": "hover",
+      "helpText": "Delivery date controlSelect the method to use to calculate possible ship and receipt dates. If you select the ATP + Issue margin option, the shipping date is equal to the available-to-promise (ATP) date plus the issue margin for the item. The issue margin is the time that is required to prepare the items to ship.",
+      "label": "Delivery date control",
+      "role": "ComboBox",
+      "tab": ""
+    },
+    {
+      "controlName": "SalesDeliveryControlGrp_M_editATPTimeFence",
+      "helpSource": "hover",
+      "helpText": "Calculate ATP by using this period (in days) if you selected the ATP calculation method in the Delivery date control field.",
+      "label": "ATP time fence",
+      "role": "Integer",
+      "tab": ""
+    },
+    {
+      "controlName": "SalesDeliveryControlGrp_M_editATPBackwardDemandTimeFence",
+      "helpSource": "hover",
+      "helpText": "ATP backward demand time fenceEnter the number of days backward from today that past due demand (that is, inventory issues) will be considered when calculating the earliest available delivery dates for inventory. For example, if you enter 0, no past due demand will be considered. If you enter 1, yesterday's demand will be considered.",
+      "label": "ATP backward demand time fence",
+      "role": "Integer",
+      "tab": ""
+    },
+    {
+      "controlName": "SalesDeliveryControlGrp_M_editATPBackwardSupplyTimeFence",
+      "helpSource": "hover",
+      "helpText": "Enter the number of days backward from today that past due supply (that is, inventory receipts) will be considered when calculating the earliest available delivery dates for inventory. For example, if you enter 0, no past due supply will be considered. If you enter 1, yesterday's supply will be considered.",
+      "label": "ATP backward supply time fence",
+      "role": "Integer",
+      "tab": ""
+    },
+    {
+      "controlName": "SalesDeliveryControlGrp_M_editATPApplyDemandTimeFence",
+      "helpSource": "hover",
+      "helpText": "ATP delayed demand offset timeThe number of days into the future from today when past due demand on inventory issues will be considered as having its delivery date. For example, if you enter 0, items with a past due delivery date will be considered as delivered today. If you enter 1, items with a past due delivery date will be considered as delivered tomorrow.",
+      "label": "ATP delayed demand offset time",
+      "role": "Integer",
+      "tab": ""
+    },
+    {
+      "controlName": "SalesDeliveryControlGrp_M_editATPApplySupplyTimeFence",
+      "helpSource": "hover",
+      "helpText": "The number of days into the future from today when items on past due inventory receipts will be considered as received. For example, if you enter 0, the item will be considered as received today. If you enter 1, the item will be considered as received tomorrow.",
+      "label": "ATP delayed supply offset time",
+      "role": "Integer",
+      "tab": ""
+    },
+    {
+      "controlName": "SalesDeliveryControlGrp_M_editATPInclPlannedOrders",
+      "helpSource": "hover",
+      "helpText": "ATP incl. planned ordersInclude planned orders in ATP calculations if you selected the ATP calculation method in the Delivery date control field.",
+      "label": "ATP incl. planned orders",
+      "role": "CheckBox",
+      "tab": ""
+    }
+  ],
+  "lookups": [
+    {
+      "tab": "",
+      "controlName": "ViewModeTab",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "DetailsViewTabPage",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "IdentificationGrp_ItemId",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "InventDim_InventSiteId",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "ctrlDefaultOrderType",
+      "opened": true,
+      "values": [
+        "Purchase order",
+        "Production",
+        "Kanban"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "PurchTab",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "PurchUnitId",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "InventDimPurch_InventSiteIdPurch",
+      "opened": true,
+      "values": [
+        "SiteName"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "InventDimPurch_InventLocationIdPurch",
+      "opened": true,
+      "values": [
+        "WarehouseNameSite"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "InventTab",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "InventUnitId",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "InventDimInvent_InventSiteIdInvent",
+      "opened": true,
+      "values": [
+        "SiteName"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "InventDimInvent_InventLocationIdInvent",
+      "opened": true,
+      "values": [
+        "WarehouseNameSite"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "InventDeliveryControlGrp_M_editDeliveryDateControlType",
+      "opened": true,
+      "values": [
+        "None",
+        "Sales lead time",
+        "ATP",
+        "ATP + Issue margin",
+        "CTP",
+        "Batch CTP"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "SalesTab",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "SalesUnitId",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "InventDimSales_InventSiteIdSales",
+      "opened": true,
+      "values": [
+        "SiteName"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "GUPDiscountClaimVendorAccount",
+      "opened": true,
+      "values": [
+        "Vendor accountNameSearch namePhoneCityStateCountry/regionZIP/postal code"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "InventDimSales_InventLocationIdSales",
+      "opened": true,
+      "values": [
+        "WarehouseNameSite"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "SalesDeliveryControlGrp_M_editDeliveryDateControlType",
+      "opened": true,
+      "values": [
+        "None",
+        "Sales lead time",
+        "ATP",
+        "ATP + Issue margin",
+        "CTP",
+        "Batch CTP"
+      ],
+      "reason": ""
+    }
+  ]
+}
