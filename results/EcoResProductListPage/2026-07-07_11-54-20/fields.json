@@ -1,0 +1,482 @@
+{
+  "formName": "EcoResProductListPage",
+  "url": "https://hint-sb-04a9f0283cca85a5c5devaos.cloudax.dynamics.com/?cmp=hge&mi=EcoResDistinctProductListPage",
+  "scannedAt": "2026-07-07T09:54:20.558Z",
+  "deep": true,
+  "walkTabs": true,
+  "tabsFound": [],
+  "tabsScanned": 1,
+  "fields": [
+    {
+      "controlName": "Tab",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Product number",
+      "role": "Pivot",
+      "tab": ""
+    },
+    {
+      "controlName": "Details",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Product number",
+      "role": "PivotItem",
+      "tab": ""
+    },
+    {
+      "controlName": "GeneralFT",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Product number",
+      "role": "SectionPage",
+      "tab": ""
+    },
+    {
+      "controlName": "GeneralFT_GeneralIdentification_DisplayProductNumber",
+      "helpSource": "dom",
+      "helpText": "Product number: 00000001",
+      "label": "Product number: 00000001",
+      "role": "InputSummary",
+      "tab": ""
+    },
+    {
+      "controlName": "GeneralIdentification_DisplayProductNumber",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Product number",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "EcoResProductTranslation_Name",
+      "helpSource": "hover",
+      "helpText": "Product nameThe name of the product. If you do not specify a product name, the product number is applied as the product name.",
+      "label": "Product name",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "EcoResProduct_SearchName",
+      "helpSource": "hover",
+      "helpText": "A short name that is used for product searches. If you do not specify a search name, the product number is applied as the search name.",
+      "label": "Search name",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "EcoResProductTranslation_Description",
+      "helpSource": "hover",
+      "helpText": "DescriptionAn additional description of the product. You can create and edit the description when a product is created. When you have released a product, the description cannot be changed.",
+      "label": "Description",
+      "role": "MultilineInput",
+      "tab": ""
+    },
+    {
+      "controlName": "EcoResProduct_ProductType",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Product type",
+      "role": "ComboBox",
+      "tab": ""
+    },
+    {
+      "controlName": "EcoResProduct_EngChgProductOwnerId",
+      "helpSource": "hover",
+      "helpText": "Product ownerProduct owner identification",
+      "label": "Product owner",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "EcoResProductDimensionGroupProduct_ProductDimensionGroup",
+      "helpSource": "hover",
+      "helpText": "The product dimension group that is associated with the product master. The product dimension group is associated with the product master upon creation, and it cannot be changed.",
+      "label": "Product dimension group",
+      "role": "ReferenceGroup",
+      "tab": ""
+    },
+    {
+      "controlName": "EcoResProductDimensionGroupProduct_ProductDimensionGroup_Name",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Name",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "EcoResStorageDimensionGroupProduct_StorageDimensionGroup",
+      "helpSource": "hover",
+      "helpText": "Storage dimension groupUnique ID for the record in the database",
+      "label": "Storage dimension group",
+      "role": "ReferenceGroup",
+      "tab": ""
+    },
+    {
+      "controlName": "EcoResStorageDimensionGroupProduct_StorageDimensionGroup_Name",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Name",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "EcoResTrackingDimensionGroupProduct_TrackingDimensionGroup",
+      "helpSource": "hover",
+      "helpText": "Tracking dimension groupUnique ID for the record in the database",
+      "label": "Tracking dimension group",
+      "role": "ReferenceGroup",
+      "tab": ""
+    },
+    {
+      "controlName": "EcoResTrackingDimensionGroupProduct_TrackingDimensionGroup_Name",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Name",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "RetailVariants_RetailColorGroupId",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Color group",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "RetailVariants_RetailStyleGroupId",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Style group",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "RetailVariants_RetailSizeGroupId",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Size group",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "General_EcoResProductMaster_VariantConfigurationTechnology",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Configuration technology",
+      "role": "ComboBox",
+      "tab": ""
+    },
+    {
+      "controlName": "General_EcoResProductMasterModelingPolicy_IsReuseExistingConfigurationEnabled",
+      "helpSource": "hover",
+      "helpText": "Allow identical configurationsFor a product master, you can select this option to create product variants that are identical to existing product variants. This option is available only if the configuration technology for the product master is set to Dimension-based configuration.",
+      "label": "Allow identical configurations",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "General_EcoResProductMasterModelingPolicy_IsAutomaticVariantGenerationEnabled",
+      "helpSource": "hover",
+      "helpText": "Select this option to generate new product variants when a product dimension is created for a product master. This option is available only if the configuration technology for the product master is set to Dimension-based configuration or Predefined variant.",
+      "label": "Generate variants automatically",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "EcoResProduct_EcoResProductMaster_IsProductVariantUnitConversionEnabled",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Enable unit of measure conversions",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "UseNomenclatureCheckBox",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Use number nomenclature",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "ProductVariantNomenclatureId",
+      "helpSource": "hover",
+      "helpText": "Product variant number nomenclatureUnique ID for the record in the database",
+      "label": "Product variant number nomenclature",
+      "role": "ReferenceGroup",
+      "tab": ""
+    },
+    {
+      "controlName": "ProductVariantNomenclatureId_Name",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Name",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "UseNomenclatureNameCheckbox",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Use name nomenclature",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "ProductVariantNomenclatureName",
+      "helpSource": "hover",
+      "helpText": "Product variant name nomenclatureUnique ID for the record in the database",
+      "label": "Product variant name nomenclature",
+      "role": "ReferenceGroup",
+      "tab": ""
+    },
+    {
+      "controlName": "ProductVariantNomenclatureName_Name",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Name",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "EcoResProduct_EngChgProductReleasePolicy",
+      "helpSource": "hover",
+      "helpText": "Release policyUnique ID for the record in the database",
+      "label": "Release policy",
+      "role": "ReferenceGroup",
+      "tab": ""
+    },
+    {
+      "controlName": "EcoResProduct_EngChgProductReleasePolicy_Name",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Name",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "EcoResProduct_EngChgProductReadinessPolicy",
+      "helpSource": "hover",
+      "helpText": "Product readiness policyUnique ID for the record in the database",
+      "label": "Product readiness policy",
+      "role": "ReferenceGroup",
+      "tab": ""
+    },
+    {
+      "controlName": "EcoResProduct_EngChgProductReadinessPolicy_Name",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Name",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "PdsCWProduct_PdsCWProduct",
+      "helpSource": "hover",
+      "helpText": "CW productThe product quantity is measured in catch weight units.",
+      "label": "CW product",
+      "role": "CheckBox",
+      "tab": ""
+    },
+    {
+      "controlName": "WHS",
+      "helpSource": "",
+      "helpText": "",
+      "label": "NMFC code",
+      "role": "SectionPage",
+      "tab": ""
+    },
+    {
+      "controlName": "WHSEcoResProductTrnsCodes_NMFCCode",
+      "helpSource": "",
+      "helpText": "",
+      "label": "NMFC code",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "WHSEcoResProductTrnsCodes_STCCCode",
+      "helpSource": "",
+      "helpText": "",
+      "label": "STCC code",
+      "role": "Input",
+      "tab": ""
+    },
+    {
+      "controlName": "WHSEcoResProductTrnsCodes_HarmonizedCode",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Harmonized system",
+      "role": "Input",
+      "tab": ""
+    }
+  ],
+  "lookups": [
+    {
+      "tab": "",
+      "controlName": "Tab",
+      "opened": true,
+      "values": [
+        "Item",
+        "Service"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "Details",
+      "opened": true,
+      "values": [
+        "Item",
+        "Service"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "GeneralFT",
+      "opened": true,
+      "values": [
+        "Item",
+        "Service"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "EcoResProduct_ProductType",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "EcoResProduct_EngChgProductOwnerId",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "EcoResProductDimensionGroupProduct_ProductDimensionGroup",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "EcoResStorageDimensionGroupProduct_StorageDimensionGroup",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "EcoResTrackingDimensionGroupProduct_TrackingDimensionGroup",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "RetailVariants_RetailColorGroupId",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "RetailVariants_RetailStyleGroupId",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "RetailVariants_RetailSizeGroupId",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "General_EcoResProductMaster_VariantConfigurationTechnology",
+      "opened": true,
+      "values": [
+        "Predefined variant",
+        "Dimension-based configuration",
+        "Constraint-based configuration"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "ProductVariantNomenclatureId",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "ProductVariantNomenclatureName",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "",
+      "controlName": "EcoResProduct_EngChgProductReleasePolicy",
+      "opened": true,
+      "values": [
+        "NameDescription"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "EcoResProduct_EngChgProductReadinessPolicy",
+      "opened": true,
+      "values": [
+        "Name"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "WHS",
+      "opened": true,
+      "values": [
+        "NMFC codeName"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "WHSEcoResProductTrnsCodes_NMFCCode",
+      "opened": true,
+      "values": [
+        "NMFC codeName"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "WHSEcoResProductTrnsCodes_STCCCode",
+      "opened": true,
+      "values": [
+        "STCC codeName"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "",
+      "controlName": "WHSEcoResProductTrnsCodes_HarmonizedCode",
+      "opened": true,
+      "values": [
+        "Harmonized Tariff ScheduleName"
+      ],
+      "reason": ""
+    }
+  ]
+}
