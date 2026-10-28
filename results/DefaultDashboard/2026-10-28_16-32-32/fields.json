@@ -1,0 +1,1469 @@
+{
+  "formName": "DefaultDashboard",
+  "url": "https://hso-academy-trn1d3123fdd54f85b0devaos.cloudax.eu.dynamics.com/?cmp=demf&mi=smmParameters",
+  "scannedAt": "2026-10-28T15:32:32.156Z",
+  "deep": true,
+  "walkTabs": true,
+  "tabsFound": [
+    "General",
+    "Prospects",
+    "Documents",
+    "Campaigns",
+    "Activities",
+    "Transaction log",
+    "Number sequences"
+  ],
+  "tabsScanned": 7,
+  "fields": [
+    {
+      "controlName": "Tab",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Define general parameters for prospects, leads and opportunities",
+      "role": "VerticalTabs",
+      "tab": "General"
+    },
+    {
+      "controlName": "General",
+      "helpSource": "",
+      "helpText": "",
+      "label": "General",
+      "role": "PivotItem",
+      "tab": "General"
+    },
+    {
+      "controlName": "Period_PeriodId",
+      "helpSource": "hover",
+      "helpText": "Period codeSelect the period that you want information about.",
+      "label": "Period code",
+      "role": "Input",
+      "tab": "General"
+    },
+    {
+      "controlName": "Period_PeriodFrom",
+      "helpSource": "hover",
+      "helpText": "Select the default start date for prospect statistics and sales targets.",
+      "label": "Start date",
+      "role": "Date",
+      "tab": "General"
+    },
+    {
+      "controlName": "Period_PeriodTo",
+      "helpSource": "hover",
+      "helpText": "End dateSelect the default end date for prospect statistics and sales targets.",
+      "label": "End date",
+      "role": "Date",
+      "tab": "General"
+    },
+    {
+      "controlName": "Leads_AutoCreateOpportunity",
+      "helpSource": "hover",
+      "helpText": "Select this check box to automatically create an opportunity record when a lead record is qualified.",
+      "label": "Create opportunity when qualified",
+      "role": "CheckBox",
+      "tab": "General"
+    },
+    {
+      "controlName": "Leads_AutoCreateCustomer",
+      "helpSource": "hover",
+      "helpText": "Create customer when qualifiedSelect this check box to automatically create a customer record when a lead record is qualified.",
+      "label": "Create customer when qualified",
+      "role": "CheckBox",
+      "tab": "General"
+    },
+    {
+      "controlName": "Opportunities_CreateOpportunityForSalesQuotation",
+      "helpSource": "hover",
+      "helpText": "Select whether to create an opportunity record when a sales quotation is created.",
+      "label": "Create opportunity for sales quotation",
+      "role": "ComboBox",
+      "tab": "General"
+    },
+    {
+      "controlName": "Opportunities_CreateOpportunityForProjectQuotation",
+      "helpSource": "hover",
+      "helpText": "Create opportunity for project quotationsSelect whether to create an opportunity record when a project quotation is created.",
+      "label": "Create opportunity for project quotations",
+      "role": "ComboBox",
+      "tab": "General"
+    },
+    {
+      "controlName": "Opportunities_UpdateOpportunityForSalesQuotation",
+      "helpSource": "hover",
+      "helpText": "Select whether to update an opportunity record when the status of a sales quotation is changed.",
+      "label": "Update opportunity when sales quotation status changes",
+      "role": "ComboBox",
+      "tab": "General"
+    },
+    {
+      "controlName": "Opportunities_UpdateOpportunityForProjectQuotation",
+      "helpSource": "hover",
+      "helpText": "Update opportunity when project quotation status changesSelect whether to update an opportunity record when the status of a project quotation is changed.",
+      "label": "Update opportunity when project quotation status changes",
+      "role": "ComboBox",
+      "tab": "General"
+    },
+    {
+      "controlName": "QMSApprovedCustomerList_QMSACLDateType",
+      "helpSource": "hover",
+      "helpText": "Date type for validating approved customer list records.",
+      "label": "Date type",
+      "role": "ComboBox",
+      "tab": "General"
+    },
+    {
+      "controlName": "Tab",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Define general parameters for prospects, leads and opportunities",
+      "role": "VerticalTabs",
+      "tab": "Prospects"
+    },
+    {
+      "controlName": "Prospects",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Prospects",
+      "role": "PivotItem",
+      "tab": "Prospects"
+    },
+    {
+      "controlName": "LanguageId",
+      "helpSource": "hover",
+      "helpText": "LanguageSelect the default language for a new prospect when it is created on the Prospect details page.",
+      "label": "Language",
+      "role": "Input",
+      "tab": "Prospects"
+    },
+    {
+      "controlName": "CustGroupId",
+      "helpSource": "hover",
+      "helpText": "Select the default customer group for a new prospect when it is created on the Prospect details page.",
+      "label": "Customer group",
+      "role": "Input",
+      "tab": "Prospects"
+    },
+    {
+      "controlName": "VendGroupId",
+      "helpSource": "hover",
+      "helpText": "Vendor groupSelect the default vendor group for a new prospect when it is created on the Prospect details page.",
+      "label": "Vendor group",
+      "role": "Input",
+      "tab": "Prospects"
+    },
+    {
+      "controlName": "CurrencyCode",
+      "helpSource": "hover",
+      "helpText": "Select the default currency code for a new prospect when it is created on the Prospect details page.",
+      "label": "Currency",
+      "role": "Input",
+      "tab": "Prospects"
+    },
+    {
+      "controlName": "BusRelTypeId",
+      "helpSource": "hover",
+      "helpText": "TypeSelect the default prospect type for a new prospect when it is created on the Prospect details page. The prospect types are defined on the Relation types page.",
+      "label": "Type",
+      "role": "Input",
+      "tab": "Prospects"
+    },
+    {
+      "controlName": "OpenFromTime",
+      "helpSource": "hover",
+      "helpText": "Enter the default opening hours of business for a newly created prospect.",
+      "label": "Opening time",
+      "role": "Time",
+      "tab": "Prospects"
+    },
+    {
+      "controlName": "OpenToTime",
+      "helpSource": "hover",
+      "helpText": "Closing timeEnter the default closing hours of business for a newly created prospect.",
+      "label": "Closing time",
+      "role": "Time",
+      "tab": "Prospects"
+    },
+    {
+      "controlName": "RelationDefaults_BusRelStatus",
+      "helpSource": "hover",
+      "helpText": "Select the default prospect status.",
+      "label": "Status",
+      "role": "Input",
+      "tab": "Prospects"
+    },
+    {
+      "controlName": "OtherInfo_EmailMemberCopyType",
+      "helpSource": "hover",
+      "helpText": "Email group copy typeSelect how e-mail messages that are sent through e-mail groups are sent to the recipient.",
+      "label": "Email group copy type",
+      "role": "ComboBox",
+      "tab": "Prospects"
+    },
+    {
+      "controlName": "OtherInfo_BusRelOpenCustForm",
+      "helpSource": "hover",
+      "helpText": "Select this check box to open either the Vendors page or the Customers page when a prospect of the corresponding type is created.",
+      "label": "Open customer or vendor form on converting a prospect",
+      "role": "CheckBox",
+      "tab": "Prospects"
+    },
+    {
+      "controlName": "Tab",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Define general parameters for prospects, leads and opportunities",
+      "role": "VerticalTabs",
+      "tab": "Documents"
+    },
+    {
+      "controlName": "Documents",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Documents",
+      "role": "PivotItem",
+      "tab": "Documents"
+    },
+    {
+      "controlName": "DocuAgeLimitForDisplay",
+      "helpSource": "hover",
+      "helpText": "Hide documents if older thanEnter the upper age limit of the documents to be displayed on the Documents page. The upper age limit is defined as the present date minus the number (of days) in this field. If you enter 10, only documents created between 10 days ago and today will be displayed.",
+      "label": "Hide documents if older than",
+      "role": "Integer",
+      "tab": "Documents"
+    },
+    {
+      "controlName": "Directory",
+      "helpSource": "hover",
+      "helpText": "Select a directory to use for storing mailing files.",
+      "label": "Mailing file directory",
+      "role": "Input",
+      "tab": "Documents"
+    },
+    {
+      "controlName": "DocuTypeIdForInEMail",
+      "helpSource": "hover",
+      "helpText": "Document type for incoming emailSelect the document type to use when saving incoming email messages as standard documents. Document types are set up on the Document types page.",
+      "label": "Document type for incoming email",
+      "role": "Input",
+      "tab": "Documents"
+    },
+    {
+      "controlName": "DocuTypeIdForOutEMail",
+      "helpSource": "hover",
+      "helpText": "Select the document type to use when saving outgoing email messages as standard documents. Document types are set up on the Document types page.",
+      "label": "Document type for outgoing email",
+      "role": "Input",
+      "tab": "Documents"
+    },
+    {
+      "controlName": "DocuTypeIdForFiles",
+      "helpSource": "hover",
+      "helpText": "Document type for other documentsSelect the document type to use when saving files by using the drag-and-drop feature. Document types are set up on the Document types page.",
+      "label": "Document type for other documents",
+      "role": "Input",
+      "tab": "Documents"
+    },
+    {
+      "controlName": "Tab",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Define general parameters for prospects, leads and opportunities",
+      "role": "VerticalTabs",
+      "tab": "Campaigns"
+    },
+    {
+      "controlName": "Campaigns",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Campaigns",
+      "role": "PivotItem",
+      "tab": "Campaigns"
+    },
+    {
+      "controlName": "CampaignStatus",
+      "helpSource": "hover",
+      "helpText": "StatusSelect the default campaign status. The status will appear when a new campaign is created on the Campaign page.",
+      "label": "Status",
+      "role": "ComboBox",
+      "tab": "Campaigns"
+    },
+    {
+      "controlName": "CampaignTypeId",
+      "helpSource": "hover",
+      "helpText": "Select the default campaign type. This will become the default campaign type when a new campaign is created on the Campaign page.",
+      "label": "Type",
+      "role": "Input",
+      "tab": "Campaigns"
+    },
+    {
+      "controlName": "CampaignGroupId",
+      "helpSource": "hover",
+      "helpText": "GroupSelect the default campaign group. This will become the default campaign group when a new campaign on the Campaign page.",
+      "label": "Group",
+      "role": "Input",
+      "tab": "Campaigns"
+    },
+    {
+      "controlName": "CampaignTargetId",
+      "helpSource": "hover",
+      "helpText": "Select the default campaign target. This will become the default campaign target when a new campaign on the Campaign page.",
+      "label": "Target",
+      "role": "Input",
+      "tab": "Campaigns"
+    },
+    {
+      "controlName": "CampaignDefaults_CampaignNumOfDaysExpiryDate",
+      "helpSource": "hover",
+      "helpText": "Days campaign expiresEnter the default number of days from the start date to the expiration date of a campaign.",
+      "label": "Days campaign expires",
+      "role": "Integer",
+      "tab": "Campaigns"
+    },
+    {
+      "controlName": "CampaignDefaults_NumOfCampaignDaysFollowUpDate",
+      "helpSource": "hover",
+      "helpText": "Enter the default number of follow-up days from the start date to the follow-up date. Note: Any automatic activities that are generated based on the campaign will use this field.",
+      "label": "Days before follow-up",
+      "role": "Integer",
+      "tab": "Campaigns"
+    },
+    {
+      "controlName": "WebSite_DefaultUserId",
+      "helpSource": "hover",
+      "helpText": "User IDSelect the default web site user identification for creating campaigns that are broadcast on the web and for gathering responses from the web.",
+      "label": "User ID",
+      "role": "Input",
+      "tab": "Campaigns"
+    },
+    {
+      "controlName": "smmParametersTable_WebSiteURL",
+      "helpSource": "hover",
+      "helpText": "Select the default web site that is associated with a campaign. This web site will be used when you are using the web broadcast functionality on the Campaign page.",
+      "label": "Internet address",
+      "role": "Input",
+      "tab": "Campaigns"
+    },
+    {
+      "controlName": "Tab",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Define general parameters for prospects, leads and opportunities",
+      "role": "VerticalTabs",
+      "tab": "Activities"
+    },
+    {
+      "controlName": "Activities",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Activities",
+      "role": "PivotItem",
+      "tab": "Activities"
+    },
+    {
+      "controlName": "RunBaseBatchDefaults_RunBaseBatchCreateActivity",
+      "helpSource": "hover",
+      "helpText": "Create activitySelect whether activities should be created automatically when you create records by using a batch job.",
+      "label": "Create activity",
+      "role": "ComboBox",
+      "tab": "Activities"
+    },
+    {
+      "controlName": "QuotationDefaultActivity_QuotationCreateActivity",
+      "helpSource": "hover",
+      "helpText": "Select whether an activity for the sales quotation is created automatically when a sales quotation is created.",
+      "label": "Create activity",
+      "role": "ComboBox",
+      "tab": "Activities"
+    },
+    {
+      "controlName": "QuotationDefaultActivity_QuotationActivityCategory",
+      "helpSource": "hover",
+      "helpText": "CategorySelect the default activity category for the follow-up sales quotation activity.",
+      "label": "Category",
+      "role": "ComboBox",
+      "tab": "Activities"
+    },
+    {
+      "controlName": "QuotationDefaultActivity_QuotationActivityTypeId",
+      "helpSource": "hover",
+      "helpText": "Select the default activity type for the follow-up sales quotation activity.",
+      "label": "Type",
+      "role": "Input",
+      "tab": "Activities"
+    },
+    {
+      "controlName": "QuotationDefaultActivity_QuotationActivityPurpose",
+      "helpSource": "hover",
+      "helpText": "PurposeEnter the default purpose for the follow-up sales quotation activity.",
+      "label": "Purpose",
+      "role": "Input",
+      "tab": "Activities"
+    },
+    {
+      "controlName": "QuotationDefaultActivity_QuotationActivityPhaseId",
+      "helpSource": "hover",
+      "helpText": "Select the default activity phase for the follow-up sales quotation activity.",
+      "label": "Phase",
+      "role": "Input",
+      "tab": "Activities"
+    },
+    {
+      "controlName": "CampaignDefaultActivity_CampaignCreateActivity",
+      "helpSource": "hover",
+      "helpText": "Create activitySelect whether a follow-up activity for the campaign should be created automatically when a campaign is created.",
+      "label": "Create activity",
+      "role": "ComboBox",
+      "tab": "Activities"
+    },
+    {
+      "controlName": "CampaignDefaultActivity_CampaignActivityCategory",
+      "helpSource": "hover",
+      "helpText": "Select the default activity category for the follow-up campaign activity.",
+      "label": "Category",
+      "role": "ComboBox",
+      "tab": "Activities"
+    },
+    {
+      "controlName": "CampaignDefaultActivity_CampaignActivityTypeId",
+      "helpSource": "hover",
+      "helpText": "TypeSelect the default activity type for the follow-up campaign activity.",
+      "label": "Type",
+      "role": "Input",
+      "tab": "Activities"
+    },
+    {
+      "controlName": "CampaignDefaultActivity_CampaignActivityPurpose",
+      "helpSource": "hover",
+      "helpText": "Enter the default purpose for the follow-up campaign activity.",
+      "label": "Purpose",
+      "role": "Input",
+      "tab": "Activities"
+    },
+    {
+      "controlName": "CampaignDefaultActivity_CampaignActivityPhaseId",
+      "helpSource": "hover",
+      "helpText": "PhaseSelect the default activity phase for the follow-up campaign activity.",
+      "label": "Phase",
+      "role": "Input",
+      "tab": "Activities"
+    },
+    {
+      "controlName": "CampaignTargetActivityDefaults_CampaignTargetsCreateActivity",
+      "helpSource": "hover",
+      "helpText": "Select whether an activity should be created automatically for the responsible employee when a campaign target is assigned to that employee.",
+      "label": "Create activity",
+      "role": "ComboBox",
+      "tab": "Activities"
+    },
+    {
+      "controlName": "CampaignTargetActivityDefaults_CampaignTargetActivityCategory",
+      "helpSource": "hover",
+      "helpText": "CategorySelect the default activity category for the campaign target activity.",
+      "label": "Category",
+      "role": "ComboBox",
+      "tab": "Activities"
+    },
+    {
+      "controlName": "CampaignTargetActivityDefaults_CampaignTargetActivityType",
+      "helpSource": "hover",
+      "helpText": "Select the default activity type for the campaign target activity.",
+      "label": "Type",
+      "role": "Input",
+      "tab": "Activities"
+    },
+    {
+      "controlName": "CampaignTargetActivityDefaults_CampaignTargetActivityPurpose",
+      "helpSource": "hover",
+      "helpText": "PurposeEnter the default purpose for the campaign target activity.",
+      "label": "Purpose",
+      "role": "Input",
+      "tab": "Activities"
+    },
+    {
+      "controlName": "CampaignTargetActivityDefaults_CampaignTargetActivityPhase",
+      "helpSource": "hover",
+      "helpText": "Select the default activity phase for the campaign target activity.",
+      "label": "Phase",
+      "role": "Input",
+      "tab": "Activities"
+    },
+    {
+      "controlName": "TelemarketingDefaultActivity_FollowupCreateActivity",
+      "helpSource": "hover",
+      "helpText": "Create activitySelect whether an activity should be created automatically when a telemarketing call list is created.",
+      "label": "Create activity",
+      "role": "ComboBox",
+      "tab": "Activities"
+    },
+    {
+      "controlName": "TelemarketingDefaultActivity_TMFollowUpActivityCategory",
+      "helpSource": "hover",
+      "helpText": "Select the default activity category for the telemarketing call list activity.",
+      "label": "Category",
+      "role": "ComboBox",
+      "tab": "Activities"
+    },
+    {
+      "controlName": "TelemarketingDefaultActivity_TMFollowUpActivityType",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Type",
+      "role": "Input",
+      "tab": "Activities"
+    },
+    {
+      "controlName": "TelemarketingDefaultActivity_TMFollowUpActivityPurpose",
+      "helpSource": "hover",
+      "helpText": "PurposeEnter the default purpose for the telemarketing call list activity.",
+      "label": "Purpose",
+      "role": "Input",
+      "tab": "Activities"
+    },
+    {
+      "controlName": "TelemarketingDefaultActivity_TMFollowUpActivityPhase",
+      "helpSource": "hover",
+      "helpText": "Select the default activity phase for the telemarketing call list activity.",
+      "label": "Phase",
+      "role": "Input",
+      "tab": "Activities"
+    },
+    {
+      "controlName": "TelemarketingDefaultCallBackActivity_CallBackCreateActivity",
+      "helpSource": "hover",
+      "helpText": "Create activitySelect whether an activity should be created automatically when the status of a call list target in a telemarketing call list is changed to Call back.",
+      "label": "Create activity",
+      "role": "ComboBox",
+      "tab": "Activities"
+    },
+    {
+      "controlName": "TelemarketingDefaultCallBackActivity_TMCallBackActivityCategory",
+      "helpSource": "hover",
+      "helpText": "Select the default activity category for the telemarketing call back activity.",
+      "label": "Category",
+      "role": "ComboBox",
+      "tab": "Activities"
+    },
+    {
+      "controlName": "TelemarketingDefaultCallBackActivity_TMCallbackActivityType",
+      "helpSource": "hover",
+      "helpText": "TypeSelect the default activity type for the telemarketing call back activity.",
+      "label": "Type",
+      "role": "Input",
+      "tab": "Activities"
+    },
+    {
+      "controlName": "TelemarketingDefaultCallBackActivity_TMCallBackActivityPurpose",
+      "helpSource": "hover",
+      "helpText": "Enter the default purpose for the telemarketing call back activity.",
+      "label": "Purpose",
+      "role": "Input",
+      "tab": "Activities"
+    },
+    {
+      "controlName": "TelemarketingDefaultCallBackActivity_TMCallBackActivityPhase",
+      "helpSource": "hover",
+      "helpText": "PhaseSelect the default activity phase for the telemarketing call back activity.",
+      "label": "Phase",
+      "role": "Input",
+      "tab": "Activities"
+    },
+    {
+      "controlName": "TelemarketingTargetActivityDefaults_TelemarketingTargetsCreateActivity",
+      "helpSource": "hover",
+      "helpText": "Select whether an activity should be created automatically for the responsible employee when a telemarketing call list target is assigned to that employee.",
+      "label": "Create activity",
+      "role": "ComboBox",
+      "tab": "Activities"
+    },
+    {
+      "controlName": "TelemarketingTargetActivityDefaults_TelemarketingTargetActivityCategory",
+      "helpSource": "hover",
+      "helpText": "CategorySelect the default activity category for the telemarketing call list target activity.",
+      "label": "Category",
+      "role": "ComboBox",
+      "tab": "Activities"
+    },
+    {
+      "controlName": "TelemarketingTargetActivityDefaults_TelemarketingTargetActivityType",
+      "helpSource": "hover",
+      "helpText": "Select the default activity type for the telemarketing call list target activity.",
+      "label": "Type",
+      "role": "Input",
+      "tab": "Activities"
+    },
+    {
+      "controlName": "TelemarketingTargetActivityDefaults_TelemarketingActivityPurpose",
+      "helpSource": "hover",
+      "helpText": "PurposeEnter the default purpose for the telemarketing call list target activity.",
+      "label": "Purpose",
+      "role": "Input",
+      "tab": "Activities"
+    },
+    {
+      "controlName": "TelemarketingTargetActivityDefaults_TelemarkeringTargetActivityPhase",
+      "helpSource": "hover",
+      "helpText": "Select the default activity phase for the telemarketing call list target activity.",
+      "label": "Phase",
+      "role": "Input",
+      "tab": "Activities"
+    },
+    {
+      "controlName": "MCRCatalogReqActivity_MCRCatalogReqActivityCreate",
+      "helpSource": "hover",
+      "helpText": "Create activity for catalog is requestedSelect if and when an activity should be created automatically when a customer requests a catalog.",
+      "label": "Create activity for catalog is requested",
+      "role": "ComboBox",
+      "tab": "Activities"
+    },
+    {
+      "controlName": "MCRCatalogReqActivity_MCRCatalogReqActivityCategory",
+      "helpSource": "hover",
+      "helpText": "Select the default activity category for the catalog request activity.",
+      "label": "Catalog requested category",
+      "role": "ComboBox",
+      "tab": "Activities"
+    },
+    {
+      "controlName": "MCRCatalogReqActivity_MCRCatalogReqActivityType",
+      "helpSource": "hover",
+      "helpText": "Catalog request activity typeSelect the default activity type for the catalog request activity.",
+      "label": "Catalog request activity type",
+      "role": "Input",
+      "tab": "Activities"
+    },
+    {
+      "controlName": "MCRCatalogReqActivity_MCRCatalogReqActivityPurpose",
+      "helpSource": "hover",
+      "helpText": "Enter the default purpose for the catalog request activity.",
+      "label": "Catalog request activity purpose",
+      "role": "Input",
+      "tab": "Activities"
+    },
+    {
+      "controlName": "MCRCatalogReqActivity_MCRCatalogReqActivityPhase",
+      "helpSource": "hover",
+      "helpText": "Catalog request activity phaseSelect the default activity phase for the catalog request activity.",
+      "label": "Catalog request activity phase",
+      "role": "Input",
+      "tab": "Activities"
+    },
+    {
+      "controlName": "MCRCatalogSentActivity_MCRCatalogSentActivityCreate",
+      "helpSource": "hover",
+      "helpText": "Select if and when an activity should be created automatically when a catalog is sent to a customer.",
+      "label": "Create activity for catalog is sent",
+      "role": "ComboBox",
+      "tab": "Activities"
+    },
+    {
+      "controlName": "MCRCatalogSentActivity_MCRCatalogSentActivityCategory",
+      "helpSource": "hover",
+      "helpText": "Catalog sent categorySelect the default activity category for the catalog sent activity.",
+      "label": "Catalog sent category",
+      "role": "ComboBox",
+      "tab": "Activities"
+    },
+    {
+      "controlName": "MCRCatalogSentActivity_MCRCatalogSentActivityType",
+      "helpSource": "hover",
+      "helpText": "Select the default activity type for the catalog sent activity.",
+      "label": "Catalog sent activity type",
+      "role": "Input",
+      "tab": "Activities"
+    },
+    {
+      "controlName": "MCRCatalogSentActivity_MCRCatalogSentActivityPurpose",
+      "helpSource": "hover",
+      "helpText": "Catalog sent activity purposeEnter the default purpose for the catalog sent activity.",
+      "label": "Catalog sent activity purpose",
+      "role": "Input",
+      "tab": "Activities"
+    },
+    {
+      "controlName": "MCRCatalogSentActivity_MCRCatalogSentActivityPhase",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Catalog sent activity phase",
+      "role": "Input",
+      "tab": "Activities"
+    },
+    {
+      "controlName": "Tab",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Define general parameters for prospects, leads and opportunities",
+      "role": "VerticalTabs",
+      "tab": "Transaction log"
+    },
+    {
+      "controlName": "TransLog",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Transaction log",
+      "role": "PivotItem",
+      "tab": "Transaction log"
+    },
+    {
+      "controlName": "Includetables_LogCustTable",
+      "helpSource": "hover",
+      "helpText": "CustomersSelect this check box to track user changes to customer records in the transaction log.",
+      "label": "Customers",
+      "role": "CheckBox",
+      "tab": "Transaction log"
+    },
+    {
+      "controlName": "Includetables_LogCustTrans",
+      "helpSource": "hover",
+      "helpText": "Select this check box to track user changes to customer transactions in the transaction log.",
+      "label": "Customer transactions",
+      "role": "CheckBox",
+      "tab": "Transaction log"
+    },
+    {
+      "controlName": "Includetables_LogVendTable",
+      "helpSource": "hover",
+      "helpText": "VendorsSelect this check box to track user changes to vendor records in the transaction log.",
+      "label": "Vendors",
+      "role": "CheckBox",
+      "tab": "Transaction log"
+    },
+    {
+      "controlName": "Includetables_LogVendTrans",
+      "helpSource": "hover",
+      "helpText": "Select this check box to track user changes to vendor transactions in the transaction log.",
+      "label": "Vendor transactions",
+      "role": "CheckBox",
+      "tab": "Transaction log"
+    },
+    {
+      "controlName": "Includetables_LogContactPerson",
+      "helpSource": "hover",
+      "helpText": "ContactsSelect this check box to track user changes to contacts in the transaction log.",
+      "label": "Contacts",
+      "role": "CheckBox",
+      "tab": "Transaction log"
+    },
+    {
+      "controlName": "Includetables_LogActivities",
+      "helpSource": "hover",
+      "helpText": "Select this check box to track user changes to activities in the transaction log.",
+      "label": "Activities",
+      "role": "CheckBox",
+      "tab": "Transaction log"
+    },
+    {
+      "controlName": "Includetables_LogDocuRef",
+      "helpSource": "hover",
+      "helpText": "Document referencesSelect this check box to track user changes to document references in the transaction log.",
+      "label": "Document references",
+      "role": "CheckBox",
+      "tab": "Transaction log"
+    },
+    {
+      "controlName": "Includetables_LogSalesTable",
+      "helpSource": "hover",
+      "helpText": "Select this check box to track user changes to sales orders in the transaction log.",
+      "label": "Sales orders",
+      "role": "CheckBox",
+      "tab": "Transaction log"
+    },
+    {
+      "controlName": "Includetables_LogQuotationTable",
+      "helpSource": "hover",
+      "helpText": "QuotationsSelect this check box to track user changes to quotations in the transaction log.",
+      "label": "Quotations",
+      "role": "CheckBox",
+      "tab": "Transaction log"
+    },
+    {
+      "controlName": "Includetables_LogMailings",
+      "helpSource": "hover",
+      "helpText": "Select this check box to track user changes to mailings in the transaction log.",
+      "label": "Mailings",
+      "role": "CheckBox",
+      "tab": "Transaction log"
+    },
+    {
+      "controlName": "Includetables_LogBusRel",
+      "helpSource": "hover",
+      "helpText": "ProspectsSelect this check box to track user changes to prospects in the transaction log.",
+      "label": "Prospects",
+      "role": "CheckBox",
+      "tab": "Transaction log"
+    },
+    {
+      "controlName": "Includetables_LogTMCallListTable",
+      "helpSource": "hover",
+      "helpText": "Select this check box to track user changes to call lists in the transaction log.",
+      "label": "Call lists",
+      "role": "CheckBox",
+      "tab": "Transaction log"
+    },
+    {
+      "controlName": "Includetables_LogCampaignTable",
+      "helpSource": "hover",
+      "helpText": "CampaignsSelect this check box to track user changes to campaigns in the transaction log.",
+      "label": "Campaigns",
+      "role": "CheckBox",
+      "tab": "Transaction log"
+    },
+    {
+      "controlName": "Includetables_LogOpportunity",
+      "helpSource": "hover",
+      "helpText": "Select this check box to track user changes to opportunities in the transaction log.",
+      "label": "Opportunities",
+      "role": "CheckBox",
+      "tab": "Transaction log"
+    },
+    {
+      "controlName": "Includetables_LogLeadTable",
+      "helpSource": "hover",
+      "helpText": "LeadsSelect this check box to track user changes to leads in the transaction log.",
+      "label": "Leads",
+      "role": "CheckBox",
+      "tab": "Transaction log"
+    },
+    {
+      "controlName": "Includetables_LogCaseDetail",
+      "helpSource": "hover",
+      "helpText": "Select this check box to track user changes to cases in the transaction log.",
+      "label": "Cases",
+      "role": "CheckBox",
+      "tab": "Transaction log"
+    },
+    {
+      "controlName": "GroupOption_TransLogInterval",
+      "helpSource": "hover",
+      "helpText": "Days to keep logEnter the age of the transactions to appear in the log tab pages for prospects and contact persons. The age is expressed in number of days.",
+      "label": "Days to keep log",
+      "role": "Integer",
+      "tab": "Transaction log"
+    },
+    {
+      "controlName": "GroupOption_LogInsert",
+      "helpSource": "hover",
+      "helpText": "Select this check box to include insert transactions in transaction log. Insert transactions are transactions that insert a new record in the relevant table, for example, when you create a new prospect or campaign.",
+      "label": "Track new transactions",
+      "role": "CheckBox",
+      "tab": "Transaction log"
+    },
+    {
+      "controlName": "GroupOption_LogDelete",
+      "helpSource": "hover",
+      "helpText": "Track deleted transactionsSelect this check box to include delete transactions in the transaction log. Delete transactions are transactions that delete a record in the relevant table, for example, when you delete a prospect or campaign.",
+      "label": "Track deleted transactions",
+      "role": "CheckBox",
+      "tab": "Transaction log"
+    },
+    {
+      "controlName": "GroupOption_LogUpdate",
+      "helpSource": "hover",
+      "helpText": "Select if the transaction log should create a new transaction log every time that an update is made, or if an update is made to the last record, or a transaction log is not created when updates are made.",
+      "label": "Track updated transactions",
+      "role": "ComboBox",
+      "tab": "Transaction log"
+    },
+    {
+      "controlName": "Tab",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Define general parameters for prospects, leads and opportunities",
+      "role": "VerticalTabs",
+      "tab": "Number sequences"
+    },
+    {
+      "controlName": "NumberSeq",
+      "helpSource": "",
+      "helpText": "",
+      "label": "Number sequences",
+      "role": "PivotItem",
+      "tab": "Number sequences"
+    },
+    {
+      "controlName": "Grid.Reference",
+      "helpSource": "dom",
+      "helpText": "Reference The unique key to associate with a number sequence code.",
+      "label": "Reference",
+      "role": "GridColumn",
+      "tab": "Number sequences"
+    },
+    {
+      "controlName": "Grid.Number sequence code",
+      "helpSource": "dom",
+      "helpText": "Number sequence code The unique ID for the record in the database.",
+      "label": "Number sequence code",
+      "role": "GridColumn",
+      "tab": "Number sequences"
+    },
+    {
+      "controlName": "Grid.Description",
+      "helpSource": "dom",
+      "helpText": "Description The description of the number sequence.",
+      "label": "Description",
+      "role": "GridColumn",
+      "tab": "Number sequences"
+    }
+  ],
+  "lookups": [
+    {
+      "tab": "General",
+      "controlName": "Tab",
+      "opened": true,
+      "values": [
+        "Period typesDescription"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "General",
+      "controlName": "General",
+      "opened": true,
+      "values": [
+        "Period typesDescription"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "General",
+      "controlName": "Period_PeriodId",
+      "opened": true,
+      "values": [
+        "Period typesDescription"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "General",
+      "controlName": "Period_PeriodFrom",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "General",
+      "controlName": "Period_PeriodTo",
+      "opened": true,
+      "values": [
+        "Period typesStart dateEnd dateModel"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "General",
+      "controlName": "Opportunities_CreateOpportunityForSalesQuotation",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "General",
+      "controlName": "Opportunities_CreateOpportunityForProjectQuotation",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "General",
+      "controlName": "Opportunities_UpdateOpportunityForSalesQuotation",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "General",
+      "controlName": "Opportunities_UpdateOpportunityForProjectQuotation",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "General",
+      "controlName": "QMSApprovedCustomerList_QMSACLDateType",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Prospects",
+      "controlName": "Tab",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Prospects",
+      "controlName": "Prospects",
+      "opened": true,
+      "values": [
+        "LanguageLanguage name"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "Prospects",
+      "controlName": "LanguageId",
+      "opened": true,
+      "values": [
+        "LanguageLanguage name"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "Prospects",
+      "controlName": "CustGroupId",
+      "opened": true,
+      "values": [
+        "Customer groupDescription"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "Prospects",
+      "controlName": "VendGroupId",
+      "opened": true,
+      "values": [
+        "Vendor groupDescription"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "Prospects",
+      "controlName": "CurrencyCode",
+      "opened": true,
+      "values": [
+        "CurrencyName"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "Prospects",
+      "controlName": "BusRelTypeId",
+      "opened": true,
+      "values": [
+        "TypeDescriptionDelete converted prospect"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "Prospects",
+      "controlName": "RelationDefaults_BusRelStatus",
+      "opened": true,
+      "values": [
+        "StatusDescription"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "Prospects",
+      "controlName": "OtherInfo_EmailMemberCopyType",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Documents",
+      "controlName": "Tab",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Documents",
+      "controlName": "Documents",
+      "opened": true,
+      "values": [
+        "TypeName"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "Documents",
+      "controlName": "DocuTypeIdForInEMail",
+      "opened": true,
+      "values": [
+        "TypeName"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "Documents",
+      "controlName": "DocuTypeIdForOutEMail",
+      "opened": true,
+      "values": [
+        "TypeName"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "Documents",
+      "controlName": "DocuTypeIdForFiles",
+      "opened": true,
+      "values": [
+        "TypeName"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "Campaigns",
+      "controlName": "Tab",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Campaigns",
+      "controlName": "Campaigns",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Campaigns",
+      "controlName": "CampaignStatus",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Campaigns",
+      "controlName": "CampaignTypeId",
+      "opened": true,
+      "values": [
+        "TypeDescription"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "Campaigns",
+      "controlName": "CampaignGroupId",
+      "opened": true,
+      "values": [
+        "GroupDescription"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "Campaigns",
+      "controlName": "CampaignTargetId",
+      "opened": true,
+      "values": [
+        "TargetDescription"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "Campaigns",
+      "controlName": "WebSite_DefaultUserId",
+      "opened": true,
+      "values": [
+        "IDTypeNameEmailProviderEnabled"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "Activities",
+      "controlName": "Tab",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Activities",
+      "controlName": "Activities",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Activities",
+      "controlName": "RunBaseBatchDefaults_RunBaseBatchCreateActivity",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Activities",
+      "controlName": "QuotationDefaultActivity_QuotationCreateActivity",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Activities",
+      "controlName": "QuotationDefaultActivity_QuotationActivityCategory",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Activities",
+      "controlName": "QuotationDefaultActivity_QuotationActivityTypeId",
+      "opened": true,
+      "values": [
+        "TypeDescription"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "Activities",
+      "controlName": "QuotationDefaultActivity_QuotationActivityPhaseId",
+      "opened": true,
+      "values": [
+        "PhaseDescription"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "Activities",
+      "controlName": "CampaignDefaultActivity_CampaignCreateActivity",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Activities",
+      "controlName": "CampaignDefaultActivity_CampaignActivityCategory",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Activities",
+      "controlName": "CampaignDefaultActivity_CampaignActivityTypeId",
+      "opened": true,
+      "values": [
+        "TypeDescription"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "Activities",
+      "controlName": "CampaignDefaultActivity_CampaignActivityPhaseId",
+      "opened": true,
+      "values": [
+        "PhaseDescription"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "Activities",
+      "controlName": "CampaignTargetActivityDefaults_CampaignTargetsCreateActivity",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Activities",
+      "controlName": "CampaignTargetActivityDefaults_CampaignTargetActivityCategory",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Activities",
+      "controlName": "CampaignTargetActivityDefaults_CampaignTargetActivityType",
+      "opened": true,
+      "values": [
+        "TypeDescription"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "Activities",
+      "controlName": "CampaignTargetActivityDefaults_CampaignTargetActivityPhase",
+      "opened": true,
+      "values": [
+        "PhaseDescription"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "Activities",
+      "controlName": "TelemarketingDefaultActivity_FollowupCreateActivity",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Activities",
+      "controlName": "TelemarketingDefaultActivity_TMFollowUpActivityCategory",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Activities",
+      "controlName": "TelemarketingDefaultActivity_TMFollowUpActivityType",
+      "opened": true,
+      "values": [
+        "TypeDescription"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "Activities",
+      "controlName": "TelemarketingDefaultActivity_TMFollowUpActivityPhase",
+      "opened": true,
+      "values": [
+        "PhaseDescription"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "Activities",
+      "controlName": "TelemarketingDefaultCallBackActivity_CallBackCreateActivity",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Activities",
+      "controlName": "TelemarketingDefaultCallBackActivity_TMCallBackActivityCategory",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Activities",
+      "controlName": "TelemarketingDefaultCallBackActivity_TMCallbackActivityType",
+      "opened": true,
+      "values": [
+        "TypeDescription"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "Activities",
+      "controlName": "TelemarketingDefaultCallBackActivity_TMCallBackActivityPhase",
+      "opened": true,
+      "values": [
+        "PhaseDescription"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "Activities",
+      "controlName": "TelemarketingTargetActivityDefaults_TelemarketingTargetsCreateActivity",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Activities",
+      "controlName": "TelemarketingTargetActivityDefaults_TelemarketingTargetActivityCategory",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Activities",
+      "controlName": "TelemarketingTargetActivityDefaults_TelemarketingTargetActivityType",
+      "opened": true,
+      "values": [
+        "TypeDescription"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "Activities",
+      "controlName": "TelemarketingTargetActivityDefaults_TelemarkeringTargetActivityPhase",
+      "opened": true,
+      "values": [
+        "PhaseDescription"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "Activities",
+      "controlName": "MCRCatalogReqActivity_MCRCatalogReqActivityCreate",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Activities",
+      "controlName": "MCRCatalogReqActivity_MCRCatalogReqActivityCategory",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Activities",
+      "controlName": "MCRCatalogReqActivity_MCRCatalogReqActivityType",
+      "opened": true,
+      "values": [
+        "TypeDescription"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "Activities",
+      "controlName": "MCRCatalogReqActivity_MCRCatalogReqActivityPhase",
+      "opened": true,
+      "values": [
+        "PhaseDescription"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "Activities",
+      "controlName": "MCRCatalogSentActivity_MCRCatalogSentActivityCreate",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Activities",
+      "controlName": "MCRCatalogSentActivity_MCRCatalogSentActivityCategory",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Activities",
+      "controlName": "MCRCatalogSentActivity_MCRCatalogSentActivityType",
+      "opened": true,
+      "values": [
+        "TypeDescription"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "Activities",
+      "controlName": "MCRCatalogSentActivity_MCRCatalogSentActivityPhase",
+      "opened": true,
+      "values": [
+        "PhaseDescription"
+      ],
+      "reason": ""
+    },
+    {
+      "tab": "Transaction log",
+      "controlName": "Tab",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Transaction log",
+      "controlName": "TransLog",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Transaction log",
+      "controlName": "GroupOption_LogUpdate",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    },
+    {
+      "tab": "Number sequences",
+      "controlName": "Tab",
+      "opened": false,
+      "values": [],
+      "reason": "no lookup panel detected"
+    }
+  ]
+}
