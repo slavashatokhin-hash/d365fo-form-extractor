@@ -5,6 +5,9 @@ const lookupCsvBtn = document.getElementById("lookupCsvBtn");
 const githubBtn = document.getElementById("githubBtn");
 const githubSettingsBtn = document.getElementById("githubSettingsBtn");
 const githubStatusEl = document.getElementById("githubStatus");
+const githubFolderRow = document.getElementById("githubFolderRow");
+const githubFolderSelect = document.getElementById("githubFolderSelect");
+const githubFolderRefreshBtn = document.getElementById("githubFolderRefreshBtn");
 const deepScanEl = document.getElementById("deepScan");
 const walkTabsEl = document.getElementById("walkTabs");
 const captureScreenshotsEl = document.getElementById("captureScreenshots");
@@ -37,6 +40,7 @@ function showEmpty() {
   githubBtn.disabled = true;
   githubStatusEl.textContent = "";
   githubStatusEl.className = "";
+  githubFolderRow.classList.remove("show");
 }
 
 function showError(message) {
@@ -265,6 +269,7 @@ async function performScan({ deep, walkTabs, captureScreenshots, captureLookups,
   const fields = [];
   const screenshots = [];
   const lookups = [];
+  const scannedTabLabels = [];
 
   for (let step = 0; step < indices.length; step++) {
     const idx = indices[step];
@@ -276,42 +281,66 @@ async function performScan({ deep, walkTabs, captureScreenshots, captureLookups,
       tabName = tabNames[idx];
     }
 
-    if (captureScreenshots) {
-      await sleep(150);
-      try {
-        const dataUrl = await chrome.tabs.captureVisibleTab(windowId, { format: "png" });
-        screenshots.push({ tab: tabName, dataUrl });
-      } catch (e) {
-        console.warn("Screenshot capture failed:", e);
+    // A page tab (e.g. "Lines") can itself contain a second, nested tab strip — e.g.
+    // a grid's "Line details" section (General/Price and discount/Fulfillment/...).
+    // That strip only appears once this outer tab is active, so it's only
+    // discoverable here, after the switch above.
+    const innerTabNames = walkTabs ? await exec(tabId, () => window.__d365foGetInnerTabHeaders()) : [];
+    const hasInnerTabs = innerTabNames.length > 1;
+    const innerIndices = hasInnerTabs ? innerTabNames.map((_, i) => i) : [null];
+
+    for (let innerStep = 0; innerStep < innerIndices.length; innerStep++) {
+      const innerIdx = innerIndices[innerStep];
+      let combinedTabName = tabName;
+
+      if (innerIdx !== null) {
+        onStatus(`Opening tab ${step + 1}/${indices.length} — ${innerTabNames[innerIdx]}…`);
+        await exec(tabId, (i) => window.__d365foActivateInnerTabByIndex(i), [innerIdx]);
+        combinedTabName = tabName ? `${tabName} > ${innerTabNames[innerIdx]}` : innerTabNames[innerIdx];
+      }
+
+      if (captureScreenshots) {
+        await sleep(150);
+        try {
+          const dataUrl = await chrome.tabs.captureVisibleTab(windowId, { format: "png" });
+          screenshots.push({ tab: combinedTabName, dataUrl });
+        } catch (e) {
+          console.warn("Screenshot capture failed:", e);
+        }
+      }
+
+      onStatus(`Reading fields${combinedTabName ? " — " + combinedTabName : ""}…`);
+      const fieldsResult = await exec(tabId, (d) => window.__d365foCollectCurrentFields(d), [deep]);
+      formName = formName || fieldsResult.formName;
+      url = fieldsResult.url || url;
+      fieldsResult.fields.forEach((f) => fields.push({ ...f, tab: combinedTabName }));
+      scannedTabLabels.push(combinedTabName);
+
+      if (captureLookups) {
+        const lookupControlNames = await exec(tabId, () => window.__d365foGetLookupCandidates());
+        for (let li = 0; li < lookupControlNames.length; li++) {
+          const controlName = lookupControlNames[li];
+          onStatus(`Opening lookup ${li + 1}/${lookupControlNames.length}${combinedTabName ? " on " + combinedTabName : ""}…`);
+          const openResult = await exec(tabId, (name) => window.__d365foOpenLookup(name), [controlName]);
+
+          if (openResult.opened && captureScreenshots) {
+            await sleep(120);
+            try {
+              const dataUrl = await chrome.tabs.captureVisibleTab(windowId, { format: "png" });
+              screenshots.push({ tab: `${combinedTabName ? combinedTabName + " — " : ""}${controlName} (lookup)`, dataUrl });
+            } catch (e) {
+              console.warn("Lookup screenshot capture failed:", e);
+            }
+          }
+
+          await exec(tabId, () => window.__d365foCloseLookup());
+          lookups.push({ tab: combinedTabName, controlName, opened: openResult.opened, values: openResult.values || [], reason: openResult.reason || "" });
+        }
       }
     }
 
-    onStatus(`Reading fields${tabName ? " — " + tabName : ""}…`);
-    const fieldsResult = await exec(tabId, (d) => window.__d365foCollectCurrentFields(d), [deep]);
-    formName = formName || fieldsResult.formName;
-    url = fieldsResult.url || url;
-    fieldsResult.fields.forEach((f) => fields.push({ ...f, tab: tabName }));
-
-    if (captureLookups) {
-      const lookupControlNames = await exec(tabId, () => window.__d365foGetLookupCandidates());
-      for (let li = 0; li < lookupControlNames.length; li++) {
-        const controlName = lookupControlNames[li];
-        onStatus(`Opening lookup ${li + 1}/${lookupControlNames.length}${tabName ? " on " + tabName : ""}…`);
-        const openResult = await exec(tabId, (name) => window.__d365foOpenLookup(name), [controlName]);
-
-        if (openResult.opened && captureScreenshots) {
-          await sleep(120);
-          try {
-            const dataUrl = await chrome.tabs.captureVisibleTab(windowId, { format: "png" });
-            screenshots.push({ tab: `${tabName ? tabName + " — " : ""}${controlName} (lookup)`, dataUrl });
-          } catch (e) {
-            console.warn("Lookup screenshot capture failed:", e);
-          }
-        }
-
-        await exec(tabId, () => window.__d365foCloseLookup());
-        lookups.push({ tab: tabName, controlName, opened: openResult.opened, values: openResult.values || [], reason: openResult.reason || "" });
-      }
+    if (hasInnerTabs) {
+      await exec(tabId, () => window.__d365foRestoreOriginalInnerTab());
     }
   }
 
@@ -319,14 +348,16 @@ async function performScan({ deep, walkTabs, captureScreenshots, captureLookups,
     await exec(tabId, () => window.__d365foRestoreOriginalTab());
   }
 
+  const tabsFound = Array.from(new Set(scannedTabLabels.filter(Boolean)));
+
   return {
     formName,
     url,
     scannedAt: new Date().toISOString(),
     deep,
     walkTabs,
-    tabsFound: tabNames,
-    tabsScanned: indices.length,
+    tabsFound: tabsFound.length ? tabsFound : tabNames,
+    tabsScanned: tabsFound.length || indices.length,
     fields,
     screenshots,
     lookups,
@@ -365,9 +396,16 @@ scanBtn.addEventListener("click", async () => {
     csvBtn.disabled = finalScan.fields.length === 0;
     jsonBtn.disabled = finalScan.fields.length === 0;
     lookupCsvBtn.disabled = !(finalScan.lookups && finalScan.lookups.length);
-    githubBtn.disabled = finalScan.fields.length === 0;
     githubStatusEl.textContent = "";
     githubStatusEl.className = "";
+
+    if (finalScan.fields.length) {
+      githubFolderRow.classList.add("show");
+      loadGithubFolders();
+    } else {
+      githubFolderRow.classList.remove("show");
+    }
+    updateGithubButtonState();
 
     const hoverCount = finalScan.fields.filter((f) => f.helpSource === "hover").length;
     const shotCount = (finalScan.screenshots || []).length;
@@ -444,7 +482,7 @@ resetBtn.addEventListener("click", () => {
   csvBtn.disabled = true;
   jsonBtn.disabled = true;
   lookupCsvBtn.disabled = true;
-  githubBtn.disabled = true;
+  githubFolderSelect.innerHTML = '<option value="">Select an existing folder…</option>';
   statusEl.textContent = "";
   showEmpty();
 });
@@ -453,8 +491,53 @@ githubSettingsBtn.addEventListener("click", () => {
   chrome.runtime.openOptionsPage();
 });
 
+function updateGithubButtonState() {
+  githubBtn.disabled = !lastScan || lastScan.fields.length === 0 || !githubFolderSelect.value;
+}
+
+async function loadGithubFolders() {
+  const config = await window.D365GitHub.getConfig();
+  if (!config || !config.owner || !config.repo || !config.token) {
+    githubStatusEl.textContent = "GitHub isn't configured yet — click the ⚙ button to set it up.";
+    githubStatusEl.className = "err";
+    return;
+  }
+
+  const previousValue = githubFolderSelect.value;
+  githubFolderRefreshBtn.disabled = true;
+  githubStatusEl.className = "";
+  githubStatusEl.textContent = "Loading folder list…";
+
+  try {
+    const { folders, truncated } = await window.D365GitHub.listFolders(config);
+    githubFolderSelect.innerHTML = '<option value="">Select an existing folder…</option>' +
+      folders.map((f) => `<option value="${escapeHtml(f)}">${escapeHtml(f)}</option>`).join("");
+    if (previousValue && folders.includes(previousValue)) {
+      githubFolderSelect.value = previousValue;
+    }
+    githubStatusEl.textContent = truncated
+      ? "Folder list loaded (truncated — repo has a lot of files)."
+      : "";
+  } catch (e) {
+    console.error(e);
+    githubStatusEl.className = "err";
+    githubStatusEl.textContent = window.D365GitHub.describeError(e);
+  } finally {
+    githubFolderRefreshBtn.disabled = false;
+    updateGithubButtonState();
+  }
+}
+
+githubFolderSelect.addEventListener("change", updateGithubButtonState);
+
+githubFolderRefreshBtn.addEventListener("click", () => {
+  loadGithubFolders();
+});
+
 githubBtn.addEventListener("click", async () => {
   if (!lastScan || githubBtn.disabled) return;
+  const root = githubFolderSelect.value;
+  if (!root) return;
   // Disable synchronously, before any await, so a rapid double-click can't fire
   // this handler twice and race two commits against the same branch.
   githubBtn.disabled = true;
@@ -471,7 +554,7 @@ githubBtn.addEventListener("click", async () => {
   githubStatusEl.textContent = "Preparing files…";
 
   try {
-    const { root, files } = window.D365GitHub.buildFiles(lastScan, toCsv, toLookupCsv);
+    const { files } = window.D365GitHub.buildFiles(lastScan, toCsv, root);
     const message = `Scan results: ${lastScan.formName || "form"} (${new Date().toISOString()})`;
     const result = await window.D365GitHub.commitFiles(config, files, message, (msg) => {
       githubStatusEl.textContent = msg;
@@ -482,7 +565,7 @@ githubBtn.addEventListener("click", async () => {
     githubStatusEl.className = "err";
     githubStatusEl.textContent = window.D365GitHub.describeError(e);
   } finally {
-    githubBtn.disabled = false;
+    updateGithubButtonState();
   }
 });
 

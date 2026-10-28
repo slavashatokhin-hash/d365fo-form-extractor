@@ -143,14 +143,38 @@ function scanD365FOFormFactory() {
 
   // ---------- tab strip detection / walking ----------
 
-  function getTabHeaderElements() {
-    const selectorGroups = [
-      '[role="tablist"] [role="tab"]',
-      '[data-dyn-role="TabHeader"]',
-      '[data-dyn-role="NavPage"] [role="tab"]',
-    ];
+  // Scoped per-tablist container (not a flat '[role="tablist"] [role="tab"]' query) so
+  // that a nested tab strip (e.g. a grid's "Line details" fast-tabs) inside a page tab
+  // doesn't get flattened together with the outer page-level tabs. See
+  // __d365foGetInnerTabHeaders below for the nested-strip walk.
+  function getTabHeaderElements(root) {
+    const tablists = Array.from((root || document).querySelectorAll('[role="tablist"]')).filter(isVisible);
+    for (const tablist of tablists) {
+      const nodes = Array.from(tablist.querySelectorAll('[role="tab"]')).filter((n) => isVisible(n) && cleanText(n.textContent));
+      if (nodes.length > 1) return nodes;
+    }
+    const selectorGroups = ['[data-dyn-role="TabHeader"]', '[data-dyn-role="NavPage"] [role="tab"]'];
     for (const sel of selectorGroups) {
-      const nodes = Array.from(document.querySelectorAll(sel)).filter((n) => cleanText(n.textContent));
+      const nodes = Array.from((root || document).querySelectorAll(sel)).filter((n) => isVisible(n) && cleanText(n.textContent));
+      if (nodes.length > 1) return nodes;
+    }
+    return [];
+  }
+
+  function isTopLevelTablist(tablist) {
+    return !tablist.closest('[role="tabpanel"], [data-dyn-role="TabPage"]');
+  }
+
+  function getInnerTabHeaderElements(outerTabs) {
+    const outerTablist = outerTabs && outerTabs.length ? outerTabs[0].closest('[role="tablist"]') : null;
+    const tablists = Array.from(getFormRoot().querySelectorAll('[role="tablist"]'))
+      .filter((tl) => isVisible(tl) && tl !== outerTablist);
+    const ordered = [
+      ...tablists.filter((tl) => !isTopLevelTablist(tl)),
+      ...tablists.filter((tl) => isTopLevelTablist(tl)),
+    ];
+    for (const tablist of ordered) {
+      const nodes = Array.from(tablist.querySelectorAll('[role="tab"]')).filter((n) => isVisible(n) && cleanText(n.textContent));
       if (nodes.length > 1) return nodes;
     }
     return [];
@@ -269,6 +293,32 @@ function scanD365FOFormFactory() {
 
     const tabs = walkTabs ? getTabHeaderElements() : [];
 
+    async function scanCurrentPanelWithInnerTabs(outerTabName) {
+      const innerTabs = walkTabs ? getInnerTabHeaderElements(tabs) : [];
+      if (innerTabs.length > 1) {
+        const originalActiveInner = getActiveTabHeader(innerTabs);
+        for (const innerTabEl of innerTabs) {
+          innerTabEl.click();
+          await waitForStableDom(1000, 250);
+          const innerTabName = cleanText(innerTabEl.textContent);
+          const combinedName = outerTabName ? `${outerTabName} > ${innerTabName}` : innerTabName;
+          const fields = collectFieldsFromDom();
+          if (deep) await hoverFillHelpText(fields);
+          addFields(fields, combinedName);
+          tabsScanned++;
+        }
+        if (originalActiveInner) {
+          originalActiveInner.click();
+          await waitForStableDom(700, 200);
+        }
+      } else {
+        const fields = collectFieldsFromDom();
+        if (deep) await hoverFillHelpText(fields);
+        addFields(fields, outerTabName);
+        tabsScanned++;
+      }
+    }
+
     if (tabs.length > 1) {
       tabsFound = tabs.map((t) => cleanText(t.textContent));
       const originalActive = getActiveTabHeader(tabs);
@@ -277,10 +327,7 @@ function scanD365FOFormFactory() {
         tabEl.click();
         await waitForStableDom(1200, 250);
         const tabName = cleanText(tabEl.textContent);
-        const fields = collectFieldsFromDom();
-        if (deep) await hoverFillHelpText(fields);
-        addFields(fields, tabName);
-        tabsScanned++;
+        await scanCurrentPanelWithInnerTabs(tabName);
       }
 
       if (originalActive) {
@@ -288,9 +335,7 @@ function scanD365FOFormFactory() {
         await waitForStableDom(800, 200);
       }
     } else {
-      const fields = collectFieldsFromDom();
-      if (deep) await hoverFillHelpText(fields);
-      addFields(fields, "");
+      await scanCurrentPanelWithInnerTabs("");
     }
 
     return {
@@ -336,16 +381,26 @@ window.__d365foScanForm = scanD365FOFormFactory();
   }
 
   window.__d365foGetTabHeaders = function () {
-    // Reuses the same detection selectors as the main scanner.
-    const selectorGroups = [
-      '[role="tablist"] [role="tab"]',
-      '[data-dyn-role="TabHeader"]',
-      '[data-dyn-role="NavPage"] [role="tab"]',
-    ];
+    // A page can contain more than one [role="tablist"] at once — e.g. the page-level
+    // Lines/Header pivot plus a nested "Line details" fast-tab strip inside the Lines
+    // page. Querying '[role="tablist"] [role="tab"]' flattens every tablist's tabs
+    // into one array regardless of which tablist owns them, so it must be scoped
+    // per-container: pick the first *visible* tablist that has more than one visible
+    // tab, and only use its own children. Nested tab strips are walked separately via
+    // __d365foGetInnerTabHeaders once this (outer) tab is active.
+    const tablists = Array.from(getFormRoot().querySelectorAll('[role="tablist"]')).filter(isVisible);
     let tabs = [];
-    for (const sel of selectorGroups) {
-      const nodes = Array.from(getFormRoot().querySelectorAll(sel)).filter((n) => cleanText(n.textContent));
+    for (const tablist of tablists) {
+      const nodes = Array.from(tablist.querySelectorAll('[role="tab"]')).filter((n) => isVisible(n) && cleanText(n.textContent));
       if (nodes.length > 1) { tabs = nodes; break; }
+    }
+    if (!tabs.length) {
+      // Fallback for markup that doesn't use role="tablist"/"tab" containers.
+      const selectorGroups = ['[data-dyn-role="TabHeader"]', '[data-dyn-role="NavPage"] [role="tab"]'];
+      for (const sel of selectorGroups) {
+        const nodes = Array.from(getFormRoot().querySelectorAll(sel)).filter((n) => isVisible(n) && cleanText(n.textContent));
+        if (nodes.length > 1) { tabs = nodes; break; }
+      }
     }
     window.__d365foTabElements = tabs;
     window.__d365foOriginalActiveTab =
@@ -404,6 +459,66 @@ window.__d365foScanForm = scanD365FOFormFactory();
     if (el) {
       el.click();
       await waitForStableDom(800, 200);
+    }
+    return true;
+  };
+
+  // ---------- nested tab strips (e.g. a grid's "Line details" fast-tabs) ----------
+  //
+  // Some D365FO forms (e.g. Purchase agreement) have a second, nested pivot control
+  // inside a page tab — the "Line details" section under Lines, with its own
+  // General/Price and discount/Fulfillment/... tab strip. It uses the exact same
+  // role="tablist"/role="tab" markup as the outer page tabs, and only becomes visible
+  // once the outer tab (Lines) is active and a grid row is selected. Because
+  // __d365foGetTabHeaders() stops at the first tablist it finds, this inner strip was
+  // never discovered. This walks any additional visible tablist distinct from the
+  // outer one already recorded in window.__d365foTabElements.
+
+  function isTopLevelTablist(tablist) {
+    return !tablist.closest('[role="tabpanel"], [data-dyn-role="TabPage"]');
+  }
+
+  window.__d365foGetInnerTabHeaders = function () {
+    const outerTabs = window.__d365foTabElements || [];
+    const outerTablist = outerTabs.length ? outerTabs[0].closest('[role="tablist"]') : null;
+
+    const tablists = Array.from(getFormRoot().querySelectorAll('[role="tablist"]'))
+      .filter((tl) => isVisible(tl) && tl !== outerTablist);
+
+    // Prefer a tablist nested inside a tab panel (the common case for a section-level
+    // pivot like Line details); fall back to any other distinct visible tablist.
+    const ordered = [
+      ...tablists.filter((tl) => !isTopLevelTablist(tl)),
+      ...tablists.filter((tl) => isTopLevelTablist(tl)),
+    ];
+
+    let tabs = [];
+    for (const tablist of ordered) {
+      const nodes = Array.from(tablist.querySelectorAll('[role="tab"]')).filter((n) => isVisible(n) && cleanText(n.textContent));
+      if (nodes.length > 1) { tabs = nodes; break; }
+    }
+
+    window.__d365foInnerTabElements = tabs;
+    window.__d365foOriginalActiveInnerTab =
+      tabs.find((t) => t.getAttribute("aria-selected") === "true" || /active|selected/i.test(t.className)) || tabs[0] || null;
+    return tabs.map((t) => cleanText(t.textContent));
+  };
+
+  window.__d365foActivateInnerTabByIndex = async function (index) {
+    const tabs = window.__d365foInnerTabElements || [];
+    const el = tabs[index];
+    if (!el) return false;
+    el.click();
+    await waitForStableDom(1000, 250);
+    await new Promise((r) => setTimeout(r, 300));
+    return true;
+  };
+
+  window.__d365foRestoreOriginalInnerTab = async function () {
+    const el = window.__d365foOriginalActiveInnerTab;
+    if (el) {
+      el.click();
+      await waitForStableDom(700, 200);
     }
     return true;
   };
@@ -476,22 +591,36 @@ window.__d365foScanForm = scanD365FOFormFactory();
     const trigger =
       container.querySelector('button[aria-label*="lookup" i], button[class*="lookup" i], [class*="lookupButton"], [class*="dyn-lookupButton"]') || el;
 
-    const before = new Set(getFloatingContainers());
+    // ComboBox-style fields (e.g. "Approved vendor check method") keep their
+    // role="listbox" panel in the DOM at all times, hidden (width 0) until opened —
+    // they don't create a new node the way other lookup flyouts do. So a plain
+    // "was this node present before" diff never catches them: the node was always
+    // present. Track visibility instead of node identity, so a pre-existing-but-hidden
+    // panel that becomes visible still counts as newly opened.
+    const wasVisibleBefore = new Set(getFloatingContainers().filter((n) => n.getBoundingClientRect().width > 0));
     trigger.click();
     await waitForStableDom(900, 250);
-    let candidates = getFloatingContainers().filter((n) => !before.has(n) && n.getBoundingClientRect().width > 0);
+    let candidates = getFloatingContainers().filter((n) => !wasVisibleBefore.has(n) && n.getBoundingClientRect().width > 0);
 
     if (!candidates.length) {
       // Fallback: focus the field and try the classic Alt+Down combo-open shortcut.
       if (el.focus) el.focus();
       el.dispatchEvent(new KeyboardEvent("keydown", { key: "ArrowDown", altKey: true, bubbles: true, cancelable: true }));
       await waitForStableDom(900, 250);
-      candidates = getFloatingContainers().filter((n) => !before.has(n) && n.getBoundingClientRect().width > 0);
+      candidates = getFloatingContainers().filter((n) => !wasVisibleBefore.has(n) && n.getBoundingClientRect().width > 0);
     }
 
     window.__d365foLookupTrigger = trigger;
 
     if (!candidates.length) return { opened: false, values: [], reason: "no lookup panel detected" };
+
+    // waitForStableDom resolves once the panel's content has settled in the DOM, but
+    // (same as the tab-strip switch — see __d365foActivateTabByIndex) the panel's open
+    // CSS transition (fade/slide-in) can still be running visually at that point. The
+    // popup takes its screenshot right after this returns, so without this buffer the
+    // screenshot can catch the panel mid-animation and appear to be missing values that
+    // are actually already in the DOM.
+    await new Promise((r) => setTimeout(r, 350));
 
     const values = extractOptionTexts(candidates[0]);
     return { opened: true, values };

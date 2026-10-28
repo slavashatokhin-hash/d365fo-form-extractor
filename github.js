@@ -74,31 +74,28 @@
       .slice(0, 80) || "untitled";
   }
 
-  function timestampSegment(date) {
-    const d = date || new Date();
-    const pad = (n) => String(n).padStart(2, "0");
-    return (
-      `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}_` +
-      `${pad(d.getHours())}-${pad(d.getMinutes())}-${pad(d.getSeconds())}`
-    );
+  // Lists existing folders in the repo (recursively, via the Git Trees API) so the
+  // popup can offer a live picker instead of auto-generating a destination path.
+  // Excludes "screenshots" leaf folders since those are an internal detail of a scan
+  // folder, not somewhere a caller should pick as the save target.
+  async function listFolders(config) {
+    const { owner, repo, token } = config;
+    const branch = config.branch || "main";
+    const data = await apiRequest(token, "GET", `/repos/${owner}/${repo}/git/trees/${encodeURIComponent(branch)}?recursive=1`);
+    const folders = (data.tree || [])
+      .filter((entry) => entry.type === "tree")
+      .map((entry) => entry.path)
+      .filter((path) => !/(^|\/)screenshots$/.test(path))
+      .sort();
+    return { folders, truncated: !!data.truncated };
   }
 
-  // Builds the list of files to commit for a scan result, rooted at
-  // results/<form-name>/<timestamp>/...
-  function buildFiles(scan, toCsv, toLookupCsv) {
-    const formSegment = sanitizeSegment(scan.formName || "form");
-    const stampSegment = timestampSegment(scan.scannedAt ? new Date(scan.scannedAt) : new Date());
-    const root = `results/${formSegment}/${stampSegment}`;
-
-    const { screenshots, ...jsonExportable } = scan;
+  // Builds the list of files to commit for a scan result, rooted at the given
+  // (existing, user-selected) folder path.
+  function buildFiles(scan, toCsv, root) {
     const files = [
-      { path: `${root}/fields.json`, content: JSON.stringify(jsonExportable, null, 2), encoding: "utf-8" },
       { path: `${root}/fields.csv`, content: toCsv(scan), encoding: "utf-8" },
     ];
-
-    if (scan.lookups && scan.lookups.length) {
-      files.push({ path: `${root}/lookups.csv`, content: toLookupCsv(scan), encoding: "utf-8" });
-    }
 
     (scan.screenshots || []).forEach((s, i) => {
       const base64 = (s.dataUrl || "").split(",")[1];
@@ -174,6 +171,7 @@
     getConfig,
     saveConfig,
     testConnection,
+    listFolders,
     buildFiles,
     commitFiles,
     describeError,

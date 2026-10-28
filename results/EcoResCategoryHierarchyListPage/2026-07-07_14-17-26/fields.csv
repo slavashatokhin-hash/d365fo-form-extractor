@@ -1,7 +1,0 @@
-"Tab","Form","Control Name","Role","Label","Help Text","Help Source"
-"","EcoResCategoryHierarchyListPage","QuickFilterControl","QuickFilter","Filter","",""
-"","EcoResCategoryHierarchyListPage","QuickFilterControl_Input","Input","Filter","",""
-"","EcoResCategoryHierarchyListPage","HierarchyDetails.Name","GridColumn","Name","Name Click to follow link","dom"
-"","EcoResCategoryHierarchyListPage","HierarchyDetails.Description","GridColumn","Description","Description","dom"
-"","EcoResCategoryHierarchyListPage","HierarchyDetails.Last modified date","GridColumn","Last modified date","Last modified date","dom"
-"","EcoResCategoryHierarchyListPage","HierarchyDetails.Last modified by","GridColumn","Last modified by","Last modified by","dom"
